@@ -57,9 +57,12 @@
         <object-type name="Button" sid="1241825272176454">
             <plugin id="Button" />
         </object-type>
+<<<<<<< HEAD
         <object-type name="Button2" sid="3129521882094247">
             <plugin id="Button" />
         </object-type>
+=======
+>>>>>>> cef339b63e0f3a3a3e1e5725478f148cc4ec4eb2
     </object-folder>
     <families />
     <layout-folder expanded="1">
