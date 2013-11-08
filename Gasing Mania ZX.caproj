@@ -62,12 +62,20 @@
     <layout-folder expanded="1">
         <layout>Layout 1.xml</layout>
         <layout>main_layout.xml</layout>
+<<<<<<< HEAD
+        <layout>option_layout.xml</layout>
+=======
         <layout>layout 2.xml</layout>
+>>>>>>> 2533203a7ec7c17e417050ff18df36d161874c4c
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>main_event.xml</event-sheet>
+<<<<<<< HEAD
+        <event-sheet>option_event.xml</event-sheet>
+=======
         <event-sheet>Event sheet 2.xml</event-sheet>
+>>>>>>> 2533203a7ec7c17e417050ff18df36d161874c4c
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="0" />
