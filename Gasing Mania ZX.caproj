@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>Gasing Mania ZX</name>
     <description></description>
     <version>1.0</version>
-    <author></author>
+    <author>Tekbobers</author>
     <author-email></author-email>
     <author-website></author-website>
     <app-id></app-id>
@@ -12,8 +12,9 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -48,6 +49,9 @@
         </object-type>
         <object-type name="Audio" sid="432376389717995">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="Text" sid="4086350997147574">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
