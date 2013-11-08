@@ -2,12 +2,5 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>option_event</name>
-    <events>
-        <event-block sid="4235281485899464">
-            <conditions>
-                <condition id="1" name="Is checked" sid="2584386840628882" type="Button" />
-            </conditions>
-            <actions />
-        </event-block>
-    </events>
+    <events />
 </c2eventsheet>

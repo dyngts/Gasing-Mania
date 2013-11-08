@@ -15,9 +15,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>achievement_layout</layout>
         <layout>upgrade_layout</layout>
         <layout>about_layout</layout>
-        <layout>highscore_layout</layout>
+        <layout active="1">highscore_layout</layout>
         <event-sheet>main_event</event-sheet>
-        <event-sheet active="1">option_event</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
