@@ -10,11 +10,11 @@
     <unique-id>3k8y8jenijj4j</unique-id>
     <saved-with-version>13900</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -56,10 +56,20 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
+        <layout>main_layout.xml</layout>
+        <layout>option_layout.xml</layout>
+        <layout>achievement_layout.xml</layout>
+        <layout>upgrade_layout.xml</layout>
+        <layout>about_layout.xml</layout>
+        <layout>highscore_layout.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>main_event.xml</event-sheet>
+        <event-sheet>option_event.xml</event-sheet>
+        <event-sheet>achievement_event.xml</event-sheet>
+        <event-sheet>upgrade_event.xml</event-sheet>
+        <event-sheet>about_layout.xml</event-sheet>
+        <event-sheet>highscore_layout.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="0" />

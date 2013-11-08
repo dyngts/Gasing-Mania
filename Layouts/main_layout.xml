@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>main_layout</name>
     <sid>4003114904966748</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>main_event</event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>
