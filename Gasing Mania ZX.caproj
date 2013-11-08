@@ -58,10 +58,12 @@
     <layout-folder expanded="1">
         <layout>Layout 1.xml</layout>
         <layout>main_layout.xml</layout>
+        <layout>option_layout.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>main_event.xml</event-sheet>
+        <event-sheet>option_event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="0" />
