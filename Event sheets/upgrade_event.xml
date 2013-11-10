@@ -2,5 +2,27 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>upgrade_event</name>
-    <events />
+    <events>
+        <event-block sid="5709161938840232">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1199898032748166" type="btn_back_upg" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8231631310711478" type="System">
+                    <param id="0" name="Layout">main_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4319154731232931">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="2907246602175349" type="btn_back_upg" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="3780677307368823" type="btn_back_upg">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2em&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

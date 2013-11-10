@@ -27,28 +27,55 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
+                <instance type="TiledBackground2" uid="29">
+=======
                 <instance type="Button" uid="0">
+>>>>>>> a22c79aa004c797da47c6ccfd031a3b7abac66ed
                     <properties>
-                        <type>Button</type>
-                        <text>OK</text>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
+                        <hotspot>Top-left</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>229</x>
-                        <y>180</y>
+                        <x>1</x>
+                        <y>1</y>
                         <z>0</z>
-                        <width>72</width>
-                        <height>24</height>
+                        <width>1761</width>
+                        <height>1582</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text3" uid="0">
+                    <properties>
+                        <text>Option</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-48,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>24</x>
+                        <y>25</y>
+                        <z>0</z>
+                        <width>158</width>
+                        <height>67</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

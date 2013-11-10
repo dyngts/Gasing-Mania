@@ -27,5 +27,174 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5730989302709933">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7947264781075982" type="btn_achievements" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8295521283654218" type="System">
+                    <param id="0" name="Layout">achievement_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7916548448909938">
+            <conditions>
+                <condition id="0" name="On clicked" sid="8516126900530762" type="btn_highscores" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1955379137792507" type="System">
+                    <param id="0" name="Layout">highscore_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7618093325543333">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7255397115667517" type="btn_option" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="729598526466743" type="System">
+                    <param id="0" name="Layout">option_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6495458935270163">
+            <conditions>
+                <condition id="0" name="On clicked" sid="5651281457861471" type="btn_upgrade" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9571637290017041" type="System">
+                    <param id="0" name="Layout">upgrade_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9205227825826852">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="5893226736678522" type="btn_achievements" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="9920801947528936" type="btn_achievements">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2em&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="906073090628169">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="4356639772128408" type="btn_highscores" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="4286399317104616" type="btn_highscores">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2em&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5823947615936854">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="4874776955397489" type="btn_option" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="3477192626624355" type="btn_option">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2em&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9268499110653045">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="6650523619038925" type="btn_upgrade" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="5446486345533072" type="btn_upgrade">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2em&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3591577185522293">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="1158037587499935" type="btn_start" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="7800859943338545" type="btn_start">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2em&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2799077066027932">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6440618665197034" type="System" />
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="2712464950297816" type="Sprite">
+                    <param id="0" name="Degrees">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9118005486353745">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8169939885474311" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9215933945001715" type="Sprite3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8830776829715473" type="Sprite4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="4438921865900916" type="btn_achievements">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="2248214473608019" type="btn_highscores">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="4727731059846326" type="btn_option">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="67691316514133" type="btn_start">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="3520867127134141" type="btn_upgrade">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1161433152269174">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8886052217710791" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="6333080116324045" type="btn_achievements">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="714813949559519" type="btn_highscores">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5098998767299926" type="btn_option">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="1645601940699336" type="btn_start">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="8330086099223454" type="btn_upgrade">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9426208756193428" type="Sprite3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4422356056952465" type="Sprite4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
