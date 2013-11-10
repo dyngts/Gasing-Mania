@@ -10,11 +10,13 @@
     <unique-id>3k8y8jenijj4j</unique-id>
     <saved-with-version>13900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors />
@@ -23,10 +25,11 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>640</width>
-        <height>480</height>
+        <width>1280</width>
+        <height>768</height>
     </window-size>
-    <pixel-rounding>0</pixel-rounding>
+    <pixel-rounding>1</pixel-rounding>
+    <first-layout>main_layout</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">No</prop>
@@ -57,12 +60,51 @@
         <object-type name="Button" sid="1241825272176454">
             <plugin id="Button" />
         </object-type>
-<<<<<<< HEAD
-        <object-type name="Button2" sid="3129521882094247">
-            <plugin id="Button" />
+        <object-type name="back_button" sid="1992257370601669">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8489332993320433" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
-=======
->>>>>>> cef339b63e0f3a3a3e1e5725478f148cc4ec4eb2
+        <object-type name="best_score" sid="6466527822327485">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="last_score" sid="7801240686937505">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="screen_title" sid="6545810678937502">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="about_text" sid="6283300356954436">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="developers_text" sid="1296946351585522">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="achv1" sid="6011088138228894">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5303638001997215" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="achievement_descr" sid="210417060619665">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="achv2" sid="4765318261425975">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2899734025480289" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="achievement_list" sid="2429219411796949">
+            <plugin id="Arr" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -78,18 +120,18 @@
         <event-sheet>option_event.xml</event-sheet>
         <event-sheet>achievement_event.xml</event-sheet>
         <event-sheet>upgrade_event.xml</event-sheet>
-        <event-sheet>about_layout.xml</event-sheet>
-        <event-sheet>highscore_layout.xml</event-sheet>
+        <event-sheet>about_event.xml</event-sheet>
+        <event-sheet>highscore_event.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="WebStorage" uid="0" />
-        <global-instance type="Touch" uid="1">
+        <global-instance type="WebStorage" uid="1" />
+        <global-instance type="Touch" uid="2">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Browser" uid="2" />
-        <global-instance type="Audio" uid="3">
+        <global-instance type="Browser" uid="3" />
+        <global-instance type="Audio" uid="7">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <positioned-audio></positioned-audio>

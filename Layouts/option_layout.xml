@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Button" uid="5">
+                <instance type="Button" uid="0">
                     <properties>
                         <type>Button</type>
                         <text>OK</text>

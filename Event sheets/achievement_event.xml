@@ -2,5 +2,44 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>achievement_event</name>
-    <events />
+    <events>
+        <comment>back to main screen when this button is touched</comment>
+        <event-block sid="7931810539501202">
+            <conditions>
+                <condition id="3" name="On touched object" sid="814671308320562" type="Touch">
+                    <param id="0" name="Object">back_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9922619417186195" type="System">
+                    <param id="0" name="Layout">main_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>if you want to add another achievement, do it just like this</comment>
+        <event-block sid="5130900265031492">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1301865650471486" type="Touch">
+                    <param id="0" name="Object">achv1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2579087120797383" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Mendapatkan Cinta Pertama&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5390034888158593">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9088015451637874" type="Touch">
+                    <param id="0" name="Object">achv2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4105529853908218" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Mendapatkan Cinta Baru&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

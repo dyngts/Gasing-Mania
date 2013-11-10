@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>highscore_event</name>
+    <events>
+        <comment>variable for best score and last score; make it global so it can be updated from game screen</comment>
+        <variable constant="0" name="lastScore" sid="3234915054778849" static="0" type="number">0</variable>
+        <variable constant="0" name="bestScore" sid="3426090597328919" static="0" type="number">0</variable>
+        <event-block sid="2202103463605815">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2333669599689806" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7527859615852794" type="best_score">
+                    <param id="0" name="Text">&quot;Best Score : &quot;&amp;bestScore</param>
+                </action>
+                <action id="0" name="Set text" sid="9976796437656213" type="last_score">
+                    <param id="0" name="Text">&quot;Last Score : &quot;&amp;lastScore</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>back to main screen when this button is touched</comment>
+        <event-block sid="9270850154139914">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2494506823212962" type="Touch">
+                    <param id="0" name="Object">back_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7321582288259671" type="System">
+                    <param id="0" name="Layout">main_layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
