@@ -5,7 +5,7 @@
     <event-sheet>option_event</event-sheet>
     <size>
         <width>1280</width>
-        <height>1024</height>
+        <height>768</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -27,14 +27,16 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-<<<<<<< HEAD
-                <instance type="TiledBackground2" uid="29">
-=======
                 <instance type="Button" uid="0">
->>>>>>> a22c79aa004c797da47c6ccfd031a3b7abac66ed
                     <properties>
+                        <type>Button</type>
+                        <text>OK</text>
+                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -47,11 +49,9 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text3" uid="0">
+                <instance type="Text3" uid="1">
                     <properties>
                         <text>Option</text>
                         <initial-visibility>Visible</initial-visibility>

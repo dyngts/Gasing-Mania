@@ -13,7 +13,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>achievement_layout</layout>
         <layout>about_layout</layout>
         <layout>highscore_layout</layout>
-        <event-sheet active="1">achievement_event</event-sheet>
+        <layout>main_layout</layout>
+        <layout>option_layout</layout>
+        <layout active="1">upgrade_layout</layout>
+        <event-sheet>achievement_event</event-sheet>
         <event-sheet>highscore_event</event-sheet>
         <event-sheet>about_event</event-sheet>
     </open-tabs>
