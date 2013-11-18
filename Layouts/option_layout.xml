@@ -4,8 +4,8 @@
     <sid>9251517961758683</sid>
     <event-sheet>option_event</event-sheet>
     <size>
-        <width>1280</width>
-        <height>768</height>
+        <width>800</width>
+        <height>480</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -27,53 +27,110 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Button" uid="0">
+                <instance type="main_background2" uid="29">
                     <properties>
-                        <type>Button</type>
-                        <text>OK</text>
-                        <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
+                        <hotspot>Top-left</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1</x>
-                        <y>1</y>
+                        <y>-291</y>
                         <z>0</z>
-                        <width>1761</width>
-                        <height>1582</height>
+                        <width>1131.258666992</width>
+                        <height>1016.269836426</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text3" uid="1">
+                <instance type="Sprite" uid="50">
                     <properties>
-                        <text>Option</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-48,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>24</x>
-                        <y>25</y>
+                        <x>127.632972717</x>
+                        <y>58.544998169</y>
                         <z>0</z>
-                        <width>158</width>
-                        <height>67</height>
+                        <width>214.102981567</width>
+                        <height>93.244850159</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.500934601</hotspotX>
+                        <hotspotY>0.502145946</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="backbutton" uid="51">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>694</x>
+                        <y>51</y>
+                        <z>0</z>
+                        <width>144.172515869</width>
+                        <height>65.893280029</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501718223</hotspotX>
+                        <hotspotY>0.503759384</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite16" uid="52">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>398</x>
+                        <y>209</y>
+                        <z>0</z>
+                        <width>192.777694702</width>
+                        <height>53.922210693</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500600219</hotspotX>
+                        <hotspotY>0.502145946</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite17" uid="53">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>400</x>
+                        <y>298</y>
+                        <z>0</z>
+                        <width>259.364044189</width>
+                        <height>52.732830048</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502145946</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

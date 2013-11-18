@@ -29,7 +29,9 @@
         </event-block>
         <event-block sid="5730989302709933">
             <conditions>
-                <condition id="0" name="On clicked" sid="7947264781075982" type="btn_achievements" />
+                <condition id="3" name="On touched object" sid="7947264781075982" type="Touch">
+                    <param id="0" name="Object">Achievement</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="8295521283654218" type="System">
@@ -39,7 +41,9 @@
         </event-block>
         <event-block sid="7916548448909938">
             <conditions>
-                <condition id="0" name="On clicked" sid="8516126900530762" type="btn_highscores" />
+                <condition id="3" name="On touched object" sid="8516126900530762" type="Touch">
+                    <param id="0" name="Object">Highscore</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="1955379137792507" type="System">
@@ -49,7 +53,9 @@
         </event-block>
         <event-block sid="7618093325543333">
             <conditions>
-                <condition id="0" name="On clicked" sid="7255397115667517" type="btn_option" />
+                <condition id="3" name="On touched object" sid="7255397115667517" type="Touch">
+                    <param id="0" name="Object">Setting</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="729598526466743" type="System">
@@ -59,66 +65,13 @@
         </event-block>
         <event-block sid="6495458935270163">
             <conditions>
-                <condition id="0" name="On clicked" sid="5651281457861471" type="btn_upgrade" />
+                <condition id="3" name="On touched object" sid="5651281457861471" type="Touch">
+                    <param id="0" name="Object">Upgrade</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="9571637290017041" type="System">
                     <param id="0" name="Layout">upgrade_layout</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9205227825826852">
-            <conditions>
-                <condition id="-3" name="Is on-screen" sid="5893226736678522" type="btn_achievements" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set CSS style" sid="9920801947528936" type="btn_achievements">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2em&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="906073090628169">
-            <conditions>
-                <condition id="-3" name="Is on-screen" sid="4356639772128408" type="btn_highscores" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set CSS style" sid="4286399317104616" type="btn_highscores">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2em&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="5823947615936854">
-            <conditions>
-                <condition id="-3" name="Is on-screen" sid="4874776955397489" type="btn_option" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set CSS style" sid="3477192626624355" type="btn_option">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2em&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9268499110653045">
-            <conditions>
-                <condition id="-3" name="Is on-screen" sid="6650523619038925" type="btn_upgrade" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set CSS style" sid="5446486345533072" type="btn_upgrade">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2em&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3591577185522293">
-            <conditions>
-                <condition id="-3" name="Is on-screen" sid="1158037587499935" type="btn_start" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set CSS style" sid="7800859943338545" type="btn_start">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2em&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -127,7 +80,7 @@
                 <condition id="-1" name="Every tick" sid="6440618665197034" type="System" />
             </conditions>
             <actions>
-                <action id="-18" name="Rotate clockwise" sid="2712464950297816" type="Sprite">
+                <action id="-18" name="Rotate clockwise" sid="2712464950297816" type="Gasing">
                     <param id="0" name="Degrees">10</param>
                 </action>
             </actions>
@@ -193,6 +146,30 @@
                 </action>
                 <action id="-15" name="Set visible" sid="4422356056952465" type="Sprite4">
                     <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="659728767957853">
+            <conditions>
+                <condition id="3" name="On touched object" sid="977200846418111" type="Touch">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8762944495718047" type="System">
+                    <param id="0" name="Layout">game_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9049357150695424">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1197838065278334" type="Touch">
+                    <param id="0" name="Object">about</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3691535610495585" type="System">
+                    <param id="0" name="Layout">about_layout</param>
                 </action>
             </actions>
         </event-block>

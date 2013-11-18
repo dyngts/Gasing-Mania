@@ -4,8 +4,8 @@
     <sid>8127298664212221</sid>
     <event-sheet>about_event</event-sheet>
     <size>
-        <width>1280</width>
-        <height>768</height>
+        <width>1920</width>
+        <height>1080</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -27,48 +27,19 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="back_button" uid="9">
+                <instance type="main_background2" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1200</x>
-                        <y>80</y>
-                        <z>0</z>
-                        <width>150</width>
-                        <height>150</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="screen_title" uid="13">
-                    <properties>
-                        <text>About</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT Condensed Extra Bold,-96,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>10</x>
-                        <y>10</y>
+                        <x>1</x>
+                        <y>-288</y>
                         <z>0</z>
-                        <width>262</width>
-                        <height>140</height>
+                        <width>1131.258666992</width>
+                        <height>1016.269836426</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -76,34 +47,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="about_text" uid="14">
-                    <properties>
-                        <text>Created by TEKBOBERS</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT Condensed,-64,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>238</x>
-                        <y>263</y>
-                        <z>0</z>
-                        <width>444</width>
-                        <height>83</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="developers_text" uid="15">
+                <instance type="developers_text" uid="33">
                     <properties>
                         <text>Alfian - Hadyan - Iqbal</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -118,14 +62,58 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>389</x>
-                        <y>406</y>
+                        <x>75</x>
+                        <y>140</y>
                         <z>0</z>
                         <width>634</width>
                         <height>84</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>459</x>
+                        <y>394</y>
+                        <z>0</z>
+                        <width>914.962890625</width>
+                        <height>170.927139282</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50036633</hotspotX>
+                        <hotspotY>0.501960814</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="backbutton" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>696</x>
+                        <y>58</y>
+                        <z>0</z>
+                        <width>144.172515869</width>
+                        <height>65.893280029</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501718223</hotspotX>
+                        <hotspotY>0.503759384</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

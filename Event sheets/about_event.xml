@@ -7,7 +7,7 @@
         <event-block sid="2011280297202091">
             <conditions>
                 <condition id="3" name="On touched object" sid="5436538528082865" type="Touch">
-                    <param id="0" name="Object">back_button</param>
+                    <param id="0" name="Object">backbutton</param>
                 </condition>
             </conditions>
             <actions>

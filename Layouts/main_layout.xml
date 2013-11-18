@@ -4,8 +4,8 @@
     <sid>4003114904966748</sid>
     <event-sheet>main_event</event-sheet>
     <size>
-        <width>1280</width>
-        <height>768</height>
+        <width>1920</width>
+        <height>1080</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="5219311130234725">
+        <layer name="Background" sid="5219311130234725">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -27,34 +27,19 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="4">
+                <instance type="main_background" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Water">
-                            <parameters>
-                                <angle>7</angle>
-                                <delta>20</delta>
-                                <emboss>0.3</emboss>
-                                <frequency>4</frequency>
-                                <intensity>3</intensity>
-                                <reflectivity>400</reflectivity>
-                                <speed>0.1</speed>
-                                <x-speed>0.3</x-speed>
-                                <y-speed>0.3</y-speed>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>0</y>
+                        <x>12</x>
+                        <y>2</y>
                         <z>0</z>
-                        <width>1446</width>
-                        <height>866</height>
+                        <width>810.011352539</width>
+                        <height>485.110534668</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -62,7 +47,46 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="12">
+                <instance type="Sprite10" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>417</x>
+                        <y>62</y>
+                        <z>0</z>
+                        <width>486.020599365</width>
+                        <height>63.347110748</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50027734</hotspotX>
+                        <hotspotY>0.502127647</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Gasing" sid="6971228042080486">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Gasing" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -80,11 +104,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>616</x>
-                        <y>412</y>
+                        <x>403</x>
+                        <y>217</y>
                         <z>0</z>
-                        <width>559.52746582</width>
-                        <height>559.52746582</height>
+                        <width>202.701751709</width>
+                        <height>202.701751709</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -92,135 +116,24 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btn_start" uid="5">
-                    <properties>
-                        <type>Button</type>
-                        <text>Start</text>
-                        <tooltip>Start the game</tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Rotate">
-                            <properties>
-                                <speed>180</speed>
-                                <acceleration>0</acceleration>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>131</x>
-                        <y>411</y>
-                        <z>0</z>
-                        <width>241.840667725</width>
-                        <height>73.895759583</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="btn_achievements" uid="8">
-                    <properties>
-                        <type>Button</type>
-                        <text>Achievements</text>
-                        <tooltip>View the achievements</tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>464</x>
-                        <y>417</y>
-                        <z>0</z>
-                        <width>260.860534668</width>
-                        <height>65.931785583</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="btn_upgrade" uid="9">
-                    <properties>
-                        <type>Button</type>
-                        <text>Upgrade</text>
-                        <tooltip>Upgrade your gasing</tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>840</x>
-                        <y>421</y>
-                        <z>0</z>
-                        <width>254.361526489</width>
-                        <height>68.82723999</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="btn_highscores" uid="10">
-                    <properties>
-                        <type>Button</type>
-                        <text>Highscores</text>
-                        <tooltip>View the your highest &amp; latest scores</tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>691</x>
-                        <y>521</y>
-                        <z>0</z>
-                        <width>231.220687866</width>
-                        <height>77.073562622</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="btn_option" uid="11">
-                    <properties>
-                        <type>Button</type>
-                        <text>Option</text>
-                        <tooltip>Do some configuration</tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>313</x>
-                        <y>519</y>
-                        <z>0</z>
-                        <width>245.560592651</width>
-                        <height>81.853530884</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="Sprite2" uid="13">
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Button" sid="2713373214494825">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Achievement" uid="44">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -230,21 +143,21 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>72.020736694</x>
-                        <y>680.020751953</y>
+                        <x>140</x>
+                        <y>173</y>
                         <z>0</z>
-                        <width>77.993591309</width>
-                        <height>77.993591309</height>
+                        <width>198.187362671</width>
+                        <height>52.415046692</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.500567555</hotspotX>
+                        <hotspotY>0.502145946</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="15">
+                <instance type="Highscore" uid="45">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -252,21 +165,21 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>689</x>
-                        <y>489</y>
+                        <x>663</x>
+                        <y>274</y>
                         <z>0</z>
-                        <width>1365</width>
-                        <height>255</height>
+                        <width>204.048538208</width>
+                        <height>70.885093689</height>
                         <depth>0</depth>
-                        <hotspotX>0.50036633</hotspotX>
-                        <hotspotY>0.501960814</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502145946</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite4" uid="16">
+                <instance type="Upgrade" uid="46">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -274,14 +187,80 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1127</x>
-                        <y>398</y>
+                        <x>134</x>
+                        <y>260</y>
                         <z>0</z>
-                        <width>68.971008301</width>
-                        <height>68.971008301</height>
+                        <width>149.711471558</width>
+                        <height>62.266437531</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500818312</hotspotX>
+                        <hotspotY>0.502145946</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Start" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>402</x>
+                        <y>382</y>
+                        <z>0</z>
+                        <width>196.188583374</width>
+                        <height>99.266731262</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.502145946</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Setting" uid="48">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>642</x>
+                        <y>162</y>
+                        <z>0</z>
+                        <width>154.914093018</width>
+                        <height>76.810310364</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500934601</hotspotX>
+                        <hotspotY>0.502145946</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="about" uid="54">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>102</x>
+                        <y>415</y>
+                        <z>0</z>
+                        <width>55.60218811</width>
+                        <height>58.271091461</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504000008</hotspotX>
+                        <hotspotY>0.503816783</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

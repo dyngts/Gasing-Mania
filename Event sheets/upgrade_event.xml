@@ -5,7 +5,9 @@
     <events>
         <event-block sid="5709161938840232">
             <conditions>
-                <condition id="0" name="On clicked" sid="1199898032748166" type="btn_back_upg" />
+                <condition id="3" name="On touched object" sid="1199898032748166" type="Touch">
+                    <param id="0" name="Object">backbutton</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="8231631310711478" type="System">

@@ -23,7 +23,7 @@
         <event-block sid="9270850154139914">
             <conditions>
                 <condition id="3" name="On touched object" sid="2494506823212962" type="Touch">
-                    <param id="0" name="Object">back_button</param>
+                    <param id="0" name="Object">backbutton</param>
                 </condition>
             </conditions>
             <actions>

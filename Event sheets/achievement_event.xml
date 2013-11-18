@@ -7,7 +7,7 @@
         <event-block sid="7931810539501202">
             <conditions>
                 <condition id="3" name="On touched object" sid="814671308320562" type="Touch">
-                    <param id="0" name="Object">back_button</param>
+                    <param id="0" name="Object">backbutton</param>
                 </condition>
             </conditions>
             <actions>
@@ -20,26 +20,69 @@
         <event-block sid="5130900265031492">
             <conditions>
                 <condition id="3" name="On touched object" sid="1301865650471486" type="Touch">
-                    <param id="0" name="Object">achv1</param>
+                    <param id="0" name="Object">achievement1</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="2579087120797383" type="achievement_descr">
-                    <param id="0" name="Text">&quot;Mendapatkan Cinta Pertama&quot;</param>
+                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer Achievement 1&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5701915906258487" type="unselected_achievement1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6649012844975542" type="unselected_achievement2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3685754341654499" type="unselected_achievement3">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="5390034888158593">
             <conditions>
                 <condition id="3" name="On touched object" sid="9088015451637874" type="Touch">
-                    <param id="0" name="Object">achv2</param>
+                    <param id="0" name="Object">achievement2</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="4105529853908218" type="achievement_descr">
-                    <param id="0" name="Text">&quot;Mendapatkan Cinta Baru&quot;</param>
+                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer achievement 2&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2988951994677038" type="unselected_achievement2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1116508934413284" type="unselected_achievement1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5983040263628514" type="unselected_achievement3">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="7679634397345218">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5402506352220101" type="Touch">
+                    <param id="0" name="Object">achievement3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="287464122748323" type="achievement_descr">
+                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer Achievement 3&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5708517291021628" type="unselected_achievement3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5145786983122677" type="unselected_achievement1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9079006874409099" type="unselected_achievement2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6197660684231276">
+            <conditions />
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
