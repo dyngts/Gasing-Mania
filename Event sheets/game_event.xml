@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>game_event</name>
+    <events>
+        <event-block sid="4710078457668611">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9904748615244887" type="System" />
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="5638190396735723" type="gasing3">
+                    <param id="0" name="Degrees">10</param>
+                </action>
+                <action id="-3" name="Set position" sid="509239046166505" type="camera">
+                    <param id="0" name="X">lerp(Self.X, gasing2.X, 1)</param>
+                    <param id="1" name="Y">lerp(Self.Y, gasing2.Y-50, 1)</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="4836782282107659" type="gasing3">
+                    <param id="0" name="Object">gasing2</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1924932104542306">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="156715275804863" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Angle">-5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="4057366888834484" type="gasing2">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1841397045735649">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="5651769063880218" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Angle">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="9889793634188059" type="gasing2">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9015126372991449">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="3068046397627119" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Angle">-5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="652986180275914" type="gasing2">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3007474620655038">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="9481142920103888" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Angle">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="3960735492745624" type="gasing2">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
