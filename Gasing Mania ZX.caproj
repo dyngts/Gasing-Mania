@@ -22,6 +22,7 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -817,6 +818,103 @@
                             <point x="0.459067" y="0.499494" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="healthbarCurrent" sid="2006825298329309">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="9972789529736214">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4303974554978497" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="healthbarMax" sid="4316392987954453">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4854680527244208">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7025515887274959" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="health" sid="9340996965450902">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3228001509878617">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="gameTime" sid="3136724471782962">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="8163041998017269">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="pause" sid="6511366464567958">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isPaused" sid="184865589088293" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="728219345895401">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5716335934961986" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.505882" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pauseScreen" sid="4061236540504595">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="6007567705362785">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414274556589984" speed="5">
+                    <frame duration="1" hotspotX="0.500586" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_resume" sid="1486901917692624">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="868271954438554">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1880189857164659" speed="5">
+                    <frame duration="1" hotspotX="0.500882" hotspotY="0.502146" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_mainmenu" sid="2726388440812055">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="2625420896956148">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8869612947700799" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502146" />
                 </animation>
             </animation-folder>
         </object-type>
