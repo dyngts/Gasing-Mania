@@ -3,6 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>upgrade_event</name>
     <events>
+        <variable constant="0" name="defense" sid="6459249001631913" static="0" type="number">0</variable>
+        <variable constant="0" name="spin_factor" sid="4019622296736852" static="0" type="number">0</variable>
+        <variable constant="0" name="agility" sid="5102107391555358" static="0" type="number">0</variable>
+        <variable constant="0" name="max_hp" sid="369585644758183" static="0" type="number">0</variable>
         <event-block sid="5709161938840232">
             <conditions>
                 <condition id="3" name="On touched object" sid="1199898032748166" type="Touch">
@@ -15,14 +19,75 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="4319154731232931">
+        <event-block sid="2703135002984543">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="2907246602175349" type="btn_back_upg" />
+                <condition id="3" name="On touched object" sid="5827273422301184" type="Touch">
+                    <param id="0" name="Object">gasing_merah_tidak</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="5" name="Set CSS style" sid="3780677307368823" type="btn_back_upg">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2em&quot;</param>
+                <action id="-15" name="Set visible" sid="5879264535656999" type="gasing_biru_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="298246782383037" type="gasing_hijau_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1054360480092683" type="gasing_biru_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1859198779450915" type="gasing_hijau_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5330551899472486" type="gasing_merah_aktif">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="525307153591287">
+            <conditions>
+                <condition id="3" name="On touched object" sid="40582597389353" type="Touch">
+                    <param id="0" name="Object">gasing_biru_tidak</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2433627935423827" type="gasing_merah_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3071537332936026" type="gasing_merah_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9822319027114609" type="gasing_hijau_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="504799781772857" type="gasing_hijau_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7693140517457781" type="gasing_biru_aktif">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7895059014475551">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8633515566788539" type="Touch">
+                    <param id="0" name="Object">gasing_hijau_tidak</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3758915290040761" type="gasing_merah_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7020008229421795" type="gasing_merah_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5925871738873383" type="gasing_biru_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="212885585982519" type="gasing_biru_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3242828566584779" type="gasing_hijau_aktif">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>

@@ -27,26 +27,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="main_background2" uid="6">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1</x>
-                        <y>-292</y>
-                        <z>0</z>
-                        <width>1131.258666992</width>
-                        <height>1016.269836426</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sprite8" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -69,24 +49,22 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="upgrade_text" uid="7">
+                <instance type="tanah" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <hotspot>Top-left</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>124.557754517</x>
-                        <y>51.272083282</y>
+                        <x>-23</x>
+                        <y>-10</y>
                         <z>0</z>
-                        <width>230.165298462</width>
-                        <height>87.771705627</height>
+                        <width>888.593383789</width>
+                        <height>499.833770752</height>
                         <depth>0</depth>
-                        <hotspotX>0.500818312</hotspotX>
-                        <hotspotY>0.502145946</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -113,9 +91,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite11" uid="14">
+                <instance type="gasing_merah_tidak" uid="77">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -123,11 +101,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>329</x>
-                        <y>173</y>
+                        <x>271</x>
+                        <y>195</y>
                         <z>0</z>
-                        <width>132.766235352</width>
-                        <height>89.631217957</height>
+                        <width>173.149124146</width>
+                        <height>116.893455505</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -135,7 +113,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite12" uid="20">
+                <instance type="gasing_merah_aktif" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -145,11 +123,33 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>498</x>
-                        <y>172</y>
+                        <x>269</x>
+                        <y>193</y>
                         <z>0</z>
-                        <width>132.76600647</width>
-                        <height>89.630996704</height>
+                        <width>173.149185181</width>
+                        <height>116.893821716</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="gasing_biru_tidak" uid="20">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>485</x>
+                        <y>186</y>
+                        <z>0</z>
+                        <width>193.979934692</width>
+                        <height>130.956832886</height>
                         <depth>0</depth>
                         <hotspotX>0.500938058</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -157,9 +157,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite13" uid="22">
+                <instance type="gasing_hijau_tidak" uid="22">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -167,11 +167,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>667</x>
-                        <y>172</y>
+                        <x>683</x>
+                        <y>189</y>
                         <z>0</z>
-                        <width>132.76600647</width>
-                        <height>89.630996704</height>
+                        <width>137.321487427</width>
+                        <height>80.744842529</height>
                         <depth>0</depth>
                         <hotspotX>0.501285374</hotspotX>
                         <hotspotY>0.502127647</hotspotY>
@@ -189,13 +189,79 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>87</x>
-                        <y>314</y>
+                        <x>94</x>
+                        <y>360</y>
                         <z>0</z>
-                        <width>114.000404358</width>
-                        <height>169.692398071</height>
+                        <width>106.767074585</width>
+                        <height>158.925415039</height>
                         <depth>0</depth>
                         <hotspotX>0.501639366</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="gasing_biru_aktif" uid="75">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>485</x>
+                        <y>187</y>
+                        <z>0</z>
+                        <width>193.979934692</width>
+                        <height>130.956832886</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500938058</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="gasing_hijau_aktif" uid="76">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>683</x>
+                        <y>189</y>
+                        <z>0</z>
+                        <width>137.321975708</width>
+                        <height>80.744804382</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501285374</hotspotX>
+                        <hotspotY>0.502127647</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="upgrade_teks" uid="7">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>153.581680298</x>
+                        <y>57.369846344</y>
+                        <z>0</z>
+                        <width>257.825317383</width>
+                        <height>62.988380432</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

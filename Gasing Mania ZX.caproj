@@ -10,24 +10,25 @@
     <unique-id>3k8y8jenijj4j</unique-id>
     <saved-with-version>13900</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
-        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
-        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Brad Larson" id="swirl">Swirl</effect>
@@ -52,7 +53,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="0">
+    <object-folder expanded="1">
         <object-type name="WebStorage" sid="5348170403011429">
             <plugin id="WebStorage" />
         </object-type>
@@ -438,7 +439,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite11" sid="5703022977464338">
+        <object-type name="gasing_merah_aktif" sid="5703022977464338">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9963332954069903" speed="5">
@@ -457,7 +458,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite12" sid="9863131651545001">
+        <object-type name="gasing_biru_tidak" sid="9863131651545001">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1937982418407721" speed="5">
@@ -476,7 +477,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite13" sid="4696500858791338">
+        <object-type name="gasing_hijau_tidak" sid="4696500858791338">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2146328892071001" speed="5">
@@ -972,6 +973,158 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="gasing_biru_aktif" sid="4944024673432654">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816135683112192" speed="5">
+                    <frame duration="1" hotspotX="0.500938" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.101313" y="0.142857" />
+                            <point x="0.499062" y="0.0529101" />
+                            <point x="0.684803" y="0.444444" />
+                            <point x="0.686679" y="0.5" />
+                            <point x="0.88743" y="0.84127" />
+                            <point x="0.499062" y="0.915344" />
+                            <point x="0.11257" y="0.84127" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gasing_hijau_aktif" sid="6915973242310555">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9808925535117369" speed="5">
+                    <frame duration="1" hotspotX="0.501285" hotspotY="0.502128">
+                        <collision-poly>
+                            <point x="0.0848329" y="0.140426" />
+                            <point x="0.498715" y="0.161702" />
+                            <point x="0.794344" y="0.340426" />
+                            <point x="0.984576" y="0.497872" />
+                            <point x="0.876607" y="0.795745" />
+                            <point x="0.498715" y="0.787234" />
+                            <point x="0.100257" y="0.834043" />
+                            <point x="0" y="0.497872" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gasing_merah_tidak" sid="5548539743833069">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4724183373966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0949367" y="0.140625" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.738397" y="0.3875" />
+                            <point x="0.753165" y="0.5" />
+                            <point x="0.85865" y="0.790625" />
+                            <point x="0.5" y="0.884375" />
+                            <point x="0.107595" y="0.840625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="8167228657898241">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4077176382815483" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="upgrade_teks" sid="3739033389371105">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4349754432134032" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00517598" y="0.0211864" />
+                            <point x="0.995859" y="0.0169492" />
+                            <point x="0.996894" y="0.987288" />
+                            <point x="0.5" y="0.652542" />
+                            <point x="0.0144928" y="0.940678" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="8281048738093954">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7364496778330716" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text_setting" sid="4285656127102675">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5200435376450785" speed="5">
+                    <frame duration="1" hotspotX="0.500519" hotspotY="0.502128">
+                        <collision-poly>
+                            <point x="0.0155763" y="0.0638298" />
+                            <point x="0.990654" y="0.0382979" />
+                            <point x="0.973001" y="0.497872" />
+                            <point x="0.983385" y="0.931915" />
+                            <point x="0.00726895" y="0.970213" />
+                            <point x="0.0290758" y="0.497872" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text_achievement" sid="5116110604579434">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9543501550611049" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502128">
+                        <collision-poly>
+                            <point x="0.0261147" y="0.174468" />
+                            <point x="0.994268" y="0.0382979" />
+                            <point x="0.989809" y="0.931915" />
+                            <point x="0.00127389" y="0.991489" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text_highscores" sid="3597123253870063">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5541193695417514" speed="5">
+                    <frame duration="1" hotspotX="0.500383" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.00383142" y="0.0211864" />
+                            <point x="0.993103" y="0.0381356" />
+                            <point x="0.987739" y="0.932203" />
+                            <point x="0.00153257" y="0.991525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text_bestscores" sid="5493414907482383">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SpriteFont" sid="2646663749320583">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="text_lastscores" sid="233732174663544">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="text_best" sid="4314156933900341">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="text_last" sid="7686355574058631">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

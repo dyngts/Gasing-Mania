@@ -29,5 +29,6 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="2376600701612113" title="Choose Control" />
     </events>
 </c2eventsheet>

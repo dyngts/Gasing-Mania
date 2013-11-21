@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>shake_event</name>
     <events>
-        <variable constant="0" name="max_hp" sid="1143235265796689" static="0" type="number">120</variable>
+        <variable constant="0" name="hp_max" sid="1143235265796689" static="0" type="number">120</variable>
         <variable constant="0" name="hp" sid="9478284568694616" static="0" type="number">0</variable>
         <variable constant="0" name="count_down" sid="8679986507520201" static="0" type="number">6</variable>
         <event-group description="" sid="4998334108509426" title="Shaking Control">
@@ -40,7 +40,7 @@
                         <condition id="-14" name="Compare variable" sid="4732867943403314" type="System">
                             <param id="0" name="Variable">hp</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">max_hp</param>
+                            <param id="2" name="Value">hp_max</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -59,13 +59,13 @@
                         <condition id="-14" name="Compare variable" sid="2241592169672446" type="System">
                             <param id="0" name="Variable">hp</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">(max_hp/2)</param>
+                            <param id="2" name="Value">(hp_max/2)</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="5289489769548321" type="System">
                             <param id="0" name="Variable">hp</param>
-                            <param id="1" name="Value">(max_hp/2)</param>
+                            <param id="1" name="Value">(hp_max/2)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -74,13 +74,13 @@
                         <condition id="-14" name="Compare variable" sid="5779231465944788" type="System">
                             <param id="0" name="Variable">hp</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">max_hp</param>
+                            <param id="2" name="Value">hp_max</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="7744958260476555" type="System">
                             <param id="0" name="Variable">hp</param>
-                            <param id="1" name="Value">max_hp</param>
+                            <param id="1" name="Value">hp_max</param>
                         </action>
                     </actions>
                 </event-block>

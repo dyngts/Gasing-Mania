@@ -47,28 +47,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="achievement_text" uid="2">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>176.546966553</x>
-                        <y>58.471645355</y>
-                        <z>0</z>
-                        <width>315.945343018</width>
-                        <height>83.558753967</height>
-                        <depth>0</depth>
-                        <hotspotX>0.500567555</hotspotX>
-                        <hotspotY>0.502145946</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="backbutton" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -246,6 +224,28 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="text_achievement" uid="2">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>269.776611328</x>
+                        <y>59.90272522</y>
+                        <z>0</z>
+                        <width>473.789642334</width>
+                        <height>70.917556763</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502127647</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
