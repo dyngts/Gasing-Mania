@@ -35,7 +35,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>12</x>
+                        <x>0</x>
                         <y>2</y>
                         <z>0</z>
                         <width>810.011352539</width>

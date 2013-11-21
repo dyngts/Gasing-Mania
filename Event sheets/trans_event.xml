@@ -2,5 +2,32 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>trans_event</name>
-    <events />
+    <events>
+        <event-group description="" sid="9873339212396315" title="Status Control" />
+        <event-block sid="8270980694033137">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8251676042761595" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4316704386888486" type="darah_angka">
+                    <param id="0" name="Text">hp</param>
+                </action>
+                <action id="-5" name="Set width" sid="2409482377451626" type="hp_bar">
+                    <param id="0" name="Width">hp*hp_bar.Width</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4967806753977557">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5688418163700942" type="Touch">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3664169672218521" type="System">
+                    <param id="0" name="Layout">game_layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

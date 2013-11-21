@@ -10,23 +10,24 @@
     <unique-id>3k8y8jenijj4j</unique-id>
     <saved-with-version>13900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
-        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Brad Larson" id="swirl">Swirl</effect>
@@ -39,7 +40,7 @@
         <height>480</height>
     </window-size>
     <pixel-rounding>1</pixel-rounding>
-    <first-layout>main_layout</first-layout>
+    <first-layout>splash_layout</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">No</prop>
@@ -51,7 +52,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-type name="WebStorage" sid="5348170403011429">
             <plugin id="WebStorage" />
         </object-type>
@@ -820,9 +821,162 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text4" sid="7543954899600576">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="4461693536228701">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground3" sid="7800181631711393">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="handphone" sid="3001329135617436">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="67588684884761" speed="10">
+                    <frame duration="5" hotspotX="0.500496" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.499504" y="0.0228385" />
+                            <point x="0.791873" y="0.171289" />
+                            <point x="0.733399" y="0.5" />
+                            <point x="0.608523" y="0.677814" />
+                            <point x="0.499504" y="0.897227" />
+                            <point x="0.27552" y="0.773246" />
+                            <point x="0.170466" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500496">
+                        <collision-poly>
+                            <point x="0.5" y="0.170466" />
+                            <point x="0.773246" y="0.27552" />
+                            <point x="0.897227" y="0.499504" />
+                            <point x="0.677814" y="0.608523" />
+                            <point x="0.5" y="0.733399" />
+                            <point x="0.171289" y="0.791873" />
+                            <point x="0.0228385" y="0.499504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text5" sid="7213426504484049">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text6" sid="3869439924762459">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="start_shake" sid="1339845752824552">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9786247012322569" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502146" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="time_out" sid="3358583266868058">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="count_down" sid="9814986478673951">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="background_shake" sid="3096998458065591">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3969740395779885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Deskripsi_shake" sid="2544404173630324">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite21" sid="3422335655942254">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9806013951586165" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Play" sid="564493383236335">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="gasing_display" sid="4739335114118885">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7446855090532486" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0949367" y="0.140625" />
+                            <point x="0.5" y="0.078125" />
+                            <point x="0.738397" y="0.3875" />
+                            <point x="0.753165" y="0.5" />
+                            <point x="0.85865" y="0.790625" />
+                            <point x="0.5" y="0.884375" />
+                            <point x="0.107595" y="0.840625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="parameter" sid="1742199708731513">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6946063226933975" speed="5">
+                    <frame duration="1" hotspotX="0.501639" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0622951" y="0.0418502" />
+                            <point x="0.498361" y="0" />
+                            <point x="0.518033" y="0.676211" />
+                            <point x="0.498361" y="0.887665" />
+                            <point x="0.0622951" y="0.95815" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="164153394725163">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6572946409404455" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hp_bar" sid="1589067928616233">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4630260054108965">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7364720256824384" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="darah_angka" sid="4046333268143092">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text7" sid="6715004609516741">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite22" sid="7940279871568087">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3357754669357182" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
+        <layout>splash_layout.xml</layout>
         <layout>main_layout.xml</layout>
         <layout>option_layout.xml</layout>
         <layout>achievement_layout.xml</layout>
@@ -843,6 +997,7 @@
         <event-sheet>game_event.xml</event-sheet>
         <event-sheet>shake_event.xml</event-sheet>
         <event-sheet>trans_event.xml</event-sheet>
+        <event-sheet>splash_event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="38" />
