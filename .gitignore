@@ -216,3 +216,4 @@ pip-log.txt
 
 *.capx.backup1
 *.uistate.xml
+*.orig

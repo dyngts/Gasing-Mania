@@ -157,7 +157,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="8762944495718047" type="System">
-                    <param id="0" name="Layout">game_layout</param>
+                    <param id="0" name="Layout">shake_layout</param>
                 </action>
             </actions>
         </event-block>
