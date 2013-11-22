@@ -13,6 +13,9 @@
                     <param id="0" name="Variable">Count</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-18" name="Rotate clockwise" sid="2386223043376319" type="Gasing">
+                    <param id="0" name="Degrees">15</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6858237107170269">
@@ -82,70 +85,6 @@
             <actions>
                 <action id="-18" name="Rotate clockwise" sid="2712464950297816" type="Gasing">
                     <param id="0" name="Degrees">10</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9118005486353745">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="8169939885474311" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="9215933945001715" type="Sprite3">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="8830776829715473" type="Sprite4">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="2" name="Set visible" sid="4438921865900916" type="btn_achievements">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="2" name="Set visible" sid="2248214473608019" type="btn_highscores">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="2" name="Set visible" sid="4727731059846326" type="btn_option">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="2" name="Set visible" sid="67691316514133" type="btn_start">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="2" name="Set visible" sid="3520867127134141" type="btn_upgrade">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1161433152269174">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="8886052217710791" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite4</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="2" name="Set visible" sid="6333080116324045" type="btn_achievements">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="2" name="Set visible" sid="714813949559519" type="btn_highscores">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="2" name="Set visible" sid="5098998767299926" type="btn_option">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="2" name="Set visible" sid="1645601940699336" type="btn_start">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="2" name="Set visible" sid="8330086099223454" type="btn_upgrade">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9426208756193428" type="Sprite3">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="4422356056952465" type="Sprite4">
-                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>

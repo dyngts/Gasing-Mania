@@ -28,10 +28,6 @@
                 <action id="-5" name="Set width" sid="9199799153175296" type="healthbarCurrent">
                     <param id="0" name="Width">(currentHP/maxHP)*healthbarMax.Width</param>
                 </action>
-                <action id="-11" name="Subtract from" sid="9864373896108101" type="System">
-                    <param id="0" name="Variable">currentHP</param>
-                    <param id="1" name="Value">1</param>
-                </action>
                 <action id="0" name="Set text" sid="8849820695403339" type="health">
                     <param id="0" name="Text">currentHP&amp;&quot; / &quot;&amp;maxHP</param>
                 </action>
@@ -160,6 +156,12 @@
                         <action id="-15" name="Set visible" sid="806420473027489" type="pauseScreen">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="2911445417368355" type="button_resume">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6524745372764603" type="button_mainmenu">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -168,9 +170,6 @@
             <conditions>
                 <condition id="4" name="Is touching object" sid="6195141105828354" type="Touch">
                     <param id="0" name="Object">button_resume</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="211991181798142" type="pause">
-                    <param id="0" name="Instance variable">isPaused</param>
                 </condition>
             </conditions>
             <actions>
@@ -185,10 +184,10 @@
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-15" name="Set visible" sid="180650068586451" type="button_resume">
-                    <param id="0" name="Visibility">1</param>
+                    <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-15" name="Set visible" sid="7654653636947436" type="button_mainmenu">
-                    <param id="0" name="Visibility">1</param>
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -196,9 +195,6 @@
             <conditions>
                 <condition id="4" name="Is touching object" sid="7313248167774863" type="Touch">
                     <param id="0" name="Object">button_mainmenu</param>
-                </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5519258344837609" type="pause">
-                    <param id="0" name="Instance variable">isPaused</param>
                 </condition>
             </conditions>
             <actions>

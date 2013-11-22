@@ -384,8 +384,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>379.5</x>
-                        <y>20</y>
+                        <x>378</x>
+                        <y>21</y>
                         <z>0</z>
                         <width>740</width>
                         <height>20</height>

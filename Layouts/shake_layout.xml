@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="background_shake" uid="15">
+                <instance type="background_shake" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="handphone" uid="59">
+                <instance type="handphone" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -71,7 +71,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text5" uid="60">
+                <instance type="Text5" uid="40">
                     <properties>
                         <text>SHAKE!</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -98,7 +98,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text6" uid="61">
+                <instance type="Text6" uid="41">
                     <properties>
                         <text>the phone</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -125,7 +125,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="count_down" uid="64">
+                <instance type="count_down" uid="42">
                     <properties>
                         <text></text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -152,7 +152,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="start_shake" uid="62">
+                <instance type="start_shake" uid="66">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -174,7 +174,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="time_out" uid="63">
+                <instance type="time_out" uid="67">
                     <properties>
                         <text>Time Out :</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -201,7 +201,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Deskripsi_shake" uid="65">
+                <instance type="Deskripsi_shake" uid="68">
                     <properties>
                         <text>Please shake the device with your truly power, don&apos;t hesitate it!!. Press &quot;start&quot; button to begin shaking</text>
                         <initial-visibility>Visible</initial-visibility>

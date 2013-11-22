@@ -6,6 +6,37 @@
         <variable constant="0" name="hp_max" sid="1143235265796689" static="0" type="number">120</variable>
         <variable constant="0" name="hp" sid="9478284568694616" static="0" type="number">0</variable>
         <variable constant="0" name="count_down" sid="8679986507520201" static="0" type="number">6</variable>
+        <event-group description="" sid="6658912134267801" title="General Control">
+            <sub-events>
+                <event-block sid="8968707270565652">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="3342832928548865" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4366087619483915" type="handphone">
+                            <param id="0" name="Animation">&quot;hp&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6776823171345806">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1088923886102118" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="495646230479089" type="System">
+                            <param id="0" name="Variable">count_down</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9696504494205409" type="System">
+                            <param id="0" name="Variable">hp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="2765123961757197" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="4998334108509426" title="Shaking Control">
             <sub-events>
                 <event-block sid="4871500175378041">
@@ -49,10 +80,6 @@
                             <param id="1" name="Value">3</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="1828023499688014">
-                    <conditions />
-                    <actions />
                 </event-block>
                 <event-block sid="8407528488617275">
                     <conditions>
@@ -126,20 +153,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="6658912134267801" title="General Control">
-            <sub-events>
-                <event-block sid="8968707270565652">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="3342832928548865" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="4366087619483915" type="handphone">
-                            <param id="0" name="Animation">&quot;hp&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
     </events>
 </c2eventsheet>
