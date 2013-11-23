@@ -32,7 +32,6 @@
                             <param id="0" name="Variable">hp</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-26" name="Restart layout" sid="2765123961757197" type="System" />
                     </actions>
                 </event-block>
             </sub-events>
