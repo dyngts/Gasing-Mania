@@ -125,6 +125,10 @@
                 <action id="-16" name="Wait" sid="4147441400621236" type="System">
                     <param id="0" name="Seconds">1.0</param>
                 </action>
+                <action id="-9" name="Set value" sid="9644332441337778" type="System">
+                    <param id="0" name="Variable">count_down</param>
+                    <param id="1" name="Value">6</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="5655783879052879" type="System">
                     <param id="0" name="Layout">trans_layout</param>
                 </action>
