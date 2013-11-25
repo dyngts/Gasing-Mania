@@ -282,6 +282,34 @@
                 </action>
             </actions>
         </event-block>
+        <event-block any="1" sid="7370246508737034">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7150606119918852" type="gasing2">
+                    <param id="0" name="Object">ranting5</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="1563920615747257" type="gasing2">
+                    <param id="0" name="Object">ranting6</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="8111749748188103" type="gasing2">
+                    <param id="0" name="Object">ranting4</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="5067393728930514" type="gasing2">
+                    <param id="0" name="Object">ranting3</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="3491621256813337" type="gasing2">
+                    <param id="0" name="Object">ranting2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="282157587524834" type="gasing2">
+                    <param id="0" name="Object">ranting1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="5185486958576008" type="System">
+                    <param id="0" name="Variable">currentHP</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="1663748604139464">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="3119973229522672" type="System">
@@ -291,6 +319,14 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="2483384621875785" type="System">
+                    <param id="0" name="Variable">lastScore</param>
+                    <param id="1" name="Value">gameTime*100</param>
+                </action>
+                <action id="-9" name="Set value" sid="283440219931006" type="System">
+                    <param id="0" name="Variable">gameTime</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="7549728907943105" type="System">
                     <param id="0" name="Layout">gameover_layout</param>
                 </action>

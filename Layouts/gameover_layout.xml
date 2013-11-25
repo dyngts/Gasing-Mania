@@ -4,8 +4,8 @@
     <sid>4935404144383979</sid>
     <event-sheet>gameover_event</event-sheet>
     <size>
-        <width>1920</width>
-        <height>1080</height>
+        <width>800</width>
+        <height>480</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="tanah" uid="98">
+                <instance type="tanah" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -35,11 +35,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-32</x>
-                        <y>-20</y>
+                        <x>-23</x>
+                        <y>-9</y>
                         <z>0</z>
-                        <width>1334.542114258</width>
-                        <height>750.679931641</height>
+                        <width>888.593383789</width>
+                        <height>499.833770752</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -47,73 +47,45 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gameover_text" uid="99">
+                <instance type="button_mainmenu2" uid="91">
                     <properties>
-                        <text>Game Over</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT,-96,700,0</font>
-                        <color>0,153,153</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Vibrance">
-                            <parameters>
-                                <vibrance>1</vibrance>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window top</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>142</x>
-                        <y>70</y>
+                        <x>414</x>
+                        <y>301</y>
                         <z>0</z>
-                        <width>491</width>
-                        <height>140</height>
+                        <width>228.04699707</width>
+                        <height>68.82800293</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.502146006</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="score_result" uid="100">
+                <instance type="last_score" uid="92">
                     <properties>
-                        <text>Your score :</text>
+                        <text>Last Score :</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT,-75,700,0</font>
-                        <color>0,153,153</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>151</x>
-                        <y>195</y>
-                        <z>0</z>
-                        <width>410</width>
-                        <height>93</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="score_number" uid="101">
-                    <properties>
-                        <text>0</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT,-75,700,0</font>
-                        <color>0,153,153</color>
+                        <font>Tw Cen MT Condensed,-64,400,0</font>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -123,11 +95,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>541</x>
-                        <y>201</y>
+                        <x>108</x>
+                        <y>59</y>
                         <z>0</z>
-                        <width>47</width>
-                        <height>87</height>
+                        <width>590</width>
+                        <height>80</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
