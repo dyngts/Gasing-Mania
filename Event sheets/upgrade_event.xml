@@ -3,10 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>upgrade_event</name>
     <events>
-        <variable constant="0" name="defense" sid="6459249001631913" static="0" type="number">0</variable>
-        <variable constant="0" name="spin_factor" sid="4019622296736852" static="0" type="number">0</variable>
-        <variable constant="0" name="agility" sid="5102107391555358" static="0" type="number">0</variable>
-        <variable constant="0" name="max_hp" sid="369585644758183" static="0" type="number">0</variable>
+        <variable constant="0" name="defense" sid="6459249001631913" static="0" type="number">60</variable>
+        <variable constant="0" name="spin_factor" sid="4019622296736852" static="0" type="number">1</variable>
+        <variable constant="0" name="agility" sid="5102107391555358" static="0" type="number">5</variable>
+        <variable constant="0" name="max_hp" sid="369585644758183" static="0" type="number">120</variable>
         <event-block sid="5709161938840232">
             <conditions>
                 <condition id="3" name="On touched object" sid="1199898032748166" type="Touch">

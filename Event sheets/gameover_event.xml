@@ -2,5 +2,25 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>gameover_event</name>
-    <events />
+    <events>
+        <event-group description="" sid="1466244560663381" title="Score Control">
+            <sub-events>
+                <variable constant="0" name="total_score" sid="4553661643287036" static="0" type="number">0</variable>
+                <event-block sid="5715570056848533">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6759911142761505" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8448147039758413" type="System">
+                            <param id="0" name="Variable">total_score</param>
+                            <param id="1" name="Value">int(gameTime*100) - (max_hp-hp)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1026095891575432" type="score_number">
+                            <param id="0" name="Text">total_score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
 </c2eventsheet>

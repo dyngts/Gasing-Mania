@@ -173,11 +173,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1394.294555664</x>
-                        <y>285.166046143</y>
+                        <x>1665.857299805</x>
+                        <y>227.35635376</y>
                         <z>0</z>
-                        <width>205.198440552</width>
-                        <height>149.41633606</height>
+                        <width>139.351837158</width>
+                        <height>101.469779968</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -185,7 +185,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ranting2" uid="16">
+                <instance type="ranting1" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -202,11 +202,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>836</x>
-                        <y>831</y>
+                        <x>1203</x>
+                        <y>703</y>
                         <z>0</z>
-                        <width>167.57661438</width>
-                        <height>122.02180481</height>
+                        <width>149.961105347</width>
+                        <height>109.194976807</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -214,7 +214,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ranting3" uid="55">
+                <instance type="ranting1" uid="55">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -231,11 +231,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1536</x>
-                        <y>683</y>
+                        <x>221</x>
+                        <y>919</y>
                         <z>0</z>
-                        <width>199.593734741</width>
-                        <height>145.335235596</height>
+                        <width>147.518936157</width>
+                        <height>107.416702271</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -260,11 +260,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>216.972686768</x>
-                        <y>584.731689453</y>
+                        <x>1707</x>
+                        <y>811</y>
                         <z>0</z>
-                        <width>140.371353149</width>
-                        <height>106.218261719</height>
+                        <width>130.253189087</width>
+                        <height>98.561897278</height>
                         <depth>0</depth>
                         <hotspotX>0.500382543</hotspotX>
                         <hotspotY>0.500505567</hotspotY>
@@ -272,7 +272,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ranting5" uid="57">
+                <instance type="ranting4" uid="57">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -289,11 +289,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>314</x>
-                        <y>951</y>
+                        <x>1199.447387695</x>
+                        <y>304.870788574</y>
                         <z>0</z>
-                        <width>188.184020996</width>
-                        <height>142.397857666</height>
+                        <width>100.053192139</width>
+                        <height>75.709724426</height>
                         <depth>0</depth>
                         <hotspotX>0.500382543</hotspotX>
                         <hotspotY>0.500505567</hotspotY>
@@ -301,7 +301,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ranting6" uid="58">
+                <instance type="ranting4" uid="91">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -318,11 +318,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>705</x>
-                        <y>97</y>
+                        <x>713</x>
+                        <y>870</y>
                         <z>0</z>
-                        <width>76.703865051</width>
-                        <height>58.041408539</height>
+                        <width>130.253189087</width>
+                        <height>98.561897278</height>
                         <depth>0</depth>
                         <hotspotX>0.500382543</hotspotX>
                         <hotspotY>0.500505567</hotspotY>
@@ -436,7 +436,7 @@
                 </instance>
                 <instance type="gameTime" uid="61">
                     <properties>
-                        <text>Time: 0</text>
+                        <text>Time = 00:00</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Tw Cen MT Condensed Extra Bold,-19,400,0</font>
                         <color>0,0,0</color>
@@ -603,6 +603,53 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.502145946</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="debu2" uid="92">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Swirl">
+                            <parameters>
+                                <angle>1</angle>
+                                <radius>0.5</radius>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Vibrance">
+                            <parameters>
+                                <vibrance>1</vibrance>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1000.850158691</x>
+                        <y>135.33770752</y>
+                        <z>0</z>
+                        <width>175.360992432</width>
+                        <height>134.305999756</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
