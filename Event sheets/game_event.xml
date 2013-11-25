@@ -333,6 +333,21 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="5238989609169998">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6876940427074841" type="System">
+                    <param id="0" name="Variable">bestScore</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">lastScore</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2623249133898444" type="System">
+                    <param id="0" name="Variable">bestScore</param>
+                    <param id="1" name="Value">lastScore</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="6081030013010261">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9711013591061915" type="gasing2">

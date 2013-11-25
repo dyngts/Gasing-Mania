@@ -11,11 +11,11 @@
                 <condition id="-2" name="On start of layout" sid="2333669599689806" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="7527859615852794" type="best_score">
-                    <param id="0" name="Text">&quot;Best Score : &quot;&amp;bestScore</param>
+                <action id="0" name="Set text" sid="7527859615852794" type="text_best">
+                    <param id="0" name="Text">bestScore</param>
                 </action>
-                <action id="0" name="Set text" sid="9976796437656213" type="last_score">
-                    <param id="0" name="Text">&quot;Last Score : &quot;&amp;lastScore</param>
+                <action id="0" name="Set text" sid="9976796437656213" type="text_last">
+                    <param id="0" name="Text">lastScore</param>
                 </action>
             </actions>
         </event-block>
