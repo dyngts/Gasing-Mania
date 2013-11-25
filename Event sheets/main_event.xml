@@ -112,5 +112,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="1609801757516769">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9427288077844926" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4637892890880743" type="System">
+                    <param id="0" name="Variable">count_down</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="2036968001763586" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

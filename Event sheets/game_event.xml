@@ -5,6 +5,9 @@
     <events>
         <variable constant="0" name="maxHP" sid="8645039895404903" static="0" type="number">1000</variable>
         <variable constant="0" name="currentHP" sid="5087719700057399" static="0" type="number">1000</variable>
+        <variable constant="0" name="displayTime" sid="6861021745506474" static="0" type="text"></variable>
+        <variable constant="0" name="Second" sid="7679371930692862" static="0" type="number">0</variable>
+        <variable constant="0" name="Minute" sid="8877674955805544" static="0" type="number">0</variable>
         <variable constant="0" name="gameTime" sid="5383168412020774" static="0" type="number">0</variable>
         <event-block sid="4710078457668611">
             <conditions>
@@ -14,10 +17,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-11" name="Subtract from" sid="1123776069979507" type="System">
-                    <param id="0" name="Variable">currentHP</param>
-                    <param id="1" name="Value">1</param>
-                </action>
                 <action id="-18" name="Rotate clockwise" sid="5638190396735723" type="gasing3">
                     <param id="0" name="Degrees">10</param>
                 </action>
@@ -30,10 +29,20 @@
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
                 <action id="-5" name="Set width" sid="9199799153175296" type="healthbarCurrent">
-                    <param id="0" name="Width">(currentHP/maxHP)*healthbarMax.Width</param>
+                    <param id="0" name="Width">(hp/max_hp)*healthbarMax.Width</param>
                 </action>
                 <action id="0" name="Set text" sid="8849820695403339" type="health">
-                    <param id="0" name="Text">currentHP&amp;&quot; / &quot;&amp;maxHP</param>
+                    <param id="0" name="Text">hp&amp;&quot; / &quot;&amp;max_hp</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="3363644268360718" type="debu2">
+                    <param id="0" name="Object">debu</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="2979471080588769" type="debu2">
+                    <param id="0" name="Degrees">10</param>
+                </action>
+                <action id="-19" name="Rotate counter-clockwise" sid="1046819518560264" type="debu">
+                    <param id="0" name="Degrees">10</param>
                 </action>
             </actions>
         </event-block>
@@ -103,14 +112,76 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="9577310391200236" type="System">
+                    <param id="0" name="Variable">displayTime</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
                 <action id="-10" name="Add to" sid="3613930369906403" type="System">
                     <param id="0" name="Variable">gameTime</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="0" name="Set text" sid="3436695144152053" type="gameTime">
-                    <param id="0" name="Text">&quot;Time: &quot;&amp;gameTime</param>
+                <action id="-9" name="Set value" sid="2917984732674519" type="System">
+                    <param id="0" name="Variable">Minute</param>
+                    <param id="1" name="Value">int(gameTime/60)</param>
+                </action>
+                <action id="-9" name="Set value" sid="3933974246179986" type="System">
+                    <param id="0" name="Variable">Second</param>
+                    <param id="1" name="Value">int(gameTime%60)</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="7999994826319719">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="666104430122152" type="System">
+                            <param id="0" name="Variable">Minute</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="4264492546661622" type="System">
+                            <param id="0" name="Variable">displayTime</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1002605895831734">
+                    <conditions />
+                    <actions>
+                        <action id="-10" name="Add to" sid="5294058993150328" type="System">
+                            <param id="0" name="Variable">displayTime</param>
+                            <param id="1" name="Value">Minute&amp;&quot;:&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1699974512921176">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8383590099343148" type="System">
+                            <param id="0" name="Variable">Second</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="4633598834537787" type="System">
+                            <param id="0" name="Variable">displayTime</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="598226028419521">
+                    <conditions />
+                    <actions>
+                        <action id="-10" name="Add to" sid="9002102323804368" type="System">
+                            <param id="0" name="Variable">displayTime</param>
+                            <param id="1" name="Value">Second</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7058720176894287" type="gameTime">
+                            <param id="0" name="Text">&quot;Time = &quot;&amp;displayTime</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="5557491158779207">
             <conditions>
@@ -242,7 +313,7 @@
         <event-block sid="1663748604139464">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="3119973229522672" type="System">
-                    <param id="0" name="Variable">currentHP</param>
+                    <param id="0" name="Variable">hp</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
@@ -275,6 +346,252 @@
                     <param id="1" name="Value">lastScore</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="6081030013010261">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9711013591061915" type="gasing2">
+                    <param id="0" name="Object">ranting1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="1343350455347971" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4726019748341999" type="ranting1" />
+            </actions>
+            <sub-events>
+                <event-block sid="5103723878872132">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="6338831126858455" type="System">
+                            <param id="0" name="Count">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7292724251110342" type="System">
+                            <param id="0" name="Object to create">ranting1</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(LayoutWidth)</param>
+                            <param id="3" name="Y">random(LayoutHeight)</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="5002397006944763" type="ranting1">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">healthbarCurrent</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="8310926019621494" type="ranting1">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">healthbarMax</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4042013272846673">
+                            <conditions>
+                                <condition id="-23" name="While" sid="32656185942532" type="System" />
+                                <condition id="-8" name="Compare two values" sid="6700486195735019" type="System">
+                                    <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting1.X,ranting1.Y)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">1000</param>
+                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="6548362242963323" type="ranting1" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="9890325661966502" type="ranting1">
+                                    <param id="0" name="X">random(LayoutWidth)</param>
+                                    <param id="1" name="Y">random(LayoutHeight)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5355201752036337">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4005508148896977" type="gasing2">
+                    <param id="0" name="Object">ranting4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="6394460580683867" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3745104806873703" type="ranting4" />
+            </actions>
+            <sub-events>
+                <event-block sid="4102039417472779">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="5256704633080639" type="System">
+                            <param id="0" name="Count">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3728076340350959" type="System">
+                            <param id="0" name="Object to create">ranting4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(LayoutWidth)</param>
+                            <param id="3" name="Y">random(LayoutHeight)</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="4038061797742858" type="ranting4">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">healthbarCurrent</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="1633421757852773" type="ranting4">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">healthbarMax</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7941409547695758">
+                            <conditions>
+                                <condition id="-23" name="While" sid="4612926321479322" type="System" />
+                                <condition id="-8" name="Compare two values" sid="8256457762489826" type="System">
+                                    <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting4.X,ranting4.Y)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">1000</param>
+                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="2340896993415148" type="ranting4" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="1504517422897879" type="ranting4">
+                                    <param id="0" name="X">random(LayoutWidth)</param>
+                                    <param id="1" name="Y">random(LayoutHeight)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7875222333872781">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="4271409564664964" type="System">
+                    <param id="0" name="First value">distance(gasing2.X,gasing2.Y,debu2.X,debu2.Y)</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">1000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="8355849708138502" type="debu2">
+                    <param id="0" name="X">gasing2.X</param>
+                    <param id="1" name="Y">gasing2.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7087331650806456">
+            <conditions>
+                <condition id="-11" name="For Each" sid="6842230294901473" type="System">
+                    <param id="0" name="Object">debu2</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="6550623622230582" type="System">
+                    <param id="0" name="First value">distance(gasing2.X,gasing2.Y,debu2.X,debu2.Y)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">300</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Rotate toward position" sid="4420149129085604" type="debu2">
+                    <param id="0" name="Degrees">(300 - distance(gasing2.X, gasing2.Y, debu2.X, debu2.Y)) * dt</param>
+                    <param id="1" name="X">gasing2.X</param>
+                    <param id="2" name="Y">gasing2.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7282468580438331">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4771911632276986" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4823312221910653">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="1381243260058975" type="System">
+                            <param id="0" name="Count">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="1456957790038378" type="System">
+                            <param id="0" name="Object to create">debu2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(LayoutWidth)</param>
+                            <param id="3" name="Y">random(LayoutHeight)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5691350645189043">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="879803420270941" type="System">
+                                    <param id="0" name="Object">debu2</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="6715923440207153" type="System">
+                                    <param id="0" name="First value">distance(gasing2.X,gasing2.Y,debu2.X,debu2.Y)</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">1000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="2623698642004341" type="debu2">
+                                    <param id="0" name="X">random(LayoutWidth)</param>
+                                    <param id="1" name="Y">random(LayoutHeight)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8593012327930578">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1607366693383855" type="gasing2">
+                    <param id="0" name="Object">debu2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="178647062974718" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7095586986513106">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1174937367842124" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6542486433451822">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7360654697808349" type="System">
+                            <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting1.X,ranting1.Y)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">1200</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="304252974952174" type="ranting1">
+                            <param id="0" name="X">random(LayoutWidth)</param>
+                            <param id="1" name="Y">random(LayoutHeight)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="614105559642974">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5461469922808755" type="System">
+                            <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting4.X,ranting4.Y)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">1200</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="5621722816448908" type="ranting4">
+                            <param id="0" name="X">random(LayoutWidth)</param>
+                            <param id="1" name="Y">random(LayoutHeight)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

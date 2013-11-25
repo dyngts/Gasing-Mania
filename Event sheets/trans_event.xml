@@ -9,11 +9,29 @@
                 <condition id="-2" name="On start of layout" sid="8251676042761595" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="4316704386888486" type="darah_angka">
+                <action id="0" name="Set text" sid="4316704386888486" type="darah_status">
                     <param id="0" name="Text">hp</param>
                 </action>
                 <action id="-5" name="Set width" sid="2409482377451626" type="hp_bar">
-                    <param id="0" name="Width">hp*hp_bar.Width</param>
+                    <param id="0" name="Width">hp*hp_bar.Width*5</param>
+                </action>
+                <action id="0" name="Set text" sid="7587336091596634" type="agility_status">
+                    <param id="0" name="Text">agility</param>
+                </action>
+                <action id="-5" name="Set width" sid="8158256364521685" type="agility_bar">
+                    <param id="0" name="Width">agility*agility_bar.Width*5</param>
+                </action>
+                <action id="0" name="Set text" sid="2828647453833537" type="spin_status">
+                    <param id="0" name="Text">spin_factor</param>
+                </action>
+                <action id="-5" name="Set width" sid="7083381922909943" type="spin_bar">
+                    <param id="0" name="Width">spin_factor*spin_bar.Width*5</param>
+                </action>
+                <action id="0" name="Set text" sid="6603409130776593" type="defense_status">
+                    <param id="0" name="Text">defense</param>
+                </action>
+                <action id="-5" name="Set width" sid="4395027461663508" type="defense_bar">
+                    <param id="0" name="Width">defense*defense_bar.Width*5</param>
                 </action>
             </actions>
         </event-block>
