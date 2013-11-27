@@ -19,7 +19,7 @@
             </conditions>
             <actions>
                 <action id="-18" name="Rotate clockwise" sid="5638190396735723" type="gasing3">
-                    <param id="0" name="Degrees">10</param>
+                    <param id="0" name="Degrees">20</param>
                 </action>
                 <action id="-3" name="Set position" sid="509239046166505" type="camera">
                     <param id="0" name="X">lerp(Self.X, gasing2.X, 1)</param>
@@ -290,33 +290,19 @@
         </event-block>
         <event-block any="1" sid="7370246508737034">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7150606119918852" type="gasing2">
-                    <param id="0" name="Object">ranting5</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="1563920615747257" type="gasing2">
-                    <param id="0" name="Object">ranting6</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="8111749748188103" type="gasing2">
-                    <param id="0" name="Object">ranting4</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="5067393728930514" type="gasing2">
-                    <param id="0" name="Object">ranting3</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="3491621256813337" type="gasing2">
-                    <param id="0" name="Object">ranting2</param>
-                </condition>
-                <condition id="0" name="On collision with another object" sid="282157587524834" type="gasing2">
-                    <param id="0" name="Object">ranting1</param>
+                <condition id="0" name="On collision with another object" sid="4906616209494101" type="gasing2">
+                    <param id="0" name="Object">rantingAll</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-11" name="Subtract from" sid="5185486958576008" type="System">
-                    <param id="0" name="Variable">currentHP</param>
+                    <param id="0" name="Variable">hp</param>
                     <param id="1" name="Value">20</param>
                 </action>
+                <action id="-9" name="Destroy" sid="639404945491139" type="rantingAll" />
             </actions>
         </event-block>
-        <event-block sid="6081030013010261">
+        <event-block disabled="1" sid="6081030013010261">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="9711013591061915" type="gasing2">
                     <param id="0" name="Object">ranting1</param>
@@ -330,7 +316,7 @@
                 <action id="-9" name="Destroy" sid="4726019748341999" type="ranting1" />
             </actions>
             <sub-events>
-                <event-block sid="5103723878872132">
+                <event-block disabled="1" sid="5103723878872132">
                     <conditions>
                         <condition id="-12" name="Repeat" sid="6338831126858455" type="System">
                             <param id="0" name="Count">2</param>
@@ -353,7 +339,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="4042013272846673">
+                        <event-block disabled="1" sid="4042013272846673">
                             <conditions>
                                 <condition id="-23" name="While" sid="32656185942532" type="System" />
                                 <condition id="-8" name="Compare two values" sid="6700486195735019" type="System">
@@ -374,7 +360,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="5355201752036337">
+        <event-block disabled="1" sid="5355201752036337">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="4005508148896977" type="gasing2">
                     <param id="0" name="Object">ranting4</param>
@@ -388,7 +374,7 @@
                 <action id="-9" name="Destroy" sid="3745104806873703" type="ranting4" />
             </actions>
             <sub-events>
-                <event-block sid="4102039417472779">
+                <event-block disabled="1" sid="4102039417472779">
                     <conditions>
                         <condition id="-12" name="Repeat" sid="5256704633080639" type="System">
                             <param id="0" name="Count">2</param>
@@ -411,7 +397,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="7941409547695758">
+                        <event-block disabled="1" sid="7941409547695758">
                             <conditions>
                                 <condition id="-23" name="While" sid="4612926321479322" type="System" />
                                 <condition id="-8" name="Compare two values" sid="8256457762489826" type="System">
@@ -525,7 +511,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="7095586986513106">
+        <event-block disabled="1" sid="7095586986513106">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="1174937367842124" type="System">
                     <param id="0" name="Interval (seconds)">5</param>
@@ -533,7 +519,7 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="6542486433451822">
+                <event-block disabled="1" sid="6542486433451822">
                     <conditions>
                         <condition id="-23" name="While" sid="2580273307035064" type="System" />
                         <condition id="-8" name="Compare two values" sid="7360654697808349" type="System">
@@ -549,7 +535,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="614105559642974">
+                <event-block disabled="1" sid="614105559642974">
                     <conditions>
                         <condition id="-23" name="While" sid="7275574636842533" type="System" />
                         <condition id="-8" name="Compare two values" sid="5461469922808755" type="System">
@@ -582,6 +568,29 @@
                 </action>
                 <action id="0" name="Spawn another object" sid="4047503281037028" type="spawnkoin">
                     <param id="0" name="Object">koin</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5157774920028148">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5328885067624809" type="System">
+                    <param id="0" name="Interval (seconds)">random(1,4)</param>
+                </condition>
+                <condition id="-16" name="Pick random instance" sid="7330027442086991" type="System">
+                    <param id="0" name="Object">spawnranting</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="6940479867719237" type="rantingAll">
+                    <param id="0" name="Frame number">random(0,1)</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="3168412398629772" type="rantingAll">
+                    <param id="0" name="Degrees">random(0,350)</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2829789586511321" type="spawnranting">
+                    <param id="0" name="Object">rantingAll</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">0</param>
                 </action>

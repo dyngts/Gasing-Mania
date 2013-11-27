@@ -1470,6 +1470,37 @@
         <object-type name="TotalKoin" sid="8105414337961654">
             <plugin id="Text" />
         </object-type>
+        <object-type name="rantingAll" sid="8159827132813542">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6483209485628749" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.393204" y="0.54" />
+                            <point x="0.5" y="0.513333" />
+                            <point x="0.616505" y="0.526667" />
+                            <point x="0.954693" y="0.5" />
+                            <point x="0.857605" y="0.804444" />
+                            <point x="0.5" y="0.626667" />
+                            <point x="0.101942" y="0.86" />
+                            <point x="0.532362" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.406274" y="0.536906" />
+                            <point x="0.499617" y="0.0920121" />
+                            <point x="0.638103" y="0.478261" />
+                            <point x="0.894415" y="0.499494" />
+                            <point x="0.806427" y="0.744186" />
+                            <point x="0.499617" y="0.582406" />
+                            <point x="0.0520275" y="0.931244" />
+                            <point x="0.459067" y="0.499494" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
