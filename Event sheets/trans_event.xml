@@ -13,7 +13,7 @@
                     <param id="0" name="Text">hp</param>
                 </action>
                 <action id="-5" name="Set width" sid="2409482377451626" type="hp_bar">
-                    <param id="0" name="Width">hp*hp_bar.Width*5</param>
+                    <param id="0" name="Width">hp/max_hp*400</param>
                 </action>
                 <action id="0" name="Set text" sid="7587336091596634" type="agility_status">
                     <param id="0" name="Text">agility</param>

@@ -6,12 +6,12 @@
         <variable constant="0" name="defense" sid="6459249001631913" static="0" type="number">60</variable>
         <variable constant="0" name="spin_factor" sid="4019622296736852" static="0" type="number">1</variable>
         <variable constant="0" name="agility" sid="5102107391555358" static="0" type="number">5</variable>
-        <variable constant="0" name="max_hp" sid="369585644758183" static="0" type="number">120</variable>
+        <variable constant="0" name="max_hp" sid="369585644758183" static="0" type="number">1000</variable>
         <comment>Level Gasing Merah : W X Y Z&#x0D;&#x0A;Level Gasing Biru:&#x09;2W X 2Y 0.5Z&#x0D;&#x0A;Level Gasing Hijau:&#x09;W 2X 0.5Y 2Z</comment>
         <variable constant="0" name="LevelGasingBiru" sid="4341088434163707" static="0" type="number">0</variable>
         <variable constant="0" name="LevelGasingHijau" sid="8223214393043893" static="0" type="number">0</variable>
         <variable constant="0" name="LevelGasingMerah" sid="9969239501375234" static="0" type="number">1</variable>
-        <variable constant="0" name="JumlahKoin" sid="8336365455054597" static="0" type="number">0</variable>
+        <variable constant="0" name="JumlahKoin" sid="8336365455054597" static="0" type="number">10</variable>
         <event-block sid="5709161938840232">
             <conditions>
                 <condition id="3" name="On touched object" sid="1199898032748166" type="Touch">
@@ -93,6 +93,16 @@
                 </action>
                 <action id="-15" name="Set visible" sid="3242828566584779" type="gasing_hijau_aktif">
                     <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8415377364559693">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1181276996399866" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5495836303008586" type="TotalKoin">
+                    <param id="0" name="Text">&quot;Coins = &quot;&amp;JumlahKoin</param>
                 </action>
             </actions>
         </event-block>
