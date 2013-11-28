@@ -8,9 +8,22 @@
                 <condition id="-2" name="On start of layout" sid="5658106991617787" type="System" />
             </conditions>
             <actions>
+                <action id="4" name="Preload" sid="2246251700289752" type="Audio">
+                    <param id="0" name="Audio file">ambler</param>
+                </action>
+                <action id="4" name="Preload" sid="929867356355391" type="Audio">
+                    <param id="0" name="Audio file">Powerup2</param>
+                </action>
                 <action id="-16" name="Wait" sid="3312681046486904" type="System">
                     <param id="0" name="Seconds">5</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="686594747389684">
+            <conditions>
+                <condition id="1" name="Preloads complete" sid="3837807748030786" type="Audio" />
+            </conditions>
+            <actions>
                 <action id="-2" name="Go to layout" sid="9795940236166866" type="System">
                     <param id="0" name="Layout">main_layout</param>
                 </action>
