@@ -10,6 +10,7 @@
     <unique-id>3k8y8jenijj4j</unique-id>
     <saved-with-version>13900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
@@ -1231,16 +1232,16 @@
             </effects>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2290299344678958" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.500637" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.624319" y="0.815166" />
-                            <point x="0.5" y="0.170616" />
-                            <point x="0.357532" y="0.838863" />
-                            <point x="0.483666" y="0.5" />
-                            <point x="0.780399" y="0.71327" />
-                            <point x="0.5" y="0.171801" />
-                            <point x="0.121597" y="0.841232" />
-                            <point x="0.477314" y="0.5" />
+                            <point x="0.221656" y="0.288079" />
+                            <point x="0.499363" y="0.145695" />
+                            <point x="0.774522" y="0.293046" />
+                            <point x="0.489172" y="0.5" />
+                            <point x="0.792357" y="0.730132" />
+                            <point x="0.499363" y="0.534768" />
+                            <point x="0.121019" y="0.842715" />
+                            <point x="0.165605" y="0.5" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -1275,19 +1276,19 @@
             </effects>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5310685383318417" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.624319" y="0.815166" />
-                            <point x="0.5" y="0.170616" />
-                            <point x="0.357532" y="0.838863" />
-                            <point x="0.483666" y="0.5" />
-                            <point x="0.780399" y="0.71327" />
-                            <point x="0.5" y="0.171801" />
-                            <point x="0.121597" y="0.841232" />
-                            <point x="0.477314" y="0.5" />
+                            <point x="0.221656" y="0.288079" />
+                            <point x="0.499363" y="0.145695" />
+                            <point x="0.774522" y="0.293046" />
+                            <point x="0.489172" y="0.5" />
+                            <point x="0.792357" y="0.730132" />
+                            <point x="0.499363" y="0.534768" />
+                            <point x="0.121019" y="0.842715" />
+                            <point x="0.165605" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.624319" y="0.815166" />
                             <point x="0.5" y="0.170616" />
@@ -1504,6 +1505,9 @@
         <object-type name="Text10" sid="9278150970386692">
             <plugin id="Text" />
         </object-type>
+        <object-type name="function" sid="1385931834553784">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -1555,11 +1559,28 @@
             </properties>
         </global-instance>
         <global-instance type="Mouse" uid="100" />
+        <global-instance type="function" uid="13" />
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="dapetkoin.m4a" />
+        <file name="dapetkoin.ogg" />
+        <file name="dapetkoin.wav" />
+        <file name="Hit_Hurt.m4a" />
+        <file name="Hit_Hurt.ogg" />
+        <file name="Hit_Hurt.wav" />
+        <file name="ambler.m4a" />
+        <file name="ambler.ogg" />
+        <file name="ambler.wav" />
+        <file name="soarcrop.m4a" />
+        <file name="soarcrop.ogg" />
+        <file name="soarcrop.wav" />
+        <file name="Powerup2.m4a" />
+        <file name="Powerup2.ogg" />
+        <file name="Powerup2.wav" />
+    </sounds-folder>
     <music-folder expanded="1" />
-    <files-folder expanded="0">
-        <file-folder expanded="0" name="Icons">
+    <files-folder expanded="1">
+        <file-folder expanded="1" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />

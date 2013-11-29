@@ -19,6 +19,9 @@
                         <action id="3" name="Start" sid="5613138137718542" type="handphone">
                             <param id="0" name="From">1</param>
                         </action>
+                        <action id="4" name="Preload" sid="7774347830471996" type="Audio">
+                            <param id="0" name="Audio file">soarcrop</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4748723605595954">
@@ -131,6 +134,12 @@
                         <action id="-9" name="Set value" sid="6332211504334334" type="System">
                             <param id="0" name="Variable">count_down</param>
                             <param id="1" name="Value">6</param>
+                        </action>
+                        <action id="0" name="Play" sid="1555828801148933" type="Audio">
+                            <param id="0" name="Audio file">Powerup2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;pow&quot;</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="5655783879052879" type="System">
                             <param id="0" name="Layout">trans_layout</param>

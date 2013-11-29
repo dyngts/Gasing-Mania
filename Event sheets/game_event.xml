@@ -10,6 +10,19 @@
         <variable constant="0" name="Second" sid="7679371930692862" static="0" type="number">0</variable>
         <variable constant="0" name="Minute" sid="8877674955805544" static="0" type="number">0</variable>
         <variable constant="0" name="gameTime" sid="5383168412020774" static="0" type="number">0</variable>
+        <event-block sid="8093500353405299">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7443201062349698" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7267689467273612" type="Audio">
+                    <param id="0" name="Audio file">soarcrop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;ingame&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="4710078457668611">
             <conditions>
                 <condition id="-1" name="Every tick" sid="9904748615244887" type="System" />
@@ -299,6 +312,12 @@
                     <param id="0" name="Variable">hp</param>
                     <param id="1" name="Value">20</param>
                 </action>
+                <action id="0" name="Play" sid="5017773406471296" type="Audio">
+                    <param id="0" name="Audio file">Hit_Hurt</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;hit&quot;</param>
+                </action>
                 <action id="-9" name="Destroy" sid="639404945491139" type="rantingAll" />
             </actions>
         </event-block>
@@ -510,6 +529,25 @@
                     <param id="1" name="Value">2</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="4916366842673325">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4090423645164748" type="System">
+                            <param id="0" name="Variable">soundOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="158182284678742" type="Audio">
+                            <param id="0" name="Audio file">Hit_Hurt</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;hit&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block disabled="1" sid="7095586986513106">
             <conditions>
@@ -586,8 +624,11 @@
                 <condition id="-6" name="Every X seconds" sid="5328885067624809" type="System">
                     <param id="0" name="Interval (seconds)">random(1,4)</param>
                 </condition>
-                <condition id="-16" name="Pick random instance" sid="7330027442086991" type="System">
+                <condition id="-16" name="Pick random instance" sid="8029089773733215" type="System">
                     <param id="0" name="Object">spawnranting</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="7786116534462134" type="rantingAll">
+                    <param id="0" name="Object">rantingAll</param>
                 </condition>
             </conditions>
             <actions>
@@ -611,6 +652,22 @@
                     <param id="1" name="Object">rantingAll</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="680476251615016">
+                    <conditions>
+                        <condition disabled="1" id="-16" name="Pick random instance" sid="7330027442086991" type="System">
+                            <param id="0" name="Object">spawnranting</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-9" name="Destroy" sid="6579509305829185" type="rantingAll" />
+                        <action disabled="1" id="0" name="Call function" sid="8711550357389898" type="function">
+                            <param id="0" name="Name">&quot;spawnRantingFunc&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block disabled="1" sid="2385988285931657">
             <conditions>
@@ -649,6 +706,23 @@
                 <action id="-9" name="Destroy" sid="3355594461199142" type="koin" />
             </actions>
             <sub-events>
+                <event-block sid="7966470257473367">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6844345973404472" type="System">
+                            <param id="0" name="Variable">soundOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="9580092205295799" type="Audio">
+                            <param id="0" name="Audio file">dapetkoin</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;get&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="2078256589751874">
                     <conditions>
                         <condition id="3" name="Compare frame" sid="9621940849681301" type="koin">
@@ -730,6 +804,9 @@
                 <action id="-9" name="Set value" sid="765918411878759" type="System">
                     <param id="0" name="Variable">currentKoin</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="6" name="Stop" sid="1670536315556902" type="Audio">
+                    <param id="0" name="Tag">&quot;ingame&quot;</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="7549728907943105" type="System">
                     <param id="0" name="Layout">gameover_layout</param>
