@@ -115,7 +115,7 @@
                 </instance>
                 <instance type="gasing_merah_aktif" uid="14">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -189,8 +189,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>94</x>
-                        <y>360</y>
+                        <x>64</x>
+                        <y>343</y>
                         <z>0</z>
                         <width>106.767074585</width>
                         <height>158.925415039</height>
@@ -203,7 +203,7 @@
                 </instance>
                 <instance type="gasing_biru_aktif" uid="75">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -225,7 +225,7 @@
                 </instance>
                 <instance type="gasing_hijau_aktif" uid="76">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -269,9 +269,80 @@
                 </instance>
                 <instance type="TotalKoin" uid="194">
                     <properties>
-                        <text>Coins = </text>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT Condensed Extra Bold,-33,400,0</font>
+                        <font>Tw Cen MT Condensed Extra Bold,-93,400,0</font>
+                        <color>0,153,153</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>22</x>
+                        <y>124</y>
+                        <z>0</z>
+                        <width>117</width>
+                        <height>113</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="lock_biru" uid="16">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>546.165710449</x>
+                        <y>108.094482422</y>
+                        <z>0</z>
+                        <width>27.630079269</width>
+                        <height>25.598455429</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507936537</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="lock_hijau" uid="55">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>740</x>
+                        <y>108.09400177</y>
+                        <z>0</z>
+                        <width>27.629999161</width>
+                        <height>25.597999573</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507936537</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pts_remaining" uid="56">
+                    <properties>
+                        <text>coins remaining</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-27,700,0</font>
                         <color>0,153,153</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -282,11 +353,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>20</x>
-                        <y>103</y>
+                        <x>6</x>
+                        <y>212</y>
                         <z>0</z>
-                        <width>226</width>
-                        <height>79</height>
+                        <width>157</width>
+                        <height>44</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

@@ -12,6 +12,128 @@
         <variable constant="0" name="LevelGasingHijau" sid="8223214393043893" static="0" type="number">0</variable>
         <variable constant="0" name="LevelGasingMerah" sid="9969239501375234" static="0" type="number">1</variable>
         <variable constant="0" name="JumlahKoin" sid="8336365455054597" static="0" type="number">0</variable>
+        <event-block collapsed="1" sid="4187020128639183">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8192204352091414" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5495836303008586" type="TotalKoin">
+                    <param id="0" name="Text">int(WebStorage.LocalValue(&quot;total_coin&quot;))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8312358086974747">
+                    <conditions>
+                        <condition id="3" inverted="1" name="Local key exists" sid="9150674261933992" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_merah&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="3172401284744945" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_merah&quot;</param>
+                            <param id="1" name="Value">&quot;active&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="2947578898049309" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                            <param id="1" name="Value">&quot;inactive&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="2484297276924792" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_biru&quot;</param>
+                            <param id="1" name="Value">&quot;inactive&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="1553584786672029" type="WebStorage">
+                            <param id="0" name="Key">&quot;merah_isunlocked&quot;</param>
+                            <param id="1" name="Value">&quot;unlocked&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="8307421411873653" type="WebStorage">
+                            <param id="0" name="Key">&quot;hijau_isunlocked&quot;</param>
+                            <param id="1" name="Value">&quot;locked&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="1390563165076268" type="WebStorage">
+                            <param id="0" name="Key">&quot;biru_isunlocked&quot;</param>
+                            <param id="1" name="Value">&quot;locked&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7493210418318147" type="gasing_merah_aktif">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="409720374858085" type="gasing_biru_aktif">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9494920254731841" type="gasing_hijau_aktif">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2919910616900849">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="88498885660565" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1737724990247703">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2535618544513404" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;level_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;active&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3310964406696793" type="gasing_merah_aktif">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2468864680099617" type="gasing_biru_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1772106577848918" type="gasing_hijau_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4797638280992418">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3969422019041157" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;level_hijau&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;active&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="9524282206078264" type="gasing_hijau_aktif">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6974821686702099" type="gasing_merah_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2627752479825299" type="gasing_biru_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7130168647564872">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="9685712706896121" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;level_biru&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;active&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="7809871451439275" type="gasing_biru_aktif">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6465822620915161" type="gasing_merah_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5234451311164777" type="gasing_hijau_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="5709161938840232">
             <conditions>
                 <condition id="3" name="On touched object" sid="1199898032748166" type="Touch">
@@ -29,6 +151,12 @@
                 <condition id="3" name="On touched object" sid="5827273422301184" type="Touch">
                     <param id="0" name="Object">gasing_merah_tidak</param>
                 </condition>
+                <condition id="-8" name="Compare two values" sid="7121401300173654" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;merah_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="8006118326134044" type="gasing_merah_aktif" />
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="5879264535656999" type="gasing_biru_aktif">
@@ -58,6 +186,18 @@
                     <param id="0" name="Variable">LevelGasingBiru</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="0" name="Set local value" sid="2701828313526958" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_merah&quot;</param>
+                    <param id="1" name="Value">&quot;active&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="8559421399858625" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="8816428365343912" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_biru&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="525307153591287">
@@ -65,6 +205,12 @@
                 <condition id="3" name="On touched object" sid="40582597389353" type="Touch">
                     <param id="0" name="Object">gasing_biru_tidak</param>
                 </condition>
+                <condition id="-8" name="Compare two values" sid="2517968007589931" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="5423848276705421" type="gasing_biru_aktif" />
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="2433627935423827" type="gasing_merah_aktif">
@@ -94,6 +240,18 @@
                     <param id="0" name="Variable">LevelGasingMerah</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="0" name="Set local value" sid="8638471170076891" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_merah&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="1984528337358967" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="2044880583299315" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_biru&quot;</param>
+                    <param id="1" name="Value">&quot;active&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7895059014475551">
@@ -101,6 +259,12 @@
                 <condition id="3" name="On touched object" sid="8633515566788539" type="Touch">
                     <param id="0" name="Object">gasing_hijau_tidak</param>
                 </condition>
+                <condition id="-8" name="Compare two values" sid="7797262414337012" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="226978892981494" type="gasing_hijau_aktif" />
             </conditions>
             <actions>
                 <action id="-15" name="Set visible" sid="3758915290040761" type="gasing_merah_aktif">
@@ -130,47 +294,19 @@
                     <param id="0" name="Variable">LevelGasingBiru</param>
                     <param id="1" name="Value">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="8415377364559693">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="1181276996399866" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="5495836303008586" type="TotalKoin">
-                    <param id="0" name="Text">&quot;Coins = &quot;&amp;int(WebStorage.LocalValue(&quot;total_coin&quot;))</param>
+                <action id="0" name="Set local value" sid="791690650561247" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_merah&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="4415743314822141" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                    <param id="1" name="Value">&quot;active&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="7898585078015544" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_biru&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="8312358086974747">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="9150674261933992" type="System">
-                    <param id="0" name="Variable">LevelGasingMerah</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block sid="6938454479490842">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="1764960379307829" type="System">
-                    <param id="0" name="Variable">LevelGasingBiru</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block sid="2355728820341123">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="3802338908683691" type="System">
-                    <param id="0" name="Variable">LevelGasingHijau</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
         </event-block>
     </events>
 </c2eventsheet>

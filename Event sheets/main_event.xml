@@ -115,9 +115,9 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="1609801757516769">
+        <event-block sid="9614455822974119">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="9427288077844926" type="System" />
+                <condition id="-2" name="On start of layout" sid="4328887256500885" type="System" />
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="4637892890880743" type="System">
@@ -128,13 +128,70 @@
                     <param id="0" name="Variable">hp</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="0" name="Play" sid="6550810794016331" type="Audio">
-                    <param id="0" name="Audio file">ambler</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>
+                <action id="0" name="Set text" sid="1906760965085647" type="TotalKoin">
+                    <param id="0" name="Text">int(WebStorage.LocalValue(&quot;total_coin&quot;))</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="258538518763612">
+                    <conditions>
+                        <condition id="3" inverted="1" name="Local key exists" sid="2229958129035342" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_merah&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="5606606794671458" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_merah&quot;</param>
+                            <param id="1" name="Value">&quot;active&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="6786027226305522" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                            <param id="1" name="Value">&quot;inactive&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="3149667526289045" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_biru&quot;</param>
+                            <param id="1" name="Value">&quot;inactive&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="8262724843098916" type="WebStorage">
+                            <param id="0" name="Key">&quot;merah_isunlocked&quot;</param>
+                            <param id="1" name="Value">&quot;unlocked&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="6859990152831969" type="WebStorage">
+                            <param id="0" name="Key">&quot;hijau_isunlocked&quot;</param>
+                            <param id="1" name="Value">&quot;locked&quot;</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="2210769634889109" type="WebStorage">
+                            <param id="0" name="Key">&quot;biru_isunlocked&quot;</param>
+                            <param id="1" name="Value">&quot;locked&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4312276804068184" type="gasing_merah_aktif">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5455983699684318" type="gasing_biru_aktif">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6608795106236707" type="gasing_hijau_aktif">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5753219782046917" type="System">
+                            <param id="0" name="Variable">maxHP</param>
+                            <param id="1" name="Value">1000</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8762999007192158" type="System">
+                            <param id="0" name="Variable">spin_factor</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2198738143242072" type="System">
+                            <param id="0" name="Variable">defense</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5190712433322791" type="System">
+                            <param id="0" name="Variable">agility</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
