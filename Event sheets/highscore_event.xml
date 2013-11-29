@@ -12,10 +12,10 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="7527859615852794" type="text_best">
-                    <param id="0" name="Text">bestScore</param>
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;high_score&quot;)</param>
                 </action>
                 <action id="0" name="Set text" sid="9976796437656213" type="text_last">
-                    <param id="0" name="Text">lastScore</param>
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;last_score&quot;)</param>
                 </action>
             </actions>
         </event-block>

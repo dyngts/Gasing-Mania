@@ -3,15 +3,124 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>gameover_event</name>
     <events>
+        <variable constant="0" name="last_score_temp" sid="4350150637747809" static="0" type="number">0</variable>
+        <variable constant="0" name="total_coin_new" sid="4759040413467381" static="0" type="number">0</variable>
+        <variable constant="0" name="total_coin_temp" sid="2244046902921522" static="0" type="number">0</variable>
+        <variable constant="0" name="high_score_temp" sid="207202166532735" static="0" type="number">0</variable>
         <event-block sid="972801035204717">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="1486319063761373" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="3818133923545704" type="System">
+                    <param id="0" name="Variable">total_coin_new</param>
+                    <param id="1" name="Value">0</param>
+                </action>
                 <action id="0" name="Set text" sid="8390409206007747" type="last_score">
                     <param id="0" name="Text">&quot;Last Score : &quot;&amp;lastScore</param>
                 </action>
+                <action id="0" name="Set local value" sid="4567276463985612" type="WebStorage">
+                    <param id="0" name="Key">&quot;last_score&quot;</param>
+                    <param id="1" name="Value">lastScore</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="6947852473080256">
+                    <conditions>
+                        <condition id="3" name="Local key exists" sid="1150770855590294" type="WebStorage">
+                            <param id="0" name="Key">&quot;high_score&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5798690740422963" type="System">
+                            <param id="0" name="Variable">high_score_temp</param>
+                            <param id="1" name="Value">int(WebStorage.LocalValue(&quot;high_score&quot;))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1213854904421547" type="System">
+                            <param id="0" name="Variable">last_score_temp</param>
+                            <param id="1" name="Value">int(WebStorage.LocalValue(&quot;last_score&quot;))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4006087905381858">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2930245535644007" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="4937429324615821" type="WebStorage">
+                            <param id="0" name="Key">&quot;high_score&quot;</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7195800437045663" type="System">
+                            <param id="0" name="Variable">high_score_temp</param>
+                            <param id="1" name="Value">int(WebStorage.LocalValue(&quot;high_score&quot;))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="770906032771588" type="System">
+                            <param id="0" name="Variable">last_score_temp</param>
+                            <param id="1" name="Value">int(WebStorage.LocalValue(&quot;last_score&quot;))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7823537648639677">
+                    <conditions>
+                        <condition id="3" name="Local key exists" sid="172757625433654" type="WebStorage">
+                            <param id="0" name="Key">&quot;total_coin&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="9383863341823271" type="System">
+                            <param id="0" name="Variable">total_coin_new</param>
+                            <param id="1" name="Value">int(WebStorage.LocalValue(&quot;total_coin&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="9684779636270772" type="System">
+                            <param id="0" name="Variable">total_coin_new</param>
+                            <param id="1" name="Value">JumlahKoin</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="4452553377386563" type="WebStorage">
+                            <param id="0" name="Key">&quot;total_coin&quot;</param>
+                            <param id="1" name="Value">total_coin_new</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4458966798178738" type="System">
+                            <param id="0" name="Variable">total_coin_new</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6727787298247193" type="System">
+                            <param id="0" name="Variable">JumlahKoin</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4426482292711979">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7067079611326917" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="6763752465966379" type="WebStorage">
+                            <param id="0" name="Key">&quot;total_coin&quot;</param>
+                            <param id="1" name="Value">JumlahKoin</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="312940867725968" type="System">
+                            <param id="0" name="Variable">JumlahKoin</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3686313342450692">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8398673858337353" type="System">
+                            <param id="0" name="First value">high_score_temp</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">last_score_temp</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="1424770490895324" type="WebStorage">
+                            <param id="0" name="Key">&quot;high_score&quot;</param>
+                            <param id="1" name="Value">WebStorage.LocalValue(&quot;last_score&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="2091258442633545">
             <conditions>

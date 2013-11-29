@@ -571,6 +571,14 @@
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">0</param>
                 </action>
+                <action id="-29" name="Move to object" sid="7891958486083184" type="koin">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Object">healthbarMax</param>
+                </action>
+                <action id="-29" name="Move to object" sid="2209895310033441" type="koin">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Object">healthbarCurrent</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="5157774920028148">
@@ -593,6 +601,14 @@
                     <param id="0" name="Object">rantingAll</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-29" name="Move to object" sid="5106438010855952" type="rantingAll">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Object">healthbarMax</param>
+                </action>
+                <action id="-29" name="Move to object" sid="670833893159024" type="rantingAll">
+                    <param id="0" name="Where">1</param>
+                    <param id="1" name="Object">rantingAll</param>
                 </action>
             </actions>
         </event-block>

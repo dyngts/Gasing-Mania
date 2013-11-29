@@ -271,8 +271,8 @@
                     <properties>
                         <text>Coins = </text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT Condensed Extra Bold,-19,400,0</font>
-                        <color>0,0,0</color>
+                        <font>Tw Cen MT Condensed Extra Bold,-33,400,0</font>
+                        <color>0,153,153</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -282,11 +282,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>24</x>
-                        <y>106</y>
+                        <x>20</x>
+                        <y>103</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
+                        <width>226</width>
+                        <height>79</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
