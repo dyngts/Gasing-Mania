@@ -232,6 +232,10 @@
                         <action id="-15" name="Set visible" sid="1271440625117568" type="button_mainmenu">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="22" name="Set paused" sid="9662038332653825" type="Audio">
+                            <param id="0" name="Tag">&quot;ingame&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="971604576089587">
@@ -254,6 +258,10 @@
                         </action>
                         <action id="-15" name="Set visible" sid="6524745372764603" type="button_mainmenu">
                             <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="22" name="Set paused" sid="3203597540082557" type="Audio">
+                            <param id="0" name="Tag">&quot;ingame&quot;</param>
+                            <param id="1" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -281,6 +289,10 @@
                 </action>
                 <action id="-15" name="Set visible" sid="7654653636947436" type="button_mainmenu">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="22" name="Set paused" sid="8343566320189508" type="Audio">
+                    <param id="0" name="Tag">&quot;ingame&quot;</param>
+                    <param id="1" name="State">1</param>
                 </action>
             </actions>
         </event-block>
