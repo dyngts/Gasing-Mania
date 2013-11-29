@@ -128,9 +128,6 @@
                     <param id="0" name="Variable">hp</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="0" name="Set text" sid="1906760965085647" type="TotalKoin">
-                    <param id="0" name="Text">int(WebStorage.LocalValue(&quot;total_coin&quot;))</param>
-                </action>
             </actions>
             <sub-events>
                 <event-block sid="258538518763612">
