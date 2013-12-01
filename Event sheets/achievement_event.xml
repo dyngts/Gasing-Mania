@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>achievement_event</name>
     <events>
+        <variable constant="0" name="badge1" sid="6166726329228302" static="0" type="number">0</variable>
+        <variable constant="0" name="badge2" sid="1460921072648357" static="0" type="number">0</variable>
+        <variable constant="0" name="badge3" sid="4987587929903634" static="0" type="number">0</variable>
         <comment>back to main screen when this button is touched</comment>
         <event-block sid="7931810539501202">
             <conditions>
@@ -25,7 +28,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="2579087120797383" type="achievement_descr">
-                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer Achievement 1&quot;</param>
+                    <param id="0" name="Text">&quot;Collect a total of 20 coins&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="5701915906258487" type="unselected_achievement1">
                     <param id="0" name="Visibility">0</param>
@@ -46,7 +49,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="4105529853908218" type="achievement_descr">
-                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer achievement 2&quot;</param>
+                    <param id="0" name="Text">&quot;Collect a total of 50 coins&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="2988951994677038" type="unselected_achievement2">
                     <param id="0" name="Visibility">0</param>
@@ -67,7 +70,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="287464122748323" type="achievement_descr">
-                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer Achievement 3&quot;</param>
+                    <param id="0" name="Text">&quot;Survive 120 seconds&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="5708517291021628" type="unselected_achievement3">
                     <param id="0" name="Visibility">0</param>
@@ -79,10 +82,6 @@
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="6197660684231276">
-            <conditions />
-            <actions />
         </event-block>
     </events>
 </c2eventsheet>
