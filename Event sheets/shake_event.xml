@@ -20,7 +20,7 @@
                             <param id="0" name="From">1</param>
                         </action>
                         <action id="4" name="Preload" sid="7774347830471996" type="Audio">
-                            <param id="0" name="Audio file">soarcrop</param>
+                            <param id="0" name="Audio file">soarcrop2</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -239,7 +239,7 @@
                             <param id="0" name="Layout">main_layout</param>
                         </action>
                         <action id="0" name="Play" sid="1633773139960883" type="Audio">
-                            <param id="0" name="Audio file">ambler</param>
+                            <param id="0" name="Audio file">ambler2</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>

@@ -9,7 +9,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Preload" sid="2246251700289752" type="Audio">
-                    <param id="0" name="Audio file">ambler</param>
+                    <param id="0" name="Audio file">ambler2</param>
                 </action>
                 <action id="4" name="Preload" sid="929867356355391" type="Audio">
                     <param id="0" name="Audio file">Powerup2</param>
@@ -28,7 +28,7 @@
                     <param id="0" name="Layout">main_layout</param>
                 </action>
                 <action id="0" name="Play" sid="4943884090177333" type="Audio">
-                    <param id="0" name="Audio file">ambler</param>
+                    <param id="0" name="Audio file">ambler2</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>
