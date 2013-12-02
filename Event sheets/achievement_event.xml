@@ -20,12 +20,12 @@
         <event-block sid="5130900265031492">
             <conditions>
                 <condition id="3" name="On touched object" sid="1301865650471486" type="Touch">
-                    <param id="0" name="Object">achievement1</param>
+                    <param id="0" name="Object">achievement_20coins</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="2579087120797383" type="achievement_descr">
-                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer Achievement 1&quot;</param>
+                    <param id="0" name="Text">&quot;Successfully get 20 coins when playing&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="5701915906258487" type="unselected_achievement1">
                     <param id="0" name="Visibility">0</param>
@@ -41,12 +41,12 @@
         <event-block sid="5390034888158593">
             <conditions>
                 <condition id="3" name="On touched object" sid="9088015451637874" type="Touch">
-                    <param id="0" name="Object">achievement2</param>
+                    <param id="0" name="Object">achievement_50coins</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="4105529853908218" type="achievement_descr">
-                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer achievement 2&quot;</param>
+                    <param id="0" name="Text">&quot;Successfully get 50 coins when playing&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="2988951994677038" type="unselected_achievement2">
                     <param id="0" name="Visibility">0</param>
@@ -62,12 +62,12 @@
         <event-block sid="7679634397345218">
             <conditions>
                 <condition id="3" name="On touched object" sid="5402506352220101" type="Touch">
-                    <param id="0" name="Object">achievement3</param>
+                    <param id="0" name="Object">achievement_120s</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="287464122748323" type="achievement_descr">
-                    <param id="0" name="Text">&quot;lorem ipsum dolor sit amet, consectectuer Achievement 3&quot;</param>
+                    <param id="0" name="Text">&quot;Successfully survive about 120 s when playing&quot;</param>
                 </action>
                 <action id="-15" name="Set visible" sid="5708517291021628" type="unselected_achievement3">
                     <param id="0" name="Visibility">0</param>
@@ -81,8 +81,84 @@
             </actions>
         </event-block>
         <event-block sid="6197660684231276">
-            <conditions />
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="400126938239738" type="System" />
+            </conditions>
             <actions />
+            <sub-events>
+                <event-block sid="9437730584038971">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5924719019966201" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4925587563665434" type="achievement_20coins">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="206711473795191">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3691259644126418" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8716986669025966" type="inachieve_20coins">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="489779812706046">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="600771317263052" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5812299934013971" type="achievement_50coins">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3388967103184876">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1104786428669721" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5756360303015522" type="inachieve_50coins">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5822758294591427">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2118374997118413" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="251126074170196" type="achievement_120s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2518722170193713">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4612212610979775" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7967680881955505" type="inachieve_120s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

@@ -23,6 +23,210 @@
                             <param id="0" name="Audio file">soarcrop</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-group description="" sid="653353460147865" title="Status Event">
+                            <sub-events>
+                                <event-block sid="5035336560857493">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="9100542314370044" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;active&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="1519597471233061">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="9379652797226542" type="System">
+                                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="1553796860390631" type="System">
+                                                    <param id="0" name="Variable">max_hp</param>
+                                                    <param id="1" name="Value">2000</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="5494601622957684" type="System">
+                                                    <param id="0" name="Variable">spin_factor</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="4895544816511703" type="System">
+                                                    <param id="0" name="Variable">defense</param>
+                                                    <param id="1" name="Value">30</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="1466531350804279" type="System">
+                                                    <param id="0" name="Variable">agility</param>
+                                                    <param id="1" name="Value">50</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="5128220186890396">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="6802735160477573" type="System">
+                                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="420418933679019" type="System">
+                                                    <param id="0" name="Variable">max_hp</param>
+                                                    <param id="1" name="Value">2500</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="2949862481687514" type="System">
+                                                    <param id="0" name="Variable">spin_factor</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="1343226605109067" type="System">
+                                                    <param id="0" name="Variable">defense</param>
+                                                    <param id="1" name="Value">40</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="1531095522275716" type="System">
+                                                    <param id="0" name="Variable">agility</param>
+                                                    <param id="1" name="Value">350</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="9729121620323828">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="2704304295446806" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;active&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="7785639455110252">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="2692989477535615" type="System">
+                                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="5033322155113589" type="System">
+                                                    <param id="0" name="Variable">max_hp</param>
+                                                    <param id="1" name="Value">1000</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="4861775590763638" type="System">
+                                                    <param id="0" name="Variable">spin_factor</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="6307175075587957" type="System">
+                                                    <param id="0" name="Variable">defense</param>
+                                                    <param id="1" name="Value">7.5</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="6073837551862288" type="System">
+                                                    <param id="0" name="Variable">agility</param>
+                                                    <param id="1" name="Value">200</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="9781336726036597">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="956432761808635" type="System">
+                                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="5088111467293097" type="System">
+                                                    <param id="0" name="Variable">max_hp</param>
+                                                    <param id="1" name="Value">1500</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="8857489880774599" type="System">
+                                                    <param id="0" name="Variable">spin_factor</param>
+                                                    <param id="1" name="Value">3</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="9527338732862743" type="System">
+                                                    <param id="0" name="Variable">defense</param>
+                                                    <param id="1" name="Value">17.5</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="6908709056903899" type="System">
+                                                    <param id="0" name="Variable">agility</param>
+                                                    <param id="1" name="Value">500</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="8809996279982916">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="7788470433489951" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_merah&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;active&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="5031848282909678">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="6741121372254826" type="System">
+                                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="1803824285629775" type="System">
+                                                    <param id="0" name="Variable">max_hp</param>
+                                                    <param id="1" name="Value">1000</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="6028033545484724" type="System">
+                                                    <param id="0" name="Variable">spin_factor</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="5534841366169322" type="System">
+                                                    <param id="0" name="Variable">defense</param>
+                                                    <param id="1" name="Value">15</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="4168901668604322" type="System">
+                                                    <param id="0" name="Variable">agility</param>
+                                                    <param id="1" name="Value">100</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="1918134506515191">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="9392074578797043" type="System">
+                                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="3394685424496897" type="System">
+                                                    <param id="0" name="Variable">max_hp</param>
+                                                    <param id="1" name="Value">1500</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="8279935460551384" type="System">
+                                                    <param id="0" name="Variable">spin_factor</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="9868488285058817" type="System">
+                                                    <param id="0" name="Variable">defense</param>
+                                                    <param id="1" name="Value">25</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="7164982796854993" type="System">
+                                                    <param id="0" name="Variable">agility</param>
+                                                    <param id="1" name="Value">300</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
                 </event-block>
                 <event-block sid="4748723605595954">
                     <conditions>
@@ -75,7 +279,7 @@
                         <condition id="9" name="Compare acceleration" sid="1086813688141146" type="Touch">
                             <param id="0" name="Axis">2</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Acceleration">12</param>
+                            <param id="2" name="Acceleration">15</param>
                         </condition>
                         <condition id="-9" inverted="1" name="Is visible" sid="4275580171419373" type="start_shake" />
                         <condition id="-14" name="Compare variable" sid="4732867943403314" type="System">
