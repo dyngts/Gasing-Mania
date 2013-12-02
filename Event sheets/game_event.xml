@@ -31,7 +31,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-18" name="Rotate clockwise" sid="5638190396735723" type="gasing3">
+                <action disabled="1" id="-18" name="Rotate clockwise" sid="5638190396735723" type="gasing3">
                     <param id="0" name="Degrees">20</param>
                 </action>
                 <action id="-3" name="Set position" sid="509239046166505" type="camera">
@@ -313,10 +313,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="7370246508737034">
+        <event-block sid="7370246508737034">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="4906616209494101" type="gasing2">
                     <param id="0" name="Object">rantingAll</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7308504160516893" type="pause">
+                    <param id="0" name="Instance variable">isPaused</param>
                 </condition>
             </conditions>
             <actions>
@@ -332,122 +335,92 @@
                 </action>
                 <action id="-9" name="Destroy" sid="639404945491139" type="rantingAll" />
             </actions>
-        </event-block>
-        <event-block disabled="1" sid="6081030013010261">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9711013591061915" type="gasing2">
-                    <param id="0" name="Object">ranting1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="1343350455347971" type="System">
-                    <param id="0" name="Variable">hp</param>
-                    <param id="1" name="Value">3</param>
-                </action>
-                <action id="-9" name="Destroy" sid="4726019748341999" type="ranting1" />
-            </actions>
             <sub-events>
-                <event-block disabled="1" sid="5103723878872132">
+                <event-block sid="228997060190033">
                     <conditions>
-                        <condition id="-12" name="Repeat" sid="6338831126858455" type="System">
-                            <param id="0" name="Count">2</param>
+                        <condition id="-12" name="Repeat" sid="6511311101725389" type="System">
+                            <param id="0" name="Count">random(2,4)</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="2986417777394537" type="System">
+                            <param id="0" name="Object">spawnranting</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="7292724251110342" type="System">
-                            <param id="0" name="Object to create">ranting1</param>
+                        <action id="5" name="Set frame" sid="5895781186447672" type="rantingAll">
+                            <param id="0" name="Frame number">random(0,1)</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="7110230223718531" type="rantingAll">
+                            <param id="0" name="Degrees">Touch.Alpha</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="1581944824478793" type="spawnranting">
+                            <param id="0" name="Object">rantingAll</param>
                             <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">random(LayoutWidth)</param>
-                            <param id="3" name="Y">random(LayoutHeight)</param>
+                            <param id="2" name="Image point">0</param>
                         </action>
-                        <action id="-29" name="Move to object" sid="5002397006944763" type="ranting1">
+                        <action id="-29" name="Move to object" sid="2151706990501297" type="rantingAll">
                             <param id="0" name="Where">1</param>
-                            <param id="1" name="Object">healthbarCurrent</param>
-                        </action>
-                        <action id="-29" name="Move to object" sid="8310926019621494" type="ranting1">
-                            <param id="0" name="Where">1</param>
-                            <param id="1" name="Object">healthbarMax</param>
+                            <param id="1" name="Object">gasing2</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block disabled="1" sid="4042013272846673">
-                            <conditions>
-                                <condition id="-23" name="While" sid="32656185942532" type="System" />
-                                <condition id="-8" name="Compare two values" sid="6700486195735019" type="System">
-                                    <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting1.X,ranting1.Y)</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">1000</param>
-                                </condition>
-                                <condition id="-4" name="Is outside layout" sid="6548362242963323" type="ranting1" />
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="9890325661966502" type="ranting1">
-                                    <param id="0" name="X">random(LayoutWidth)</param>
-                                    <param id="1" name="Y">random(LayoutHeight)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block disabled="1" sid="5355201752036337">
+        <event-block sid="9780184296446177">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4005508148896977" type="gasing2">
-                    <param id="0" name="Object">ranting4</param>
+                <condition id="0" name="On collision with another object" sid="6831001468016325" type="gasing2">
+                    <param id="0" name="Object">batu</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5055809394189237" type="pause">
+                    <param id="0" name="Instance variable">isPaused</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-11" name="Subtract from" sid="6394460580683867" type="System">
+                <action id="-11" name="Subtract from" sid="7980650901915965" type="System">
                     <param id="0" name="Variable">hp</param>
-                    <param id="1" name="Value">3</param>
+                    <param id="1" name="Value">50</param>
                 </action>
-                <action id="-9" name="Destroy" sid="3745104806873703" type="ranting4" />
+                <action id="0" name="Play" sid="5736487257134038" type="Audio">
+                    <param id="0" name="Audio file">Hit_Hurt</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;hit&quot;</param>
+                </action>
             </actions>
-            <sub-events>
-                <event-block disabled="1" sid="4102039417472779">
-                    <conditions>
-                        <condition id="-12" name="Repeat" sid="5256704633080639" type="System">
-                            <param id="0" name="Count">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="3728076340350959" type="System">
-                            <param id="0" name="Object to create">ranting4</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">random(LayoutWidth)</param>
-                            <param id="3" name="Y">random(LayoutHeight)</param>
-                        </action>
-                        <action id="-29" name="Move to object" sid="4038061797742858" type="ranting4">
-                            <param id="0" name="Where">1</param>
-                            <param id="1" name="Object">healthbarCurrent</param>
-                        </action>
-                        <action id="-29" name="Move to object" sid="1633421757852773" type="ranting4">
-                            <param id="0" name="Where">1</param>
-                            <param id="1" name="Object">healthbarMax</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block disabled="1" sid="7941409547695758">
-                            <conditions>
-                                <condition id="-23" name="While" sid="4612926321479322" type="System" />
-                                <condition id="-8" name="Compare two values" sid="8256457762489826" type="System">
-                                    <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting4.X,ranting4.Y)</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">1000</param>
-                                </condition>
-                                <condition id="-4" name="Is outside layout" sid="2340896993415148" type="ranting4" />
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="1504517422897879" type="ranting4">
-                                    <param id="0" name="X">random(LayoutWidth)</param>
-                                    <param id="1" name="Y">random(LayoutHeight)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
+        </event-block>
+        <event-block sid="3753650959005243">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1472312996686186" type="gasing2">
+                    <param id="0" name="Object">lubang</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="785739709855083" type="pause">
+                    <param id="0" name="Instance variable">isPaused</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4635702992332821" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Play" sid="198928972977164" type="Audio">
+                    <param id="0" name="Audio file">Hit_Hurt</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;hit&quot;</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="351464639411029" type="gasing3">
+                    <param id="0" name="Degrees">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1443979694280396">
+            <conditions>
+                <condition id="-22" name="Else" sid="7040741918682545" type="System" />
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="1216600679689874" type="gasing3">
+                    <param id="0" name="Degrees">20</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="7875222333872781">
             <conditions>
@@ -561,52 +534,10 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block disabled="1" sid="7095586986513106">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="1174937367842124" type="System">
-                    <param id="0" name="Interval (seconds)">5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block disabled="1" sid="6542486433451822">
-                    <conditions>
-                        <condition id="-23" name="While" sid="2580273307035064" type="System" />
-                        <condition id="-8" name="Compare two values" sid="7360654697808349" type="System">
-                            <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting1.X,ranting1.Y)</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">400</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="304252974952174" type="ranting1">
-                            <param id="0" name="X">random(LayoutWidth)</param>
-                            <param id="1" name="Y">random(LayoutHeight)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="614105559642974">
-                    <conditions>
-                        <condition id="-23" name="While" sid="7275574636842533" type="System" />
-                        <condition id="-8" name="Compare two values" sid="5461469922808755" type="System">
-                            <param id="0" name="First value">distance(gasing2.X,gasing2.Y,ranting4.X,ranting4.Y)</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">400</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="5621722816448908" type="ranting4">
-                            <param id="0" name="X">random(LayoutWidth)</param>
-                            <param id="1" name="Y">random(LayoutHeight)</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="162175803932507">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="5718927443217283" type="System">
-                    <param id="0" name="Interval (seconds)">random(2,6)</param>
+                    <param id="0" name="Interval (seconds)">random(2,8)</param>
                 </condition>
                 <condition id="-16" name="Pick random instance" sid="3712954329318589" type="System">
                     <param id="0" name="Object">spawnkoin</param>
@@ -623,86 +554,90 @@
                 </action>
                 <action id="-29" name="Move to object" sid="7891958486083184" type="koin">
                     <param id="0" name="Where">1</param>
-                    <param id="1" name="Object">healthbarMax</param>
-                </action>
-                <action id="-29" name="Move to object" sid="2209895310033441" type="koin">
-                    <param id="0" name="Where">1</param>
-                    <param id="1" name="Object">healthbarCurrent</param>
+                    <param id="1" name="Object">gasing2</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="5157774920028148">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="5328885067624809" type="System">
-                    <param id="0" name="Interval (seconds)">random(1,4)</param>
-                </condition>
-                <condition id="-16" name="Pick random instance" sid="8029089773733215" type="System">
-                    <param id="0" name="Object">spawnranting</param>
-                </condition>
-                <condition id="1" inverted="1" name="Is overlapping another object" sid="7786116534462134" type="rantingAll">
-                    <param id="0" name="Object">rantingAll</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="6940479867719237" type="rantingAll">
-                    <param id="0" name="Frame number">random(0,1)</param>
-                </action>
-                <action id="-18" name="Rotate clockwise" sid="3168412398629772" type="rantingAll">
-                    <param id="0" name="Degrees">random(0,350)</param>
-                </action>
-                <action id="0" name="Spawn another object" sid="2829789586511321" type="spawnranting">
-                    <param id="0" name="Object">rantingAll</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="-29" name="Move to object" sid="5106438010855952" type="rantingAll">
-                    <param id="0" name="Where">1</param>
-                    <param id="1" name="Object">healthbarMax</param>
-                </action>
-                <action id="-29" name="Move to object" sid="670833893159024" type="rantingAll">
-                    <param id="0" name="Where">1</param>
-                    <param id="1" name="Object">rantingAll</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="680476251615016">
-                    <conditions>
-                        <condition disabled="1" id="-16" name="Pick random instance" sid="7330027442086991" type="System">
-                            <param id="0" name="Object">spawnranting</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action disabled="1" id="-9" name="Destroy" sid="6579509305829185" type="rantingAll" />
-                        <action disabled="1" id="0" name="Call function" sid="8711550357389898" type="function">
-                            <param id="0" name="Name">&quot;spawnRantingFunc&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block disabled="1" sid="2385988285931657">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="895034464896699" type="System" />
-                <condition id="-10" name="For" sid="7848714793190133" type="System">
-                    <param id="0" name="Name">&quot;spawn static&quot;</param>
-                    <param id="1" name="Start index">1</param>
-                    <param id="2" name="End index">15</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="2069729407178404" type="System" />
             </conditions>
             <actions />
             <sub-events>
-                <event-block disabled="1" sid="6584371326879275">
+                <event-block sid="1535265799393804">
                     <conditions>
-                        <condition id="-16" name="Pick random instance" sid="1611359601576625" type="System">
+                        <condition id="-10" name="For" sid="5328885067624809" type="System">
+                            <param id="0" name="Name">&quot;spawn ranting&quot;</param>
+                            <param id="1" name="Start index">1</param>
+                            <param id="2" name="End index">10</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="8029089773733215" type="System">
                             <param id="0" name="Object">spawnranting</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="5599266164645792" type="spawnranting">
-                            <param id="0" name="Object">ranting1</param>
+                        <action id="5" name="Set frame" sid="6940479867719237" type="rantingAll">
+                            <param id="0" name="Frame number">random(0,1)</param>
+                        </action>
+                        <action id="-18" name="Rotate clockwise" sid="3168412398629772" type="rantingAll">
+                            <param id="0" name="Degrees">Touch.Alpha</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="2829789586511321" type="spawnranting">
+                            <param id="0" name="Object">rantingAll</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="5106438010855952" type="rantingAll">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">gasing2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8794131127737806">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="8006009278945227" type="System">
+                            <param id="0" name="Count">4</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="2962612852476035" type="System">
+                            <param id="0" name="Object">spawnBatu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="2723452328902641" type="batu">
+                            <param id="0" name="Degrees">random(0,350)</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6958691764482043" type="spawnBatu">
+                            <param id="0" name="Object">batu</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="6843876097643242" type="batu">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">gasing2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2362550588214604">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="1705138244925411" type="System">
+                            <param id="0" name="Count">3</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="142206644358548" type="System">
+                            <param id="0" name="Object">spawnLubang</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="7923130995562448" type="lubang">
+                            <param id="0" name="Degrees">random(0,350)</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="7327374633047802" type="spawnLubang">
+                            <param id="0" name="Object">lubang</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="455503989449108" type="lubang">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">gasing2</param>
                         </action>
                     </actions>
                 </event-block>
