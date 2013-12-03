@@ -73,7 +73,7 @@
                     <properties>
                         <text>Click one of them!</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Tw Cen MT,-19,700,0</font>
+                        <font>Tw Cen MT,-32,700,0</font>
                         <color>0,153,153</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>

@@ -279,7 +279,7 @@
                         <condition id="9" name="Compare acceleration" sid="1086813688141146" type="Touch">
                             <param id="0" name="Axis">2</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Acceleration">15</param>
+                            <param id="2" name="Acceleration">11</param>
                         </condition>
                         <condition id="-9" inverted="1" name="Is visible" sid="4275580171419373" type="start_shake" />
                         <condition id="-14" name="Compare variable" sid="4732867943403314" type="System">

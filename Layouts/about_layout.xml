@@ -62,8 +62,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>75</x>
-                        <y>140</y>
+                        <x>32</x>
+                        <y>202</y>
                         <z>0</z>
                         <width>634</width>
                         <height>84</height>
@@ -106,14 +106,41 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>696</x>
-                        <y>58</y>
+                        <x>716</x>
+                        <y>49</y>
                         <z>0</z>
                         <width>144.172515869</width>
                         <height>65.893280029</height>
                         <depth>0</depth>
                         <hotspotX>0.501718223</hotspotX>
                         <hotspotY>0.503759384</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="musiccredits_text" uid="168">
+                    <properties>
+                        <text>Music Credits</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-29,400,0</font>
+                        <color>0,153,153</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>52</x>
+                        <y>33</y>
+                        <z>0</z>
+                        <width>502</width>
+                        <height>91</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

@@ -98,6 +98,9 @@
                         <action id="-15" name="Set visible" sid="4925587563665434" type="achievement_20coins">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="5187858998508148" type="inachieve_20coins">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="206711473795191">
@@ -105,6 +108,9 @@
                         <condition id="-22" name="Else" sid="3691259644126418" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="9440292010878772" type="achievement_20coins">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="8716986669025966" type="inachieve_20coins">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -119,6 +125,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="3350673092434324" type="inachieve_50coins">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="5812299934013971" type="achievement_50coins">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -129,6 +138,9 @@
                         <condition id="-22" name="Else" sid="1104786428669721" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="2187669505019346" type="achievement_50coins">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="5756360303015522" type="inachieve_50coins">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -143,6 +155,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="8507371512909299" type="inachieve_120s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="251126074170196" type="achievement_120s">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -153,6 +168,9 @@
                         <condition id="-22" name="Else" sid="4612212610979775" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-15" name="Set visible" sid="3150653889763052" type="achievement_120s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="7967680881955505" type="inachieve_120s">
                             <param id="0" name="Visibility">1</param>
                         </action>

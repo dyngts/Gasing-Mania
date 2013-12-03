@@ -17,9 +17,18 @@
                 <action id="-16" name="Wait" sid="3312681046486904" type="System">
                     <param id="0" name="Seconds">5</param>
                 </action>
+                <action id="0" name="Play" sid="3541426575848308" type="Audio">
+                    <param id="0" name="Audio file">ambler2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="2388502184165753" type="System">
+                    <param id="0" name="Layout">main_layout</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="686594747389684">
+        <event-block disabled="1" sid="686594747389684">
             <conditions>
                 <condition id="1" name="Preloads complete" sid="3837807748030786" type="Audio" />
             </conditions>

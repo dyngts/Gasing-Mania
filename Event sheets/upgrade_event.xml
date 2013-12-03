@@ -1616,6 +1616,11 @@
                     <param id="1" name="Comparison">5</param>
                     <param id="2" name="Second value">500</param>
                 </condition>
+                <condition id="-8" name="Compare two values" sid="9781553062854096" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;locked&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="9386442829689158" type="System">
@@ -1673,6 +1678,11 @@
                     <param id="0" name="First value">int(WebStorage.LocalValue(&quot;total_coin&quot;))</param>
                     <param id="1" name="Comparison">5</param>
                     <param id="2" name="Second value">400</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="235696621205189" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;locked&quot;</param>
                 </condition>
             </conditions>
             <actions>
@@ -1733,6 +1743,11 @@
                     <param id="2" name="Second value">100</param>
                 </condition>
                 <condition id="-9" name="Is visible" sid="2420673865986185" type="gasing_biru_aktif" />
+                <condition id="-8" name="Compare two values" sid="9870010702023798" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;0&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="7775747153902418" type="System">
@@ -1786,6 +1801,11 @@
                     <param id="2" name="Second value">100</param>
                 </condition>
                 <condition id="-9" name="Is visible" sid="3063755781894412" type="gasing_hijau_aktif" />
+                <condition id="-8" name="Compare two values" sid="878749723732856" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;0&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="1865563625251743" type="System">
@@ -1839,6 +1859,11 @@
                     <param id="2" name="Second value">100</param>
                 </condition>
                 <condition id="-9" name="Is visible" sid="4538987596496255" type="gasing_merah_aktif" />
+                <condition id="-8" name="Compare two values" sid="2928008604481481" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;0&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="1144854341636809" type="System">

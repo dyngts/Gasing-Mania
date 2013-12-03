@@ -25,6 +25,51 @@
                 </action>
             </actions>
             <sub-events>
+                <event-block sid="1565934296737031">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7603425633758744" type="System">
+                            <param id="0" name="Variable">JumlahKoin</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="6873138376065587" type="WebStorage">
+                            <param id="0" name="Key">&quot;isachieve_20coins&quot;</param>
+                            <param id="1" name="Value">&quot;achieved&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5540293665002239">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1003848491496396" type="System">
+                            <param id="0" name="Variable">JumlahKoin</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="8465456572120108" type="WebStorage">
+                            <param id="0" name="Key">&quot;isachieve_50coins&quot;</param>
+                            <param id="1" name="Value">&quot;achieved&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5638143572166831">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8349081522277215" type="System">
+                            <param id="0" name="Variable">gameTime</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">120</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="2978299036605952" type="WebStorage">
+                            <param id="0" name="Key">&quot;isachieve_120s&quot;</param>
+                            <param id="1" name="Value">&quot;achieved&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="6947852473080256">
                     <conditions>
                         <condition id="3" name="Local key exists" sid="1150770855590294" type="WebStorage">
