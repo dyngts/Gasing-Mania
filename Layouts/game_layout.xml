@@ -305,7 +305,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gasing_hijau" uid="168">
+                <instance type="gasing_hijau" uid="13">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2798,11 +2798,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>400.470092773</x>
-                        <y>238.5</y>
+                        <x>433.476898193</x>
+                        <y>258.519317627</y>
                         <z>0</z>
-                        <width>802</width>
-                        <height>487</height>
+                        <width>867.936340332</width>
+                        <height>527.038635254</height>
                         <depth>0</depth>
                         <hotspotX>0.500586152</hotspotX>
                         <hotspotY>0.5</hotspotY>
