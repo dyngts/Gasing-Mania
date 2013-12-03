@@ -16,5 +16,13 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="357803612960405">
+            <conditions />
+            <actions>
+                <action id="0" name="Set text" sid="2601707275666818" type="musiccredits_text">
+                    <param id="0" name="Text">&quot;Music Credits&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
