@@ -866,17 +866,9 @@
                     <param id="0" name="Variable">lastScore</param>
                     <param id="1" name="Value">currentKoin*10</param>
                 </action>
-                <action id="-9" name="Set value" sid="6844426645010283" type="System">
-                    <param id="0" name="Variable">gameTime</param>
-                    <param id="1" name="Value">0</param>
-                </action>
                 <action id="-10" name="Add to" sid="186870102929619" type="System">
                     <param id="0" name="Variable">JumlahKoin</param>
                     <param id="1" name="Value">currentKoin</param>
-                </action>
-                <action id="-9" name="Set value" sid="1124292469342731" type="System">
-                    <param id="0" name="Variable">currentKoin</param>
-                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="6" name="Stop" sid="2633393899299791" type="Audio">
                     <param id="0" name="Tag">&quot;ingame&quot;</param>

@@ -69,7 +69,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>379</x>
-                        <y>336</y>
+                        <y>429</y>
                         <z>0</z>
                         <width>228.04699707</width>
                         <height>68.82800293</height>
@@ -96,7 +96,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>176</x>
-                        <y>183</y>
+                        <y>303</y>
                         <z>0</z>
                         <width>509</width>
                         <height>80</height>
@@ -127,6 +127,60 @@
                         <z>0</z>
                         <width>482</width>
                         <height>101</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="time_elapsed" uid="229">
+                    <properties>
+                        <text>Time Elapsed : </text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-64,400,0</font>
+                        <color>0,153,153</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>174</x>
+                        <y>152</y>
+                        <z>0</z>
+                        <width>509</width>
+                        <height>80</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="coin_get" uid="230">
+                    <properties>
+                        <text>Coins :</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-64,400,0</font>
+                        <color>0,153,153</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>174</x>
+                        <y>226</y>
+                        <z>0</z>
+                        <width>509</width>
+                        <height>80</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

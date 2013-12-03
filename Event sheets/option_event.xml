@@ -3,11 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>option_event</name>
     <events>
-        <variable constant="0" name="soundOn" sid="3301574805695859" static="0" type="number">1</variable>
+        <variable constant="0" name="soundOn" sid="3301574805695859" static="0" type="number">0</variable>
         <event-block sid="4235281485899464">
             <conditions />
             <actions>
                 <action id="2" name="Stop" sid="8248826062446036" type="Sprite16" />
+                <action id="5" name="Set frame" sid="8812975156784179" type="Sprite16">
+                    <param id="0" name="Frame number">soundOn</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3074284550741857">
@@ -32,17 +35,19 @@
             <sub-events>
                 <event-block sid="2886891719036393">
                     <conditions>
-                        <condition id="3" name="Compare frame" sid="8163221830455724" type="Sprite16">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">0</param>
+                        <condition id="-14" name="Compare variable" sid="8163221830455724" type="System">
+                            <param id="0" name="Variable">soundOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="8" name="Set silent" sid="2828132863709808" type="Audio">
                             <param id="0" name="Mode">2</param>
                         </action>
-                        <action id="5" name="Set frame" sid="4964717906751514" type="Sprite16">
-                            <param id="0" name="Frame number">1</param>
+                        <action id="-9" name="Set value" sid="8051279889651807" type="System">
+                            <param id="0" name="Variable">soundOn</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -54,8 +59,9 @@
                         <action id="8" name="Set silent" sid="1710416933785073" type="Audio">
                             <param id="0" name="Mode">2</param>
                         </action>
-                        <action id="5" name="Set frame" sid="3395435253511315" type="Sprite16">
-                            <param id="0" name="Frame number">0</param>
+                        <action id="-9" name="Set value" sid="7784218934603133" type="System">
+                            <param id="0" name="Variable">soundOn</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>

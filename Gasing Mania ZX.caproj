@@ -10,30 +10,27 @@
     <unique-id>3k8y8jenijj4j</unique-id>
     <saved-with-version>13900</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
-        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Brad Larson" id="swirl">Swirl</effect>
@@ -55,7 +52,7 @@
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Hide address bar">Yes</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
-        <prop name="Preview browser">Internet Explorer</prop>
+        <prop name="Preview browser">Firefox</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
@@ -1900,6 +1897,12 @@
         <object-type name="musiccredits_text" sid="2273940660446695">
             <plugin id="Text" />
         </object-type>
+        <object-type name="time_elapsed" sid="6351750353963286">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="coin_get" sid="2352901666316308">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -1951,7 +1954,7 @@
             </properties>
         </global-instance>
         <global-instance type="Mouse" uid="100" />
-        <global-instance type="function" uid="13" />
+        <global-instance type="function" uid="228" />
     </global-instances>
     <sounds-folder expanded="1">
         <file name="dapetkoin.m4a" />

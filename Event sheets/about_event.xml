@@ -20,7 +20,7 @@
             <conditions />
             <actions>
                 <action id="0" name="Set text" sid="2601707275666818" type="musiccredits_text">
-                    <param id="0" name="Text">&quot;Music Credits&quot;</param>
+                    <param id="0" name="Text">&quot;Menu BGM: Ambler &quot;&amp; newline &amp;&quot;Ingame BGM: Son of a Rocket&quot;&amp;newline&amp;newline&amp;&quot; by Kevin MacLeod (incompetech.com)&#x0D;&#x0A;Licensed under Creative Commons: By Attribution 3.0&#x0D;&#x0A;http://creativecommons.org/licenses/by/3.0/&quot;</param>
                 </action>
             </actions>
         </event-block>
