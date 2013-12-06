@@ -104,6 +104,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="8488805555359555" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="3664169672218521" type="System">
                     <param id="0" name="Layout">game_layout</param>
                 </action>

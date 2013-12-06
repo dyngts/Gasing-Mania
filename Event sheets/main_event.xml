@@ -37,6 +37,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="309638027773135" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="8295521283654218" type="System">
                     <param id="0" name="Layout">achievement_layout</param>
                 </action>
@@ -49,6 +55,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="2945025011497132" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="1955379137792507" type="System">
                     <param id="0" name="Layout">highscore_layout</param>
                 </action>
@@ -61,6 +73,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="9738070940460248" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="729598526466743" type="System">
                     <param id="0" name="Layout">option_layout</param>
                 </action>
@@ -73,6 +91,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="397192692366133" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="9571637290017041" type="System">
                     <param id="0" name="Layout">upgrade_layout</param>
                 </action>
@@ -101,6 +125,12 @@
                 <action id="6" name="Stop" sid="6372933113124026" type="Audio">
                     <param id="0" name="Tag">&quot;ambler&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="9851073640623585" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9049357150695424">
@@ -110,6 +140,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="7497739978346487" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="3691535610495585" type="System">
                     <param id="0" name="Layout">about_layout</param>
                 </action>

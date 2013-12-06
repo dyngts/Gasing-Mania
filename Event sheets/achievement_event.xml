@@ -11,6 +11,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="5415060436256308" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="9922619417186195" type="System">
                     <param id="0" name="Layout">main_layout</param>
                 </action>
@@ -43,6 +49,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="6420407682524911" type="achievement_20pts_active">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="8844249716960072" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -285,6 +297,12 @@
                 <action id="-15" name="Set visible" sid="7107076615377752" type="inachieve_20pts_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="691450356806418" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="4251261123456744">
@@ -525,6 +543,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="1931826382133703" type="achievement_50pts_active">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="3832869878899301" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -767,6 +791,12 @@
                 <action id="-15" name="Set visible" sid="715252307226945" type="inachieve_50pts_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="3714770625364142" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="8947822535010575">
@@ -1007,6 +1037,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="9585758350779561" type="achievement_120s_active">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="3381500241391634" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -1249,6 +1285,12 @@
                 <action id="-15" name="Set visible" sid="7909367244515121" type="inachieve_120d_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="4576958110406649" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="3806558956464641">
@@ -1489,6 +1531,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="8585832606508673" type="achievement_300s_active">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="2910251907691907" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -1731,6 +1779,12 @@
                 <action id="-15" name="Set visible" sid="9544889376339606" type="inachieve_300s_active2">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="1844683326809646" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="7845531637839917">
@@ -1971,6 +2025,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="4871619391825141" type="achievement_nodamage_active">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="1403812818134248" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -2213,6 +2273,12 @@
                 <action id="-15" name="Set visible" sid="2628385841933845" type="inachieve_nodamage_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="9652122228109888" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="4838632914261365">
@@ -2454,6 +2520,12 @@
                 <action id="-15" name="Set visible" sid="8890485109137176" type="achievement_zxmania_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="6193001638105922" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="4248271341958951">
@@ -2694,6 +2766,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="4594287934625866" type="inachieve_zxmania_active2">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="6299447241137303" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>

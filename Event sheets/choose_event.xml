@@ -458,6 +458,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="2585943086890449" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="1006051126613629" type="System">
                     <param id="0" name="Layout">main_layout</param>
                 </action>
@@ -490,6 +496,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="9408894813136676" type="gasing_merah_aktif">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="844197704359999" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
                 <action id="0" name="Set local value" sid="88917035327293" type="WebStorage">
                     <param id="0" name="Key">&quot;level_merah&quot;</param>
@@ -747,6 +759,12 @@
                 <action id="-15" name="Set visible" sid="84458783755634" type="gasing_biru_aktif">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="6681844946902967" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="0" name="Set local value" sid="7757802045145162" type="WebStorage">
                     <param id="0" name="Key">&quot;level_merah&quot;</param>
                     <param id="1" name="Value">&quot;inactive&quot;</param>
@@ -972,6 +990,12 @@
                 <action id="-15" name="Set visible" sid="8385566325209072" type="gasing_hijau_aktif">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="2093224361240333" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="0" name="Set local value" sid="7336873351129781" type="WebStorage">
                     <param id="0" name="Key">&quot;level_merah&quot;</param>
                     <param id="1" name="Value">&quot;inactive&quot;</param>
@@ -1176,6 +1200,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="8272451436931926" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="1685788003106561" type="System">
                     <param id="0" name="Layout">shake_layout</param>
                 </action>

@@ -483,6 +483,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="3244598420636403" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="8231631310711478" type="System">
                     <param id="0" name="Layout">main_layout</param>
                 </action>
@@ -539,6 +545,12 @@
                 <action id="0" name="Set local value" sid="8816428365343912" type="WebStorage">
                     <param id="0" name="Key">&quot;level_biru&quot;</param>
                     <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="4432624785249207" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -850,6 +862,12 @@
                     <param id="0" name="Key">&quot;level_biru&quot;</param>
                     <param id="1" name="Value">&quot;active&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="7736088703162192" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="1691560470483603">
@@ -1122,6 +1140,12 @@
                 <action id="0" name="Set local value" sid="7898585078015544" type="WebStorage">
                     <param id="0" name="Key">&quot;level_biru&quot;</param>
                     <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="8308570660782628" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -1406,6 +1430,12 @@
                 <action id="-15" name="Set visible" sid="3108086799234926" type="blue_inactive_1">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="9226755314331379" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6919394307310662">
@@ -1469,6 +1499,12 @@
                 <action id="-15" name="Set visible" sid="9213525268627625" type="hijau_inactive_1">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="7239427365074984" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6978830745812193">
@@ -1526,6 +1562,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="6546432041858685" type="biru_active_2">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="8775697282354039" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -1585,6 +1627,12 @@
                 <action id="-15" name="Set visible" sid="9874863010670853" type="hijau_active_2">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="0" name="Play" sid="571562415872762" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="1703609202158167">
@@ -1642,6 +1690,12 @@
                 </action>
                 <action id="-15" name="Set visible" sid="8734892874531821" type="merah_active_2">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="9478922277921867" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
             </actions>
         </event-block>

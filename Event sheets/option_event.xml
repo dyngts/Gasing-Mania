@@ -23,6 +23,12 @@
                 <action id="-2" name="Go to layout" sid="9850793210967014" type="System">
                     <param id="0" name="Layout">main_layout</param>
                 </action>
+                <action id="0" name="Play" sid="2524941259096784" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7770834213031782">
@@ -31,7 +37,14 @@
                     <param id="0" name="Object">Sprite16</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="6524892862487281" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="2886891719036393">
                     <conditions>
@@ -43,7 +56,15 @@
                     </conditions>
                     <actions>
                         <action id="8" name="Set silent" sid="2828132863709808" type="Audio">
-                            <param id="0" name="Mode">2</param>
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="9382397096108841" type="Audio">
+                            <param id="0" name="Tag">&quot;ambler&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="8591402468847337" type="Audio">
+                            <param id="0" name="Tag">&quot;ingame&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="8051279889651807" type="System">
                             <param id="0" name="Variable">soundOn</param>
@@ -57,7 +78,15 @@
                     </conditions>
                     <actions>
                         <action id="8" name="Set silent" sid="1710416933785073" type="Audio">
-                            <param id="0" name="Mode">2</param>
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="2533172905899845" type="Audio">
+                            <param id="0" name="Tag">&quot;ambler&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="7520317702839568" type="Audio">
+                            <param id="0" name="Tag">&quot;ingame&quot;</param>
+                            <param id="1" name="State">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="7784218934603133" type="System">
                             <param id="0" name="Variable">soundOn</param>
