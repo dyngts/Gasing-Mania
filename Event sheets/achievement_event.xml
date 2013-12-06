@@ -17,68 +17,2897 @@
             </actions>
         </event-block>
         <comment>if you want to add another achievement, do it just like this</comment>
-        <event-block sid="5130900265031492">
+        <event-block collapsed="1" sid="5130900265031492">
             <conditions>
                 <condition id="3" name="On touched object" sid="1301865650471486" type="Touch">
-                    <param id="0" name="Object">achievement_20coins</param>
+                    <param id="0" name="Object">achievement_20pts</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="8095565526181723" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="2579087120797383" type="achievement_descr">
                     <param id="0" name="Text">&quot;Successfully get 20 coins when playing&quot;</param>
                 </action>
-                <action id="-15" name="Set visible" sid="5701915906258487" type="unselected_achievement1">
+                <action id="-15" name="Set visible" sid="9579110293030837" type="inachieve_20pts">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="6649012844975542" type="unselected_achievement2">
-                    <param id="0" name="Visibility">1</param>
+                <action id="-15" name="Set visible" sid="8731372664399608" type="inachieve_20pts_active">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="3685754341654499" type="unselected_achievement3">
+                <action id="-15" name="Set visible" sid="6288992656746287" type="achievement_20pts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6420407682524911" type="achievement_20pts_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="5302630713004662">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3013935479866565" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3936186254300903" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6151016054509695" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3697550267052315" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4445083172885076" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4403187791476262">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4327758814400535" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="244386457675004" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3844289394367796" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4254569037918249" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1847929980378834" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="768072117427989">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2021299271120634" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6418876890068125" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6706001694470341" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2802658835175698" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8858379546170267" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6987590613096001">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3016111664217499" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="207113263983124" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5659284644600348" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8557846826725165" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8007560055457451" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6592234691844227">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5981787858276204" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4780763515465025" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9067953239012489" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8080137756008608" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="534025764809025" type="achievement_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6433881522204926">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1697078758295697" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5133476314157121" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7677862411211205" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2645146585568118" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7338332158852142" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1045732873188784">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="277860352751478" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3251642366441991" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6803449930117094" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2192685309378657" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8681800572583725" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8450998531267634">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1348039741987085" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6420512071467168" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2265319789519304" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7478232481892186" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4416509469633708" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5813050921231496">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4926621955532728" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7525139465088883" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1268811479593597" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3842566255383676" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7990409650013648" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6033150885510088">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4285218853203698" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2292183773947155" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9940624243105017" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4993895923734007" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9829279352606031" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block sid="5390034888158593">
+        <event-block collapsed="1" sid="3591293598394558">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8089930063397179" type="Touch">
+                    <param id="0" name="Object">inachieve_20pts</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="7383902066242792" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4214677473164123" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully get 20 coins when playing&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7853788374769871" type="inachieve_20pts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8648133725913014" type="achievement_20pts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7998491752753762" type="achievement_20pts_active">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7107076615377752" type="inachieve_20pts_active">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4251261123456744">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="9533602934465846" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7960159327004107" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8251493931978912" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6428754087305735" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3439450354281083" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9038242100183564">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9428269358851111" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5733345830018404" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2407569717130036" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2988683984209109" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2592113063664739" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2727179480844633">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1434788878461576" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9717252750363535" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4613687219634842" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5179819807504525" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1183416152838707" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6970984551468833">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7256324269670216" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6331859875571166" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5096554644111772" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3082426587466636" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1858739589737989" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8489222484559071">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2233445884302121" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="982066019952074" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1652477402050972" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9730284758709375" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="620305313339517" type="achievement_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="882378429212254">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4399020222984317" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6464293020644524" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1136857602351146" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3120074465361264" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7449481829821466" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5078455535329908">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7153016889122149" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6431041996616584" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8609849315871489" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4451651251363017" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="311298791840613" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5700036703035358">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7906996996248021" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9207188605820949" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3286659148312107" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7668410212188934" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6876791669531995" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1964230236359059">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8597610764092884" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3849199151001799" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2995356213747561" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4312796574123419" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9123954682257846" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8533234358198932">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7317825618592467" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4913851990779151" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5047295762365844" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1233341933334112" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="976265842625627" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="5390034888158593">
             <conditions>
                 <condition id="3" name="On touched object" sid="9088015451637874" type="Touch">
-                    <param id="0" name="Object">achievement_50coins</param>
+                    <param id="0" name="Object">achievement_50pts</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="6247875464203178" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="4105529853908218" type="achievement_descr">
                     <param id="0" name="Text">&quot;Successfully get 50 coins when playing&quot;</param>
                 </action>
-                <action id="-15" name="Set visible" sid="2988951994677038" type="unselected_achievement2">
+                <action id="-15" name="Set visible" sid="3618579250300452" type="inachieve_50pts_active">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="1116508934413284" type="unselected_achievement1">
-                    <param id="0" name="Visibility">1</param>
+                <action id="-15" name="Set visible" sid="9418214562898905" type="inachieve_50pts">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="5983040263628514" type="unselected_achievement3">
+                <action id="-15" name="Set visible" sid="4768249088085566" type="achievement_50pts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1931826382133703" type="achievement_50pts_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="5130311237781101">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2305202200299824" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5278646281336732" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3019442199540347" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2051576967103739" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1156624754850711" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1713046206128533">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1431915735575015" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6952660831455117" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8275999866756505" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2465574047873946" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4214836099035344" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1381204793581935">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1811931911391771" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="44391160033351" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4013704731173318" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7235402085382885" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9644335034762147" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7551746687813915">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9802488970178454" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6423252608031254" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3005885203502314" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8165425369348592" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9689505782408458" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7493657390568532">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="9418430471605742" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1300108532007096" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7926345884968535" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1814664213242194" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2791624423400309" type="achievement_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8498329546873548">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3725149655383503" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8540558695177428" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="778078253565855" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4410584687908135" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3643441754894802" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7809639274073213">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7750102569090799" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8193745401337812" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9664005630106724" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3358199161716271" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3643099436525329" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="59946797269988">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7635857336495304" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1861941834879866" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9713079092774168" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8588122326928028" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7217857157181609" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1782636487773986">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="751757274261137" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4716631703700055" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7021211648764267" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="252111999463108" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3471311108315069" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6029826534883523">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3908722810662164" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9210744764024317" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7750355559539297" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9367119195856589" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3706434890318456" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block sid="7679634397345218">
+        <event-block collapsed="1" sid="4411019179896176">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5428260168740615" type="Touch">
+                    <param id="0" name="Object">inachieve_50pts</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="3942757822847407" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1268944441592329" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully get 50 coins when playing&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1617715904448556" type="inachieve_50pts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9571962521560355" type="achievement_50pts">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="271315288766047" type="achievement_50pts_active">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="715252307226945" type="inachieve_50pts_active">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8947822535010575">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7895797192336353" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="160834250721866" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8800197364176286" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2214386261718638" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="532857991805471" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1826258397493434">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8047165549020726" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="425677118029508" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9546145788245543" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2137236571881485" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5265463080292534" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4995646620332442">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7715844285427976" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="611201581372686" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="605458819390949" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1638085350836996" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2319781052150933" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5658914472314406">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2017989980985091" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="540679709304875" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5330809621826099" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="734207722028526" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4495979469072906" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5652190038699267">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="139504222666893" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2318582727539737" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6664913659133649" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2524352945623697" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7020255125768284" type="achievement_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="259955761297885">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8458403128536411" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9421811633185069" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2794134548805788" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1843174953838997" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4077498965760053" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3435347702419078">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8653921288222583" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6668057455027564" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9017747221480602" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3007546601192696" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7211844090945631" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5071887062922732">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9813918258544657" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5982104935510923" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9443114248434852" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8926792152819517" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1951272289370893" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7271432414574325">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2047559549272028" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4664297799856229" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5220578530350122" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8877588321510434" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9207334313989297" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8073669249519969">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="393849267797902" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6373827275108569" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1399109290560443" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6832686152217318" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8070615172441763" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="7679634397345218">
             <conditions>
                 <condition id="3" name="On touched object" sid="5402506352220101" type="Touch">
-                    <param id="0" name="Object">achievement_120s</param>
+                    <param id="0" name="Object">achievement_120d</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="1948636749379252" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="287464122748323" type="achievement_descr">
                     <param id="0" name="Text">&quot;Successfully survive about 120 s when playing&quot;</param>
                 </action>
-                <action id="-15" name="Set visible" sid="5708517291021628" type="unselected_achievement3">
+                <action id="-15" name="Set visible" sid="9732967573690592" type="inachieve_120d">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="5145786983122677" type="unselected_achievement1">
-                    <param id="0" name="Visibility">1</param>
+                <action id="-15" name="Set visible" sid="5132946364516486" type="inachieve_120d_active">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="9079006874409099" type="unselected_achievement2">
+                <action id="-15" name="Set visible" sid="8523375473422504" type="achievement_120d">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9585758350779561" type="achievement_120s_active">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="5357513974421185">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6987031692033727" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7232846309691058" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7228017253190743" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3309374266373662" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6586834968042831" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3711206153220267">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6819914203519978" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3968796997927287" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8212444059482613" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6762021411347761" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="163619839992919" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6829983291413555">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7127130526332864" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6520755917617109" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8628278634772681" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6167004701067022" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1338892742530494" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3788280433797506">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3031625713290182" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7417847661598795" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6528638606841987" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9777708616267773" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7826507596128305" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3093201507283084">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="389446344204988" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1842049354635562" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6340066415329876" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6539104086682669" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5360240019074708" type="achievement_300s_active">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8459015308813314">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="61781526246257" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3146868776126741" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8401900717767446" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8083261062731333" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7602751052341725" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8244281001695838">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8742863057543616" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8859134882723958" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3916089269444639" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6900336852155159" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2730746620531897" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="761441993296116">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8008347462597523" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3725277163702793" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8564561618372653" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8869252736127162" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7036273365463162" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3697379553774737">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7072973446666421" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4450856168270759" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4019854149916299" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6440947564963877" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4478728138049967" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3798533142144346">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7552642070276674" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3354326818250471" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9758273552806404" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1902281379564137" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6564981095260432" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="6037015993519142">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9950874666952365" type="Touch">
+                    <param id="0" name="Object">inachieve_120d</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="384392717519591" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8228745327901638" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully survive about 120 s when playing&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="825814668112517" type="inachieve_120d">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9459066652800307" type="achievement_120d">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1237017050022094" type="achievement_120s_active">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7909367244515121" type="inachieve_120d_active">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3806558956464641">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8676609880540442" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4546420962316714" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8610793527727706" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9179994591531419" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7091669667423075" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9411083245862501">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6200523788300411" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8861466198596821" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3314504575161023" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2234916966675782" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4639100334475512" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8914752354877161">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2548018813081359" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1012031239660327" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4621111741758858" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5158007991938126" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9933523484223048" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2737502784387779">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6359860806069793" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1830020392215607" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9527298573856906" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6477911960213765" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9114957059991189" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7491342497014845">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="66086153932523" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="275100190677514" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6903825129071876" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1954255994450551" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4834398443779545" type="achievement_300s_active">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9778655270416843">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4293442181123667" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7820298199289301" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4195183509633441" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1071843145271543" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5661516223124423" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4842408359665993">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2119287901080926" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9897303003733328" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4771697174822056" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6692169651419715" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9051517374548458" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7875789407954684">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5401487638235625" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="626314076774711" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7513021141862994" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2831451502479312" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3047074122889751" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4671507240361543">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4232363699606569" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3421084812563815" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9565701831021672" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3618349604012942" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2090986785282721" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5903515459635594">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5136466077386344" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="275020504505347" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="289943937260956" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7123854796559382" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2837994451417901" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="6338109244486759">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9508221377952867" type="Touch">
+                    <param id="0" name="Object">achievement_300s</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="4813939429760796" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7398038509083567" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully survive about 300 s when playing&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5184719387405092" type="achievement_300s">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6001158025196272" type="inachieve_300s">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9695806500345275" type="inachieve_300s_active2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8585832606508673" type="achievement_300s_active">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4019979908864077">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1836251171973328" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3344427099309253" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3636346966484942" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6563716602214646" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3495346981075149" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="761840798614205">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5154326527197473" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2798004244881036" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4160259677784057" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9747271877012771" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8252348306676306" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5150598141803399">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="909345455141867" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5978181400784043" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1528811141644949" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4770463980786368" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4530751036846472" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6827106377444276">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1093528693693401" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4947029764316166" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3517394062799074" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9966476746109789" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7450887997801859" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3515234699180162">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2515482205079552" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1606298822282592" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4153889552817505" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="437304792681942" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="325261026335023" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2235681655094575">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5877422326183518" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1411783638556521" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3077301295193806" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6669888017569994" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6812696402951837" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8302027869457572">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="973086928530215" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6307502046184713" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3347243472419075" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2451694542944484" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7384407566119008" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5734482372029363">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4044091730715116" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="277337857452235" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4976429929413514" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9135504479610437" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9618453726876421" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1434782597203502">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7049100218640045" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="124105138504086" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5520710048183917" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9087680728548807" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2676927586323567" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="260493019074624">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4042060608246677" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2840981547497376" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="997675238748345" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6026532420342688" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7733901991448944" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="3029718946082328">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1328082171038297" type="Touch">
+                    <param id="0" name="Object">inachieve_300s</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="6285161131684204" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2752095129038711" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully survive about 300 s when playing&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3701241636276657" type="achievement_300s">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1710952414922624" type="inachieve_300s">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3223115844825352" type="achievement_300s_active">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9544889376339606" type="inachieve_300s_active2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7845531637839917">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2884686237627701" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8333284160226733" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1018541875295117" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8825601184302225" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2128761964537551" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5291346913346865">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2424634990270812" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="375466976409968" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6934436245875456" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1892121204576568" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2032995382895594" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6544221220238543">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7992033540637998" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="356465187504561" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8278617303798319" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1007932281439632" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9745848683377586" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="220308726908202">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9743665847717139" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1776222797161904" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="740576769119155" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2338237523513147" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3224859367296759" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1900361554537179">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="9433518523505024" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8715825764160874" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5562069247367139" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8280269335595282" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4690070452470672" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6137756671568292">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2262857370389693" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7404708680708014" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3737390821660037" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6847259347856463" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="344326578099835" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7973454870175199">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4898794811626947" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9768105360253429" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7764056845193873" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9896983343267435" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4271859380986686" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9737910495940469">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4470642409138024" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3977598755561756" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1394132861461824" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2159027333326506" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5630770131427386" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="760662834728369">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="375982509372163" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5193466972207403" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4626884857012121" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9266137206014999" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9515402920810642" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6191504836034559">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7735289373481691" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2286517532371914" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2490509120201057" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9367454474056257" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1167513191238637" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="1366642143862091">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2105639094778265" type="Touch">
+                    <param id="0" name="Object">achievement_nodamage</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="6144610535615931" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="591388360682607" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully dead without damage&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7366310264754357" type="inachieve_nodamage">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2581315772445101" type="inachieve_nodamage_active">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3459969721695691" type="achievement_nodamage">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4871619391825141" type="achievement_nodamage_active">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6070849354378669">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7225732041237851" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="992581488828293" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4556644563530735" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8978072758177599" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4177156984117812" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4511544424863174">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6854748325003677" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6753547665834858" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3212567559668864" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7539663406775719" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2382784914572861" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7124636778997669">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="93443460630143" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="916377922794953" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="673005566382058" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1216491640212193" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="428125228188314" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="561453742024467">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6912791865780483" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1344388772976613" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9753611898882673" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2249490253358235" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4490739897661308" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5538034751500181">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2109421457561261" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7160271750356287" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3252147614425298" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1767849295114008" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5079887341630889" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9543639403005078">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6733495880951261" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="984975482141343" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3202087735510087" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5356736546553449" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7562681531769457" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1554130180905573">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6129412385484098" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3866250232086704" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9825064892519183" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7032711801338383" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7715367859476012" type="achievement_300s_active">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8513910099739865">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4768251955035783" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4472551261845087" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4616399196127688" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4766983315065859" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3350917517063868" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4638997044219835">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3176103402835829" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6209747510255312" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4285722919372915" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2382202228822456" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4442204159268879" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6023856012021681">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6151015119199516" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7662913238824267" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="274183943230793" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2788820533587934" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3978920630941189" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="4401779434106423">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9558020055224373" type="Touch">
+                    <param id="0" name="Object">inachieve_nodamage</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="3454987025640855" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3363831963706595" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully dead without damage&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3593240290692724" type="inachieve_nodamage">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3888391756074557" type="achievement_nodamage">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9210689545736557" type="achievement_nodamage_active">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2628385841933845" type="inachieve_nodamage_active">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4838632914261365">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2937811779099499" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5978454369253467" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3168922029270736" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7229708260011077" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7279710422187381" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="209517317557125">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7837488784055529" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5206845131243982" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="435804942229901" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8053134458353912" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="210914464236052" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3913912150706969">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6157082946049935" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="931031074394844" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8822797980706578" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9665558296456157" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4256287730404455" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9885958076720004">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3401390258506469" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9786354911807092" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2975549222775431" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8336839709836822" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5141105375174851" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9561046567735045">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2654798365980229" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6175490149496061" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9171891599121121" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6958107304956602" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7096817083366575" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1548105855656387">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4983868021879963" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4656175969776434" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1646368902235672" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8476459018746928" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="557071956222294" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6204786469843482">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="956359636346379" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9194137225679015" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="956563285751744" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4576285649015942" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9796134753031106" type="achievement_300s_active">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="753736322415294">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6005091356917227" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1991151673325881" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5955300480146515" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6900580527605507" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2791389678002714" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7779032596310305">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7260388628364509" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7651535507556823" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5947433829367448" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9997485131002631" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1678456071297002" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7532055063101702">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8451585336260321" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7130929167425541" type="achievement_zxmania_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7964002584079293" type="inachieve_zxmania_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6579793784244067" type="achievement_zxmania">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3788595488242116" type="inachieve_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="2665788408104201">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8953700002908257" type="Touch">
+                    <param id="0" name="Object">achievement_zxmania</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="9085932039540809" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2544333617794104" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully unlock and upgrade all Gasings&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1658927447222364" type="inachieve_zxmania">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3345741794016101" type="inachieve_zxmania_active2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6892876215425308" type="achievement_zxmania">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8890485109137176" type="achievement_zxmania_active">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4248271341958951">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4278784322924967" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4424946109416358" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4516353782719914" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6859907444039232" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6891846295664223" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8895752605909526">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6548317782956767" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4657935781245509" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1370054629016681" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7870582934681644" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8958096374159823" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="104383227236133">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8277353943333474" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1785815044443152" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9099558113904751" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5548212503056595" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8987574304696478" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8444564492484824">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4208648766822506" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3662184776958981" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3161614280503172" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4801765139644488" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8478576902047001" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7437774418094332">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="9624872277282145" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3744402347112512" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9442841765139209" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1124351237076639" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3220464079452509" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7012409468045174">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7921738069991347" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4286674043377579" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5408698721430432" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5822927819630095" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2517751887817058" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1078580960426414">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6052042897933021" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8726493615563493" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9684887892906982" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2358791892130904" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5540159683983685" type="achievement_300s_active">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5922854326680321">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3241632629044027" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3943688691242605" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5734083542309892" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="925559553439797" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4603699850025006" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1080192551707206">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="457076029235399" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9309040573975144" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6003043198033907" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5872883312702509" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2337988394875352" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2807802791431395">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3576822754217187" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5720211107437049" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="333503832985519" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5338843440501272" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4060991589758119" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="2211994584807248">
+            <conditions>
+                <condition id="3" name="On touched object" sid="306772422681952" type="Touch">
+                    <param id="0" name="Object">inachieve_zxmania</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Compare two values" sid="6821788030018289" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;achieved&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3841004458633397" type="achievement_descr">
+                    <param id="0" name="Text">&quot;Successfully unlock and upgrade all Gasings&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7507946505869593" type="inachieve_zxmania">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="671094898362377" type="achievement_zxmania">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4668051379164552" type="achievement_zxmania_active">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4594287934625866" type="inachieve_zxmania_active2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4298581490765066">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2460817751091473" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_20coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8186545257197959" type="inachieve_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4736743907882452" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2992920857988041" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8858167115902898" type="achievement_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5667752630341516">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5492843401956253" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9367261948495101" type="achievement_20pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1868160793854035" type="achievement_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3324600168890914" type="inachieve_20pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2962921642385154" type="inachieve_20pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8720792714201725">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7194606028355182" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_50coins&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4322894784763264" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="425417833915227" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2353055411782633" type="inachieve_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="92486342404014" type="achievement_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8699551025971875">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4986706320819874" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8046541515026947" type="achievement_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3544181094118746" type="inachieve_50pts_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8748805781442663" type="achievement_50pts">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1381044426826614" type="inachieve_50pts">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4522966665485811">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3465768075953568" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_120s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9905065511405118" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4777845722269621" type="inachieve_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2620057057970686" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="891039178702993" type="achievement_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="829257564509346">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2355225019578804" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4127683438365538" type="achievement_120s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5955849528497103" type="inachieve_120d_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6779234862828076" type="achievement_120d">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6051376986045457" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6980929167681356">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3581979355742834" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9219633500829001" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9391022385206299" type="inachieve_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7156643424980029" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8756346832473176" type="achievement_300s_active">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8826326647985774">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5747346170808222" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7518247442179209" type="achievement_300s">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5411193434035291" type="inachieve_300s_active2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1321707571070817" type="achievement_300s_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1359808493630223" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="930836096823383">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5238774524285421" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="978280179667859" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6185005486735398" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2707865388783843" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1758715911324732" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9461756987126998">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1102347407584532" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8674062715599668" type="achievement_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1630941326648311" type="inachieve_nodamage_active">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5748087064211869" type="achievement_nodamage">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7170765232157925" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="6197660684231276">
             <conditions>
@@ -86,6 +2915,31 @@
             </conditions>
             <actions />
             <sub-events>
+                <event-block sid="2451893799461272">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3530093018730494" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;1&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="8956124101441941" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;1&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="3759606496335933" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="3247374848836262" type="WebStorage">
+                            <param id="0" name="Key">&quot;isachieve_zxmania&quot;</param>
+                            <param id="1" name="Value">&quot;achieved&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="9437730584038971">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="5924719019966201" type="System">
@@ -95,11 +2949,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="4925587563665434" type="achievement_20coins">
+                        <action id="-15" name="Set visible" sid="4925587563665434" type="achievement_20pts">
                             <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="5187858998508148" type="inachieve_20coins">
-                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -108,10 +2959,7 @@
                         <condition id="-22" name="Else" sid="3691259644126418" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="9440292010878772" type="achievement_20coins">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="8716986669025966" type="inachieve_20coins">
+                        <action id="-15" name="Set visible" sid="9440292010878772" type="inachieve_20pts">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
@@ -125,10 +2973,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="3350673092434324" type="inachieve_50coins">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="5812299934013971" type="achievement_50coins">
+                        <action id="-15" name="Set visible" sid="5812299934013971" type="achievement_50pts">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
@@ -138,10 +2983,7 @@
                         <condition id="-22" name="Else" sid="1104786428669721" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="2187669505019346" type="achievement_50coins">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="5756360303015522" type="inachieve_50coins">
+                        <action id="-15" name="Set visible" sid="2187669505019346" type="inachieve_50pts">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
@@ -155,10 +2997,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="8507371512909299" type="inachieve_120s">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="251126074170196" type="achievement_120s">
+                        <action id="-15" name="Set visible" sid="251126074170196" type="achievement_120d">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
@@ -168,10 +3007,79 @@
                         <condition id="-22" name="Else" sid="4612212610979775" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="3150653889763052" type="achievement_120s">
-                            <param id="0" name="Visibility">0</param>
+                        <action id="-15" name="Set visible" sid="3150653889763052" type="inachieve_120d">
+                            <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="7967680881955505" type="inachieve_120s">
+                    </actions>
+                </event-block>
+                <event-block sid="5503545373791578">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2291008348940077" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1428589861798891" type="achievement_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3862010548686795">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6697566544401903" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3470655857535538" type="inachieve_300s">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2271491942098068">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2784255600420791" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_nodamage&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6306761634348928" type="achievement_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="14539317583028">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4733136981640613" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4288568050364093" type="inachieve_nodamage">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1505670166750245">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1381843205350453" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;achieved&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8153898943482948" type="achievement_zxmania">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6980584926533503">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="121670107116059" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6737437215883879" type="inachieve_zxmania">
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>

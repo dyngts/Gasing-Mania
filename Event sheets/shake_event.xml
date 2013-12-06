@@ -236,7 +236,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="1433562261876963" type="System">
-                            <param id="0" name="Layout">main_layout</param>
+                            <param id="0" name="Layout">choose_layout</param>
                         </action>
                         <action id="0" name="Play" sid="1633773139960883" type="Audio">
                             <param id="0" name="Audio file">ambler2</param>
@@ -291,37 +291,7 @@
                     <actions>
                         <action id="-10" name="Add to" sid="9144069237825344" type="System">
                             <param id="0" name="Variable">hp</param>
-                            <param id="1" name="Value">3</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="8407528488617275">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="2241592169672446" type="System">
-                            <param id="0" name="Variable">hp</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">(max_hp/2)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="5289489769548321" type="System">
-                            <param id="0" name="Variable">hp</param>
-                            <param id="1" name="Value">(max_hp/2)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2041980589235156">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="5779231465944788" type="System">
-                            <param id="0" name="Variable">hp</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">max_hp</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="7744958260476555" type="System">
-                            <param id="0" name="Variable">hp</param>
-                            <param id="1" name="Value">max_hp</param>
+                            <param id="1" name="Value">3+spin_factor</param>
                         </action>
                     </actions>
                 </event-block>
@@ -337,24 +307,60 @@
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="4147441400621236" type="System">
-                            <param id="0" name="Seconds">1.0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="6332211504334334" type="System">
-                            <param id="0" name="Variable">count_down</param>
-                            <param id="1" name="Value">6</param>
-                        </action>
-                        <action id="0" name="Play" sid="1555828801148933" type="Audio">
-                            <param id="0" name="Audio file">Powerup2</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">10</param>
-                            <param id="1" name="Tag (optional)">&quot;pow&quot;</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="5655783879052879" type="System">
-                            <param id="0" name="Layout">trans_layout</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8979770502480905">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3285203734832333" type="System">
+                                    <param id="0" name="Variable">hp</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">(max_hp/2)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="3886692033005957" type="System">
+                                    <param id="0" name="Variable">hp</param>
+                                    <param id="1" name="Value">(max_hp/2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="939259130248931">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3050227580691975" type="System">
+                                    <param id="0" name="Variable">hp</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">max_hp</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="366218459718968" type="System">
+                                    <param id="0" name="Variable">hp</param>
+                                    <param id="1" name="Value">max_hp</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="275605201537716">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="8459924076821976" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="336735461750081" type="System">
+                                    <param id="0" name="Variable">count_down</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="0" name="Play" sid="2547355219774469" type="Audio">
+                                    <param id="0" name="Audio file">Powerup2</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">10</param>
+                                    <param id="1" name="Tag (optional)">&quot;pow&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="9822937298796158" type="System">
+                                    <param id="0" name="Layout">trans_layout</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="7847930718296505">
                     <conditions>

@@ -67,5 +67,15 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="2965831398414378">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4487315612993456" type="Touch">
+                    <param id="0" name="Object">Sprite17</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Clear local storage" sid="5803661971243107" type="WebStorage" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

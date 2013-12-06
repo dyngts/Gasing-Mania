@@ -9,6 +9,7 @@
         <variable constant="0" name="displayTime" sid="6861021745506474" static="0" type="text"></variable>
         <variable constant="0" name="Second" sid="7679371930692862" static="0" type="number">0</variable>
         <variable constant="0" name="Minute" sid="8877674955805544" static="0" type="number">0</variable>
+        <variable constant="0" name="isDamage" sid="936317017900817" static="0" type="text">&quot;false&quot;</variable>
         <variable constant="0" name="gameTime" sid="5383168412020774" static="0" type="number">0</variable>
         <event-block sid="9669970414401365">
             <conditions>
@@ -21,9 +22,12 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;ingame&quot;</param>
                 </action>
+                <action behavior="8Direction" id="4" name="Set max speed" sid="2559878770881233" type="gasing2">
+                    <param id="0" name="Max Speed">agility</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="3654984552968471">
+        <event-block collapsed="1" sid="3654984552968471">
             <conditions>
                 <condition id="-1" name="Every tick" sid="7751573910287873" type="System" />
                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="262563589372791" type="pause">
@@ -198,6 +202,10 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="180883937957391">
+            <conditions />
+            <actions />
+        </event-block>
         <event-block sid="3563050359386841">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="6070362092855201" type="System">
@@ -277,7 +285,7 @@
                             <param id="1" name="Value">Second</param>
                         </action>
                         <action id="0" name="Set text" sid="8351439460511939" type="gameTime">
-                            <param id="0" name="Text">&quot;Time = &quot;&amp;displayTime</param>
+                            <param id="0" name="Text">displayTime</param>
                         </action>
                     </actions>
                 </event-block>
@@ -407,7 +415,7 @@
             <actions>
                 <action id="-11" name="Subtract from" sid="9941735404468245" type="System">
                     <param id="0" name="Variable">hp</param>
-                    <param id="1" name="Value">20</param>
+                    <param id="1" name="Value">int((20/defense)*5)</param>
                 </action>
                 <action id="0" name="Play" sid="5598963286334851" type="Audio">
                     <param id="0" name="Audio file">Hit_Hurt</param>
@@ -416,6 +424,10 @@
                     <param id="1" name="Tag (optional)">&quot;hit&quot;</param>
                 </action>
                 <action id="-9" name="Destroy" sid="6556433397990051" type="rantingAll" />
+                <action id="-9" name="Set value" sid="2458931315193855" type="System">
+                    <param id="0" name="Variable">isDamage</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="5988679740721872">
@@ -459,13 +471,17 @@
             <actions>
                 <action id="-11" name="Subtract from" sid="5831729892701462" type="System">
                     <param id="0" name="Variable">hp</param>
-                    <param id="1" name="Value">50</param>
+                    <param id="1" name="Value">int((50/defense)*10)</param>
                 </action>
                 <action id="0" name="Play" sid="6978312354476064" type="Audio">
                     <param id="0" name="Audio file">Hit_Hurt</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;hit&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9658644717989795" type="System">
+                    <param id="0" name="Variable">isDamage</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -481,7 +497,7 @@
             <actions>
                 <action id="-11" name="Subtract from" sid="6953455706071309" type="System">
                     <param id="0" name="Variable">hp</param>
-                    <param id="1" name="Value">10</param>
+                    <param id="1" name="Value">int((10/defense)*15)</param>
                 </action>
                 <action id="0" name="Play" sid="565189030282049" type="Audio">
                     <param id="0" name="Audio file">Hit_Hurt</param>
@@ -491,6 +507,10 @@
                 </action>
                 <action id="-18" name="Rotate clockwise" sid="8094332786187252" type="gasing3">
                     <param id="0" name="Degrees">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="2390580709806206" type="System">
+                    <param id="0" name="Variable">isDamage</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -637,7 +657,11 @@
             <actions>
                 <action id="-11" name="Subtract from" sid="4140528861899801" type="System">
                     <param id="0" name="Variable">hp</param>
-                    <param id="1" name="Value">2</param>
+                    <param id="1" name="Value">int((2/defense)*10)</param>
+                </action>
+                <action id="-9" name="Set value" sid="4192658029732784" type="System">
+                    <param id="0" name="Variable">isDamage</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
                 </action>
             </actions>
             <sub-events>
@@ -765,6 +789,10 @@
                             <param id="0" name="Where">1</param>
                             <param id="1" name="Object">gasing2</param>
                         </action>
+                        <action id="-29" name="Move to object" sid="9982529275341111" type="lubang">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">TiledBackground</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -809,7 +837,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="0" name="Set text" sid="2705013414281371" type="currentKoin">
-                            <param id="0" name="Text">&quot;Coins = &quot;&amp;currentKoin</param>
+                            <param id="0" name="Text">currentKoin</param>
                         </action>
                     </actions>
                 </event-block>
@@ -826,7 +854,7 @@
                             <param id="1" name="Value">5</param>
                         </action>
                         <action id="0" name="Set text" sid="7805620298773531" type="currentKoin">
-                            <param id="0" name="Text">&quot;Coins = &quot;&amp;currentKoin</param>
+                            <param id="0" name="Text">currentKoin</param>
                         </action>
                     </actions>
                 </event-block>
@@ -843,7 +871,7 @@
                             <param id="1" name="Value">10</param>
                         </action>
                         <action id="0" name="Set text" sid="5185128713926573" type="currentKoin">
-                            <param id="0" name="Text">&quot;Coins = &quot;&amp;currentKoin</param>
+                            <param id="0" name="Text">currentKoin</param>
                         </action>
                     </actions>
                 </event-block>
@@ -891,6 +919,50 @@
                             <param id="0" name="Variable">bestScore</param>
                             <param id="1" name="Value">lastScore</param>
                         </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7429191897881607">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7968865915962404" type="System">
+                    <param id="0" name="Interval (seconds)">random(3,10)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="445911071978864">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="8577919158257034" type="System">
+                            <param id="0" name="Count">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="4500140760215899" type="System">
+                            <param id="0" name="Object to create">batu_terbang</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(1900,1992)</param>
+                            <param id="3" name="Y">random(1100,1147)</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="4873750182815059" type="batu_terbang">
+                            <param id="0" name="Speed">400</param>
+                        </action>
+                        <action id="-21" name="Rotate toward position" sid="4141671292926831" type="batu_terbang">
+                            <param id="0" name="Degrees">(1500 - distance(gasing2.X,gasing2.Y,batu_terbang.X,batu_terbang.Y))</param>
+                            <param id="1" name="X">gasing2.X</param>
+                            <param id="2" name="Y">gasing2.Y</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="961467146600471" type="batu_terbang">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="810598843531985">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="8234665401655524" type="batu_terbang" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5261754617169797" type="batu_terbang" />
                     </actions>
                 </event-block>
             </sub-events>

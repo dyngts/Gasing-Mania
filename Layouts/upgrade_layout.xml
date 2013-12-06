@@ -629,26 +629,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="upgrade_merah" uid="206">
+                <instance type="beli_biru" uid="233">
                     <properties>
-                        <text> UPGRADE (100 coins)</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Tw Cen MT,-20,700,0</font>
-                        <color>255,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Character</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>258.699951172</x>
-                        <y>450.944030762</y>
+                        <x>476.058013916</x>
+                        <y>340.859985352</y>
                         <z>0</z>
-                        <width>189.870269775</width>
-                        <height>46.720703125</height>
+                        <width>180.307006836</width>
+                        <height>162.951004028</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -656,26 +651,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="upgrade_biru" uid="207">
+                <instance type="beli_hijau" uid="234">
                     <properties>
-                        <text>UPGRADE (100 coins)</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Tw Cen MT,-20,700,0</font>
-                        <color>0,128,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Character</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>474.667999268</x>
-                        <y>450.944000244</y>
+                        <x>688.057983398</x>
+                        <y>340.859985352</y>
                         <z>0</z>
-                        <width>189.869995117</width>
-                        <height>46.721000671</height>
+                        <width>180.307006836</width>
+                        <height>162.951004028</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -683,26 +673,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="upgrade_hijau" uid="208">
+                <instance type="tingkatan_merah" uid="235">
                     <properties>
-                        <text>UPGRADE (100 coins)</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Tw Cen MT,-20,700,0</font>
-                        <color>0,128,84</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Character</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>688.046020508</x>
-                        <y>450.944000244</y>
+                        <x>262.058013916</x>
+                        <y>340.859985352</y>
                         <z>0</z>
-                        <width>189.869995117</width>
-                        <height>46.721000671</height>
+                        <width>180.307006836</width>
+                        <height>162.951004028</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -710,26 +695,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="buy_hijau" uid="209">
+                <instance type="tingkatan_hijau" uid="236">
                     <properties>
-                        <text>BUY (400 coins)</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Tw Cen MT,-20,700,0</font>
-                        <color>0,128,84</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>688.046020508</x>
-                        <y>450.944000244</y>
+                        <x>688.057983398</x>
+                        <y>340.859985352</y>
                         <z>0</z>
-                        <width>189.869995117</width>
-                        <height>46.721000671</height>
+                        <width>180.307006836</width>
+                        <height>162.951004028</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -737,26 +717,21 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="buy_biru" uid="210">
+                <instance type="tingkatan_biru" uid="237">
                     <properties>
-                        <text>BUY (500 coins)</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Tw Cen MT,-20,700,0</font>
-                        <color>0,128,255</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>474.667999268</x>
-                        <y>450.944000244</y>
+                        <x>476.058013916</x>
+                        <y>340.859985352</y>
                         <z>0</z>
-                        <width>189.869995117</width>
-                        <height>46.721000671</height>
+                        <width>180.307006836</width>
+                        <height>162.951004028</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

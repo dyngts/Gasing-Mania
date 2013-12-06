@@ -2,5 +2,1184 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>choose_event</name>
-    <events />
+    <events>
+        <event-block sid="2410282427330119">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4904413704781245" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1522251407774585">
+                    <conditions>
+                        <condition id="3" name="Local key exists" sid="1250881740058145" type="WebStorage">
+                            <param id="0" name="Key">&quot;level_merah&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block collapsed="1" sid="6637551499219512">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="722728715561359" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;level_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;active&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="1566427281750683" type="gasing_merah_aktif">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8948721329461704" type="gasing_biru_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="242795850888011" type="gasing_hijau_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="5213373150451191">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="4883839601422037" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="7185270715285014" type="merah_active_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2353713288450582">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="960547754976514" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="4962131896944455" type="merah_active_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7448504301476131">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="3786732650938976" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="9402055842159144" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="5642564178944979" type="blue_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="6583891713736633">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="9088773915555961" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="3946280216733255" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="9681402697478385" type="biru_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5076129222595922">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="1596395542944048" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="9669332068902871" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="9653950311756467" type="hijau_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2159761016257776">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="8344854085141293" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="2181378814014768" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="2699702340889905" type="hijau_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block collapsed="1" sid="8642430228648497">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3498255512092123" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;level_hijau&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;active&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8133101825850722" type="gasing_hijau_aktif">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8499358808206782" type="gasing_merah_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2323834619926645" type="gasing_biru_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="4436222613498816">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="7422537629807781" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="4949630180782835" type="merah_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="1403765419268365">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="8581992411218848" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="7353114678656717" type="merah_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5301907263990831">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="6545477099405707" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="7173718012595027" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="9129873028749167" type="blue_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5782085999430886">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="8882600424178144" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="7100544266301834" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="5324105964536933" type="biru_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4882846480101321">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="5630062685610711" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="9431280534800627" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="7691759165306881" type="hijau_active_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7185305275213934">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="2070077762688752" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="2120644980315936" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="2716664919150595" type="hijau_active_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block collapsed="1" sid="8241983973199652">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3673109691701697" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;level_biru&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;active&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8073406962619609" type="gasing_biru_aktif">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7665570151049864" type="gasing_merah_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2472249111987924" type="gasing_hijau_tidak">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="3423223800179353">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="2002379737330516" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="2922487025047644" type="merah_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2554567605581477">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="1343515390777215" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="9073178637353979" type="merah_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2709169148400118">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="1352523814692144" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="5549534596904102" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="81184152363151" type="biru_active_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9171349526916073">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="4849269354838501" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="7568639532156375" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="8064979548904692" type="biru_active_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="6372047609715173">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="5266894009765664" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="1061984562397318" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="2521716007964792" type="hijau_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5748691419641799">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="3630144658726592" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="5474104348201873" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="3472241340984692" type="hijau_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="9062599731872037">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="3830768832662984" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="4474690066201277" type="hijau_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5376598629827443" type="hijau_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2732365561004456" type="hijau_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="515181616773334" type="hijau_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4831260587031827" type="lock_hijau">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8291275684945293">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="8148097401004775" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="9480050529835332" type="biru_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2404564272308524" type="biru_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5823457427849862" type="biru_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="382886157761116" type="blue_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1409935470994925" type="lock_biru">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2325121084609681">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8576730535694584" type="Touch">
+                    <param id="0" name="Object">backbutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1006051126613629" type="System">
+                    <param id="0" name="Layout">main_layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block collapsed="1" sid="5839680432722755">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7983419644427268" type="Touch">
+                    <param id="0" name="Object">gasing_merah_tidak</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="5728163746402362" type="gasing_merah_aktif" />
+                <condition id="-8" name="Compare two values" sid="967165912409107" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;merah_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="933100365318063" type="gasing_biru_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7813440438910108" type="gasing_hijau_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5207176924352978" type="gasing_biru_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3217139623458404" type="gasing_hijau_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9408894813136676" type="gasing_merah_aktif">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set local value" sid="88917035327293" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_merah&quot;</param>
+                    <param id="1" name="Value">&quot;active&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="7053789271401247" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="4971855484562062" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_biru&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1359933057431006">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="9711542649794875" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_merah&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5316420153542673">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="7754873149409671" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="2198973782348565" type="merah_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1636095757411017" type="merah_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6663771437154952" type="merah_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4608033926605598" type="merah_active_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3633931204035923">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2054377949400863" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3067635519117589" type="merah_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4060277654610363" type="merah_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4188740848103533" type="merah_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3458626701174875" type="merah_active_2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2878219283205461">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3816382608849682" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="6525810641895024">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="275416569106894" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="3857336699285552" type="biru_inactive_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="2605293085602783" type="biru_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="3592796449646879" type="biru_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8122170191902816" type="blue_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7063754611615797">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="7350002438060131" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="6649742779203095" type="blue_inactive_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="9799851870855371" type="biru_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7416078162279308" type="biru_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="2308277508199047" type="biru_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="9435439896513299">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7884474025789247" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="477679639499537" type="biru_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1570234335398165" type="biru_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2460484113228144" type="biru_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5056816475367358" type="blue_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1957676321984084">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="7624816999508606" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9307839115794987">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="485201881529069" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="6905686922532604" type="hijau_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="297341831945917" type="hijau_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="1601673928671997" type="hijau_inactive_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7961293868871633" type="hijau_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5189436779432615">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="8642301601836281" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="364145617388215" type="hijau_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="6741586982994125" type="hijau_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="3045054526984356" type="hijau_inactive_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="5280970755712447" type="hijau_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="1010650892768011">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="688436181636304" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="5014516196148516" type="hijau_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3903928505834911" type="hijau_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2296332578648952" type="hijau_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4229704029753641" type="hijau_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="1094036232739264">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6691435430350821" type="Touch">
+                    <param id="0" name="Object">gasing_biru_tidak</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="591373508577768" type="gasing_biru_aktif" />
+                <condition id="-8" name="Compare two values" sid="3211417564825554" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9306740648029566" type="gasing_merah_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5002071199631764" type="gasing_merah_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1135778745139931" type="gasing_hijau_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2923053220484344" type="gasing_hijau_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="84458783755634" type="gasing_biru_aktif">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set local value" sid="7757802045145162" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_merah&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="45802531860017" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="3231403594109847" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_biru&quot;</param>
+                    <param id="1" name="Value">&quot;active&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8147825957841801">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4576175343535059" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_biru&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6576165298789597">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="8249058196287205" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="4488881533031865" type="merah_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="205407268269911" type="merah_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3319040778906092" type="merah_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4782726031685363" type="merah_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2171809791543303">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="8374874778999165" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="9964481763079467" type="merah_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7398863496044382" type="merah_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6061142243660523" type="merah_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2378752873182092" type="merah_inactive_2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4817428752308115">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="3960310841939664" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="9438176783456729" type="biru_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1138922496492917" type="biru_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3582618172664304" type="blue_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8752109898917512" type="biru_active_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2212896367073931">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="8718399642694138" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="5452047044522892" type="biru_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="43820800080262" type="biru_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7862272140261147" type="blue_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3747923322301197" type="biru_active_2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3833845897402658">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="6555712844039708" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="57997774164777">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="6159393491474523" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="6607354673580532" type="hijau_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="2407593517865299" type="hijau_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="4638892104282103" type="hijau_inactive_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7089818440073583" type="hijau_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="6072829141051745">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="39790253370161" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="3596638420057735" type="hijau_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="4794756926777878" type="hijau_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="8046829626050137" type="hijau_inactive_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="7406462474778589" type="hijau_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="4746097115738087">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="5903741491887084" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="7708929763405041" type="hijau_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2272846507826976" type="hijau_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6954965754143307" type="hijau_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5133308684283704" type="hijau_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block collapsed="1" sid="5164656826837975">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1409413468943289" type="Touch">
+                    <param id="0" name="Object">gasing_hijau_tidak</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="7370308315578368" type="gasing_hijau_aktif" />
+                <condition id="-8" name="Compare two values" sid="2394495833289672" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;hijau_isunlocked&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3725256285136942" type="gasing_merah_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2491051581595802" type="gasing_merah_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="798836539368778" type="gasing_biru_aktif">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1020160665320445" type="gasing_biru_tidak">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8385566325209072" type="gasing_hijau_aktif">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set local value" sid="7336873351129781" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_merah&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="8785757311195591" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_hijau&quot;</param>
+                    <param id="1" name="Value">&quot;active&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="23317002732758" type="WebStorage">
+                    <param id="0" name="Key">&quot;level_biru&quot;</param>
+                    <param id="1" name="Value">&quot;inactive&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4918350703938674">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8891372236802703" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_hijau&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="655605441737283">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="9010986785358879" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="2046383190647879" type="merah_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1363650221073292" type="merah_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5412828640625502" type="merah_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4482684859887837" type="merah_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="737502749279769">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2150235281375607" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_merah&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8392613190585889" type="merah_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9868703404976092" type="merah_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7088801366313088" type="merah_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="697694272265638" type="merah_inactive_2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8292437830780075">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="1282208085845644" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;biru_isunlocked&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;unlocked&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="2730908126700149">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="1259878569891539" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;0&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="986344472162159" type="biru_inactive_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="1633011966298326" type="biru_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="2526726216068425" type="biru_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="6216176695943607" type="blue_inactive_1">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="1778346404884531">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="4764213779784958" type="System">
+                                            <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_biru&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">&quot;1&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="4140846675744653" type="biru_active_2">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="2228623527385194" type="biru_active_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="5102028355840566" type="blue_inactive_1">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="810431216378682" type="biru_inactive_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="4238047065893997">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2051242528543115" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="1709348482873488" type="biru_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5962876927770647" type="biru_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5830200707334276" type="biru_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="384275902951316" type="blue_inactive_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3765978739182895">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2272651872846444" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;0&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="6884146059161897" type="hijau_active_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9473927325560974" type="hijau_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2052799601650175" type="hijau_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4531664118491196" type="hijau_active_1">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4872094956734449">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="1373217113042444" type="System">
+                                    <param id="0" name="First value">WebStorage.LocalValue(&quot;upgrade_hijau&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="7734979556588695" type="hijau_active_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1516865727507127" type="hijau_inactive_2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6063409647800422" type="hijau_inactive_1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="3264237523703647" type="hijau_active_2">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3754173398237945">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9538603919338663" type="Touch">
+                    <param id="0" name="Object">Continue_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1685788003106561" type="System">
+                    <param id="0" name="Layout">shake_layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

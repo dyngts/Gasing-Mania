@@ -84,6 +84,51 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="7472100584295729">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5455102234542401" type="System">
+                            <param id="0" name="Variable">gameTime</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">300</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="6622673624742379" type="WebStorage">
+                            <param id="0" name="Key">&quot;isachieve_300s&quot;</param>
+                            <param id="1" name="Value">&quot;achieved&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7967550908886619">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="86702243128812" type="System">
+                            <param id="0" name="First value">isDamage</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;false&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="6384513835756157" type="WebStorage">
+                            <param id="0" name="Key">&quot;isachieve_nodamage&quot;</param>
+                            <param id="1" name="Value">&quot;achieved&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="22667067437456" type="System">
+                            <param id="0" name="Variable">isDamage</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="774213470298814">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3631737263087294" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="9893725377224" type="System">
+                            <param id="0" name="Variable">isDamage</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="6947852473080256">
                     <conditions>
                         <condition id="3" name="Local key exists" sid="1150770855590294" type="WebStorage">

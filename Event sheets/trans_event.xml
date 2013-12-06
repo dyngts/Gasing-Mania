@@ -13,27 +13,89 @@
                     <param id="0" name="Text">hp</param>
                 </action>
                 <action id="-5" name="Set width" sid="2409482377451626" type="hp_bar">
-                    <param id="0" name="Width">hp/max_hp*400</param>
+                    <param id="0" name="Width">(hp/max_hp)*healthbarMax.Width</param>
                 </action>
                 <action id="0" name="Set text" sid="7587336091596634" type="agility_status">
                     <param id="0" name="Text">agility</param>
                 </action>
                 <action id="-5" name="Set width" sid="8158256364521685" type="agility_bar">
-                    <param id="0" name="Width">agility*agility_bar.Width*5</param>
+                    <param id="0" name="Width">(agility/500)*healthbarMax.Width</param>
                 </action>
                 <action id="0" name="Set text" sid="2828647453833537" type="spin_status">
                     <param id="0" name="Text">spin_factor</param>
                 </action>
                 <action id="-5" name="Set width" sid="7083381922909943" type="spin_bar">
-                    <param id="0" name="Width">spin_factor*spin_bar.Width*5</param>
+                    <param id="0" name="Width">(spin_factor/3)*healthbarMax.Width</param>
                 </action>
                 <action id="0" name="Set text" sid="6603409130776593" type="defense_status">
                     <param id="0" name="Text">defense</param>
                 </action>
                 <action id="-5" name="Set width" sid="4395027461663508" type="defense_bar">
-                    <param id="0" name="Width">defense*defense_bar.Width*5</param>
+                    <param id="0" name="Width">(defense/40)*healthbarMax.Width</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="1966429827781205">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3822563032944035" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_merah&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7703692063678953" type="gasing_hijau">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8293763784916984" type="gasing_biru">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4335403072419291" type="gasing2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3879956866606788">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2092412495796159" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_hijau&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8076061966035322" type="gasing_biru">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5203251182638548" type="gasing2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7911647049006989" type="gasing_hijau">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8058422655986076">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7491562903684918" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_biru&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2798177508807563" type="gasing_hijau">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2615542253873999" type="gasing2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4675925173976503" type="gasing_biru">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="4967806753977557">
             <conditions>
