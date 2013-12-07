@@ -2,5 +2,250 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>story_event</name>
-    <events />
+    <events>
+        <variable constant="0" name="hal_cerita" sid="7724370380396321" static="0" type="number">0</variable>
+        <event-block sid="6467617934432711">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7698967856101414" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8068758806490621" type="Audio">
+                    <param id="0" name="Audio file">ambler2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="4414702048620918" type="System">
+                    <param id="0" name="Variable">hal_cerita</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2018959757922625" type="story_2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="673954375228614" type="story_3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="55054358524889" type="cerita_2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6432101225019882" type="cerita_3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3833582648666112" type="story_4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2434747434698298" type="cerita_4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5189018202915129" type="skip">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8446658433414609" type="story_1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5939909771689003" type="cerita_1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9972654547896273" type="continue">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9716792249811613">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9063147282421996" type="Touch">
+                    <param id="0" name="Object">continue</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1318549023188608" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="623656852819018">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1583419431540746" type="System">
+                            <param id="0" name="Variable">hal_cerita</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="1704928885761023" type="System">
+                            <param id="0" name="Layout">main_layout</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8109561313075307">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9090624485153262" type="System">
+                            <param id="0" name="Variable">hal_cerita</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2337889295984608" type="System">
+                            <param id="0" name="Variable">hal_cerita</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5375079763307556" type="story_4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4386166391258872" type="cerita_4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8794848070552535" type="story_1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="649538426108872" type="cerita_1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6599493688741854" type="cerita_2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4396156742521872" type="story_2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2025360175312521" type="story_3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4708286665680697" type="cerita_3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="752516709727434" type="skip">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3496906774847893" type="continue">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7754755135101998" type="story_4">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6302349421092363" type="cerita_4">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5674749175189023">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7960540704941357" type="System">
+                            <param id="0" name="Variable">hal_cerita</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4332396474265718" type="System">
+                            <param id="0" name="Variable">hal_cerita</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1314898127035986" type="story_1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9657195666340017" type="cerita_1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7553091015880693" type="story_4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7736847393464163" type="cerita_4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3235566558603455" type="cerita_2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1849131139652349" type="story_2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1772039772868284" type="skip">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3230820609989447" type="continue">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6002785259906828" type="story_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7128215573933843" type="cerita_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5475768585105111">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="977983498877717" type="System">
+                            <param id="0" name="Variable">hal_cerita</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6421378645912309" type="System">
+                            <param id="0" name="Variable">hal_cerita</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9085993447494304" type="story_3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="164037886968639" type="cerita_3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6834416496454698" type="story_4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1116829335427048" type="cerita_4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6064512086657142" type="story_1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4546307629757937" type="cerita_1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7090031385082977" type="cerita_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6132677253510553" type="story_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8037939342199671" type="skip">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1913848271519427" type="continue">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9684762341026377">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1723681254764436" type="Touch">
+                    <param id="0" name="Object">skip</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4710535841378361" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="4532731504622922" type="Audio">
+                    <param id="0" name="Audio file">ambler2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9222589713083873" type="System">
+                    <param id="0" name="Layout">main_layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

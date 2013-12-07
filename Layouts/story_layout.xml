@@ -4,8 +4,8 @@
     <sid>263317014802641</sid>
     <event-sheet>story_event</event-sheet>
     <size>
-        <width>800</width>
-        <height>480</height>
+        <width>1920</width>
+        <height>1080</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -26,7 +26,248 @@
             <force-own-texture>0</force-own-texture>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="story_1" uid="285">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>434.571655273</x>
+                        <y>233.509063721</y>
+                        <z>0</z>
+                        <width>873.755615234</width>
+                        <height>491.487548828</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="story_2" uid="286">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>434.571990967</x>
+                        <y>233.509002686</y>
+                        <z>0</z>
+                        <width>873.755981445</width>
+                        <height>491.488006592</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="story_3" uid="287">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>425.776824951</x>
+                        <y>241.436721802</y>
+                        <z>0</z>
+                        <width>852.165649414</width>
+                        <height>479.343444824</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="story_4" uid="293">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>425.777008057</x>
+                        <y>241.43699646</y>
+                        <z>0</z>
+                        <width>852.166015625</width>
+                        <height>479.342987061</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cerita_1" uid="288">
+                    <properties>
+                        <text>Once upon a time at small village, live a boy named Denny. He was addict to many games, especially spinning top game or usually called &quot;Gasing&quot;. He&apos;s happy to play it when his spinning top rapidly whirling and can survive in a long time.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-24,700,0</font>
+                        <color>0,152,152</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>299.60546875</x>
+                        <y>14.77041626</y>
+                        <z>0</z>
+                        <width>488</width>
+                        <height>141</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cerita_2" uid="289">
+                    <properties>
+                        <text>After school, he&apos;s usually play the spinning top at the only one field in his village.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-24,700,0</font>
+                        <color>0,152,152</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>299.604980469</x>
+                        <y>43.770004272</y>
+                        <z>0</z>
+                        <width>410</width>
+                        <height>102</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cerita_3" uid="290">
+                    <properties>
+                        <text>But, many kids always disturb Denny because they also want to use the field to play soccer. They often throw a small objects like rock and gravel for make his spinning top stop to whirl. Besides, the nature sometimes annoy his spinning top rotation.</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-24,700,0</font>
+                        <color>0,152,152</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>299.605010986</x>
+                        <y>14.770004272</y>
+                        <z>0</z>
+                        <width>481</width>
+                        <height>144</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="continue" uid="291">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>677</x>
+                        <y>427</y>
+                        <z>0</z>
+                        <width>210.045593262</width>
+                        <height>77.126113892</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="skip" uid="292">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>65</x>
+                        <y>46</y>
+                        <z>0</z>
+                        <width>107.728385925</width>
+                        <height>68.422080994</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cerita_4" uid="294">
+                    <properties>
+                        <text>All obstacles not make Denny become desperate. For the love of his spinning top, he&apos;s decide to make his spinning top become the strongest one which can&apos;t be disturbed by everybody</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Tw Cen MT Condensed,-32,700,0</font>
+                        <color>0,152,152</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>97</x>
+                        <y>165</y>
+                        <z>0</z>
+                        <width>631.807006836</width>
+                        <height>166.335601807</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>
