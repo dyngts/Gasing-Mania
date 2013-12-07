@@ -464,6 +464,12 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
+                <action id="0" name="Play" sid="6156391796166706" type="Audio">
+                    <param id="0" name="Audio file">ambler2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="1006051126613629" type="System">
                     <param id="0" name="Layout">main_layout</param>
                 </action>

@@ -62,6 +62,9 @@
         </event-block>
         <event-block sid="9245473079466886">
             <conditions>
+                <condition id="3" name="Local key exists" sid="6157707775370479" type="WebStorage">
+                    <param id="0" name="Key">&quot;soundOn&quot;</param>
+                </condition>
                 <condition id="-8" name="Compare two values" sid="7923075515420522" type="System">
                     <param id="0" name="First value">WebStorage.LocalValue(&quot;soundOn&quot;)</param>
                     <param id="1" name="Comparison">0</param>
