@@ -632,30 +632,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ranting1" sid="4072977175738903">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="765207236590765">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6133820914378001" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.393204" y="0.54" />
-                            <point x="0.5" y="0.513333" />
-                            <point x="0.616505" y="0.526667" />
-                            <point x="0.954693" y="0.5" />
-                            <point x="0.857605" y="0.804444" />
-                            <point x="0.5" y="0.626667" />
-                            <point x="0.101942" y="0.86" />
-                            <point x="0.532362" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TiledBackground" sid="3814916411635207">
             <plugin id="TiledBg" />
             <texture />
@@ -682,102 +658,6 @@
                             <point x="0.5" y="1" />
                             <point x="0.145" y="0.855" />
                             <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ranting2" sid="7364421248031382">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="4266210081352216">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3315071291944246" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.393204" y="0.54" />
-                            <point x="0.5" y="0.513333" />
-                            <point x="0.616505" y="0.526667" />
-                            <point x="0.954693" y="0.5" />
-                            <point x="0.857605" y="0.804444" />
-                            <point x="0.5" y="0.626667" />
-                            <point x="0.101942" y="0.86" />
-                            <point x="0.532362" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ranting3" sid="788906574342219">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="5315139832040308">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5134012026346186" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.393204" y="0.54" />
-                            <point x="0.5" y="0.513333" />
-                            <point x="0.616505" y="0.526667" />
-                            <point x="0.954693" y="0.5" />
-                            <point x="0.857605" y="0.804444" />
-                            <point x="0.5" y="0.626667" />
-                            <point x="0.101942" y="0.86" />
-                            <point x="0.532362" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ranting4" sid="2361910812786025">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="9728645131418334">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2119100708700498" speed="5">
-                    <frame duration="1" hotspotX="0.500383" hotspotY="0.500506">
-                        <collision-poly>
-                            <point x="0.406274" y="0.536906" />
-                            <point x="0.499617" y="0.0920121" />
-                            <point x="0.638103" y="0.478261" />
-                            <point x="0.894415" y="0.499494" />
-                            <point x="0.806427" y="0.744186" />
-                            <point x="0.499617" y="0.582406" />
-                            <point x="0.0520275" y="0.931244" />
-                            <point x="0.459067" y="0.499494" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ranting5" sid="7928669118427542">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="8683310763407037">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7837652829775824" speed="5">
-                    <frame duration="1" hotspotX="0.500383" hotspotY="0.500506">
-                        <collision-poly>
-                            <point x="0.406274" y="0.536906" />
-                            <point x="0.499617" y="0.0920121" />
-                            <point x="0.638103" y="0.478261" />
-                            <point x="0.894415" y="0.499494" />
-                            <point x="0.806427" y="0.744186" />
-                            <point x="0.499617" y="0.582406" />
-                            <point x="0.0520275" y="0.931244" />
-                            <point x="0.459067" y="0.499494" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1316,25 +1196,6 @@
                             <point x="0.500637" y="0.465232" />
                             <point x="0.878981" y="0.157285" />
                             <point x="0.870064" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite13" sid="8151423897418825">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6609321595670007" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.125" y="0.125" />
-                            <point x="0.5" y="0" />
-                            <point x="0.875" y="0.125" />
-                            <point x="1" y="0.5" />
-                            <point x="0.875" y="0.875" />
-                            <point x="0.5" y="1" />
-                            <point x="0.125" y="0.875" />
-                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
