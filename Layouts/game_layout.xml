@@ -2433,11 +2433,11 @@
                         <x>1086</x>
                         <y>-217</y>
                         <z>0</z>
-                        <width>220</width>
-                        <height>124</height>
+                        <width>95</width>
+                        <height>95</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.50526315</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

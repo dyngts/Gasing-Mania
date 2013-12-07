@@ -62,7 +62,7 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="1466531350804279" type="System">
                                                     <param id="0" name="Variable">agility</param>
-                                                    <param id="1" name="Value">50</param>
+                                                    <param id="1" name="Value">125</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -89,7 +89,7 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="1531095522275716" type="System">
                                                     <param id="0" name="Variable">agility</param>
-                                                    <param id="1" name="Value">350</param>
+                                                    <param id="1" name="Value">250</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -155,7 +155,7 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="6908709056903899" type="System">
                                                     <param id="0" name="Variable">agility</param>
-                                                    <param id="1" name="Value">500</param>
+                                                    <param id="1" name="Value">400</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -194,7 +194,7 @@
                                                 </action>
                                                 <action id="-9" name="Set value" sid="4168901668604322" type="System">
                                                     <param id="0" name="Variable">agility</param>
-                                                    <param id="1" name="Value">100</param>
+                                                    <param id="1" name="Value">150</param>
                                                 </action>
                                             </actions>
                                         </event-block>

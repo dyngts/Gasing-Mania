@@ -504,6 +504,32 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="3750682393281733">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8492422697325884" type="gasing2">
+                    <param id="0" name="Object">batu_terbang</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9831085857683722" type="pause">
+                    <param id="0" name="Instance variable">isPaused</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="2578411300229361" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Value">int((20/defense)*10)</param>
+                </action>
+                <action id="0" name="Play" sid="8852877617701739" type="Audio">
+                    <param id="0" name="Audio file">Hit_Hurt</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;hit&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="8400074203429412" type="System">
+                    <param id="0" name="Variable">isDamage</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="5062655975897654">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="7050890702086531" type="gasing2">
@@ -532,6 +558,50 @@
                     <param id="1" name="Value">&quot;true&quot;</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="3958080918085708">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="442536756667947" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_merah&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="5058986827375537" type="gasing3">
+                            <param id="0" name="Degrees">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="10014276652479">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7123665015924463" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_biru&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="6951295232769028" type="gasing_biru">
+                            <param id="0" name="Degrees">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9740793497379516">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="456398961923663" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;level_hijau&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;active&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="1948924455240079" type="gasing_hijau">
+                            <param id="0" name="Degrees">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="9309160773586837">
             <conditions>
@@ -766,9 +836,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-18" name="Rotate clockwise" sid="9072046653842224" type="batu">
-                            <param id="0" name="Degrees">random(0,350)</param>
-                        </action>
                         <action id="0" name="Spawn another object" sid="3951126504473344" type="spawnBatu">
                             <param id="0" name="Object">batu</param>
                             <param id="1" name="Layer">0</param>
