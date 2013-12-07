@@ -2237,6 +2237,7 @@
         <layout>gameover_layout.xml</layout>
         <layout>choose_layout.xml</layout>
         <layout>help_layout.xml</layout>
+        <layout>story_layout.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>main_event.xml</event-sheet>
@@ -2252,6 +2253,7 @@
         <event-sheet>gameover_event.xml</event-sheet>
         <event-sheet>choose_event.xml</event-sheet>
         <event-sheet>help_event.xml</event-sheet>
+        <event-sheet>story_event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="WebStorage" uid="88" />
