@@ -3,20 +3,19 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>option_event</name>
     <events>
-        <variable constant="0" name="soundOn" sid="3301574805695859" static="0" type="number">0</variable>
         <event-block sid="4235281485899464">
             <conditions />
             <actions>
                 <action id="2" name="Stop" sid="8248826062446036" type="Sprite16" />
-                <action id="5" name="Set frame" sid="8812975156784179" type="Sprite16">
-                    <param id="0" name="Frame number">soundOn</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="3074284550741857">
             <conditions>
                 <condition id="3" name="On touched object" sid="2092686356808041" type="Touch">
                     <param id="0" name="Object">backbutton</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="701816953278604" type="System">
+                    <param id="0" name="Layer">1</param>
                 </condition>
             </conditions>
             <actions>
@@ -36,6 +35,9 @@
                 <condition id="3" name="On touched object" sid="6846598237218085" type="Touch">
                     <param id="0" name="Object">Sprite16</param>
                 </condition>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="1118574270382588" type="System">
+                    <param id="0" name="Layer">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="6524892862487281" type="Audio">
@@ -48,27 +50,22 @@
             <sub-events>
                 <event-block sid="2886891719036393">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="8163221830455724" type="System">
-                            <param id="0" name="Variable">soundOn</param>
+                        <condition id="-8" name="Compare two values" sid="9664570141595374" type="System">
+                            <param id="0" name="First value">WebStorage.LocalValue(&quot;soundOn&quot;)</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="2" name="Second value">&quot;0&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="8" name="Set silent" sid="2828132863709808" type="Audio">
                             <param id="0" name="Mode">0</param>
                         </action>
-                        <action id="2" name="Set muted" sid="9382397096108841" type="Audio">
+                        <action id="6" name="Stop" sid="8520774219470766" type="Audio">
                             <param id="0" name="Tag">&quot;ambler&quot;</param>
-                            <param id="1" name="State">0</param>
                         </action>
-                        <action id="2" name="Set muted" sid="8591402468847337" type="Audio">
-                            <param id="0" name="Tag">&quot;ingame&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="8051279889651807" type="System">
-                            <param id="0" name="Variable">soundOn</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="0" name="Set local value" sid="1920571393951946" type="WebStorage">
+                            <param id="0" name="Key">&quot;soundOn&quot;</param>
+                            <param id="1" name="Value">&quot;1&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -80,17 +77,15 @@
                         <action id="8" name="Set silent" sid="1710416933785073" type="Audio">
                             <param id="0" name="Mode">1</param>
                         </action>
-                        <action id="2" name="Set muted" sid="2533172905899845" type="Audio">
-                            <param id="0" name="Tag">&quot;ambler&quot;</param>
-                            <param id="1" name="State">1</param>
+                        <action id="0" name="Play" sid="101098926739931" type="Audio">
+                            <param id="0" name="Audio file">ambler2</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;ambler&quot;</param>
                         </action>
-                        <action id="2" name="Set muted" sid="7520317702839568" type="Audio">
-                            <param id="0" name="Tag">&quot;ingame&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="7784218934603133" type="System">
-                            <param id="0" name="Variable">soundOn</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="0" name="Set local value" sid="8100077486263476" type="WebStorage">
+                            <param id="0" name="Key">&quot;soundOn&quot;</param>
+                            <param id="1" name="Value">&quot;0&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -101,9 +96,97 @@
                 <condition id="3" name="On touched object" sid="4487315612993456" type="Touch">
                     <param id="0" name="Object">Sprite17</param>
                 </condition>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="1573904913477407" type="System">
+                    <param id="0" name="Layer">1</param>
+                </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="3027660414667074" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3460403792806269" type="pauseScreen">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="1875226819679439" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5185323762327871">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6282997911721321" type="Touch">
+                    <param id="0" name="Object">btn_yes</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="6877859956597209" type="System">
+                    <param id="0" name="Layer">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6543852736229249" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
                 <action id="4" name="Clear local storage" sid="5803661971243107" type="WebStorage" />
+                <action id="-4" name="Set layer visible" sid="8659841155824995" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3709180341421746">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9660677852661677" type="Touch">
+                    <param id="0" name="Object">btn_no</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="1500524531708483" type="System">
+                    <param id="0" name="Layer">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6860066581921117" type="Audio">
+                    <param id="0" name="Audio file">button_select2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;button&quot;</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="4977166697468764" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="552353154512225">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="4630847973524704" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;soundOn&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;0&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7114069685018878" type="Sprite16">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9723299431497521">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="9520059040158723" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;soundOn&quot;)</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5456891976351396" type="Sprite16">
+                    <param id="0" name="Frame number">1</param>
+                </action>
             </actions>
         </event-block>
     </events>

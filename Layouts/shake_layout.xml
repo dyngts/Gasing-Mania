@@ -37,11 +37,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>399</x>
-                        <y>240</y>
+                        <x>423.415252686</x>
+                        <y>254.649169922</y>
                         <z>0</z>
-                        <width>800</width>
-                        <height>480</height>
+                        <width>848.830505371</width>
+                        <height>509.298339844</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -73,7 +73,7 @@
                 </instance>
                 <instance type="Text5" uid="40">
                     <properties>
-                        <text>SHAKE!</text>
+                        <text>SHAKE</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Tw Cen MT,-80,700,0</font>
                         <color>0,153,153</color>
@@ -100,7 +100,7 @@
                 </instance>
                 <instance type="Text6" uid="41">
                     <properties>
-                        <text>the phone</text>
+                        <text>the phone!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Tw Cen MT,-64,700,0</font>
                         <color>0,153,153</color>
@@ -116,7 +116,7 @@
                         <x>269</x>
                         <y>38</y>
                         <z>0</z>
-                        <width>280</width>
+                        <width>292</width>
                         <height>90</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -203,7 +203,7 @@
                 </instance>
                 <instance type="Deskripsi_shake" uid="68">
                     <properties>
-                        <text>Please shake the device with your truly power, don&apos;t hesitate it!!. Press &quot;start&quot; button to begin shaking</text>
+                        <text>Shake the device with all of your power! Do not hesitate!! Press &quot;start&quot; button to begin</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Tw Cen MT,-27,700,0</font>
                         <color>0,153,153</color>

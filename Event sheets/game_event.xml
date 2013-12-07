@@ -685,13 +685,7 @@
             </actions>
             <sub-events>
                 <event-block sid="8508394636480463">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="2815741210418091" type="System">
-                            <param id="0" name="Variable">soundOn</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="0" name="Play" sid="4359328312616955" type="Audio">
                             <param id="0" name="Audio file">Hit_Hurt</param>
@@ -827,13 +821,7 @@
             </actions>
             <sub-events>
                 <event-block sid="2170792272145573">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="2567713909870729" type="System">
-                            <param id="0" name="Variable">soundOn</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="0" name="Play" sid="9242764177620695" type="Audio">
                             <param id="0" name="Audio file">dapetkoin</param>
