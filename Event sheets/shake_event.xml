@@ -22,6 +22,9 @@
                         <action id="4" name="Preload" sid="7774347830471996" type="Audio">
                             <param id="0" name="Audio file">soarcrop2</param>
                         </action>
+                        <action id="0" name="Set text" sid="8785474679258677" type="Deskripsi_shake">
+                            <param id="0" name="Text">&quot;Shake the device with all of your power! &quot;&amp;newline&amp;&quot;Do not hesitate!! &quot;&amp;newline&amp;&quot;Press START button to begin&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-group description="" sid="653353460147865" title="Status Event">
