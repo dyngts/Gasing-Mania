@@ -236,7 +236,7 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;button&quot;</param>
                 </action>
-                <action id="0" name="Play" sid="4532731504622922" type="Audio">
+                <action disabled="1" id="0" name="Play" sid="4532731504622922" type="Audio">
                     <param id="0" name="Audio file">ambler2</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
