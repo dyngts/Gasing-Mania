@@ -2745,8 +2745,8 @@
                 <condition id="3" name="On touched object" sid="306772422681952" type="Touch">
                     <param id="0" name="Object">inachieve_zxmania</param>
                 </condition>
-                <condition id="-8" inverted="1" name="Compare two values" sid="6821788030018289" type="System">
-                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_300s&quot;)</param>
+                <condition id="-8" inverted="1" name="Compare two values" sid="3056339022172948" type="System">
+                    <param id="0" name="First value">WebStorage.LocalValue(&quot;isachieve_zxmania&quot;)</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Second value">&quot;achieved&quot;</param>
                 </condition>
